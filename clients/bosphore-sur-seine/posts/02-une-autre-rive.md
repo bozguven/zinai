@@ -1,6 +1,6 @@
 ---
 id: 02-une-autre-rive
-date: 2026-11-05
+date: 2026-11-13
 channel: Instagram post
 status: draft
 ---

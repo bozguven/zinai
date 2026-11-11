@@ -1,6 +1,6 @@
 # Bosphore sur Seine — brief
 
-Last updated: 3 November 2026. Items marked **[À CONFIRMER]** are not confirmed by Ali and Ruşan yet.
+Last updated: 11 November 2026. Items marked **[À CONFIRMER]** are not confirmed by Ali and Ruşan yet.
 
 ## The event
 
@@ -14,8 +14,8 @@ Last updated: 3 November 2026. Items marked **[À CONFIRMER]** are not confirmed
 - **Partners shown on the flyer:** Birkleyn Sound (Ruşan's live-session platform) and the venue.
 - **Tickets:** Shotgun, sold by the venue's company with the team's company. Link [À CONFIRMER]
 - **Prices proposed, not yet agreed [À CONFIRMER]:** Première rive 12 € (first 40),
-  Rive 15 € (from 15 Nov), Dernière vague 18 € (from 22 Nov), Duo 26 €, Groupe de 6 75 €.
-- **Tickets on sale:** 10 November [À CONFIRMER]
+  Rive 15 € (from 21 Nov), Dernière vague 18 € (from 24 Nov), Duo 26 €, Groupe de 6 75 €.
+- **Tickets on sale:** 17 November [À CONFIRMER]
 - **Website:** https://bosphore-sur-seine.vercel.app (FR, /en, /tr)
 - **Playlist:** https://samply.app/p/82842e8b-3fbb-4692-ac67-ebb6932ec6e3
 

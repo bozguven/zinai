@@ -1,6 +1,6 @@
 ---
 id: 09-premiere-rive-epuisee
-date: 2026-11-15
+date: 2026-11-21
 channel: Instagram post + story
 status: draft
 ---
@@ -13,13 +13,13 @@ status: draft
 
 Première rive : épuisée. Merci. 🌙
 
-Les 40 premières fenêtres sont allumées. Les places passent à 15 € jusqu'au 21 novembre.
+Les 40 premières fenêtres sont allumées. Les places passent à 15 € jusqu'au 23 novembre.
 
 ## Caption — TR
 
 Première rive tükendi. Teşekkürler. 🌙
 
-İlk 40 pencerenin ışığı yandı. Biletler 21 Kasım'a kadar 15 €.
+İlk 40 pencerenin ışığı yandı. Biletler 23 Kasım'a kadar 15 €.
 
 ## Hashtags
 
@@ -27,4 +27,4 @@ Première rive tükendi. Teşekkürler. 🌙
 
 ## Notes for the team
 
-Publish only if the first 40 are really sold. If not, post 'Dernier jour à 12 €' on 14 Nov instead.
+Publish only if the first 40 are really sold. If not, post 'Dernier jour à 12 €' on 20 Nov instead.

@@ -1,7 +1,7 @@
 ---
 id: 05-tickets-monday
-date: 2026-11-08
-channel: Instagram post + story (and reminder story on 9 Nov)
+date: 2026-11-16
+channel: Instagram post + story (and reminder story on 16 Nov)
 status: draft
 ---
 
@@ -11,14 +11,14 @@ status: draft
 
 ## Caption — FR
 
-Lundi 10 novembre, la billetterie ouvre. 🌙
+Mardi 17 novembre, la billetterie ouvre. 🌙
 
 Les 40 premières places partent à 12 € : c'est la Première rive. Ensuite, le prix monte.
 Active les notifications pour ne pas la rater.
 
 ## Caption — TR
 
-10 Kasım Pazartesi biletler satışa çıkıyor. 🌙
+17 Kasım Salı biletler satışa çıkıyor. 🌙
 
 İlk 40 bilet 12 €: Première rive. Sonra fiyat artıyor.
 Kaçırmamak için bildirimleri aç.
@@ -29,4 +29,4 @@ Kaçırmamak için bildirimleri aç.
 
 ## Notes for the team
 
-[À CONFIRMER] prices and date. Use the Instagram countdown sticker in the story, set to 10 Nov 10:00.
+[À CONFIRMER] prices and date. Use the Instagram countdown sticker in the story, set to 17 Nov 10:00.

@@ -1,6 +1,6 @@
 ---
 id: 03-rusan-reel
-date: 2026-11-06
+date: 2026-11-14
 channel: Instagram Reel, TikTok, YouTube Short
 status: draft
 ---

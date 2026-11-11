@@ -1,6 +1,6 @@
 ---
 id: 08-lineup
-date: 2026-11-14
+date: 2026-11-20
 channel: Instagram post + story, collab with each artist
 status: draft
 ---

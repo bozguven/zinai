@@ -1,6 +1,6 @@
 ---
 id: 11-how-to-come
-date: 2026-11-20
+date: 2026-11-23
 channel: Instagram post + story (save to highlights)
 status: draft
 ---

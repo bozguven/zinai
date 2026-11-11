@@ -1,23 +1,20 @@
 date,day,channel,format,topic,visual,status,file,depends_on
-2026-11-04,Tue,Instagram + story,post,Save the date,announce-post-fr; announce-story-fr; announce-post-tr,draft,posts/01-save-the-date.md,
-2026-11-05,Wed,Instagram,post,The concept: une autre rive,quote-post-fr,draft,posts/02-une-autre-rive.md,
-2026-11-06,Thu,Instagram Reel + TikTok + YouTube Short,reel,Who is Ruşan Filiztek,30-45 s clip from a Birkleyn session,draft,posts/03-rusan-reel.md,Ruşan picks the session
-2026-11-06,Thu,YouTube,video,Birkleyn session release 1,Birkleyn thumbnail,planned,,Ruşan's release calendar
-2026-11-07,Fri,Instagram + story,post + story,Music survey,survey-story-fr,draft,posts/04-survey.md,Survey link
-2026-11-08,Sat,Instagram + story,post,Tickets open Monday,tickets-soon-post-fr,draft,posts/05-tickets-monday.md,Prices and date agreed
-2026-11-09,Sun,Instagram,story,Reminder: tomorrow 10:00,tickets-soon-story-fr,draft,posts/05-tickets-monday.md,Prices and date agreed
-2026-11-10,Mon,Instagram + story + WhatsApp,post + story,Tickets open,tickets-open-post-fr; tickets-open-story-fr,draft,posts/06-tickets-open.md,Shotgun link
-2026-11-11,Tue,Instagram Reel + TikTok,reel,Rehearsal clip,phone video from rehearsal,planned,,Clip filmed
-2026-11-12,Wed,Instagram Reel + TikTok,reel,Sürgün: exile and new roots,Ruşan talking 20-30 s,draft,posts/07-surgun.md,Ruşan films it
-2026-11-13,Thu,YouTube,video,Birkleyn session release 2,Birkleyn thumbnail,planned,,Ruşan's release calendar
-2026-11-14,Fri,Instagram + story,post,Line-up reveal,lineup-post-fr,draft,posts/08-lineup.md,Friends' names
-2026-11-15,Sat,Instagram + story,post,Première rive sold out / price 15 €,soldout-post-fr,draft,posts/09-premiere-rive-epuisee.md,Only if true
-2026-11-16,Sun,Instagram Reel + TikTok,reel,Barge at night,phone video on the quay,planned,,Clip filmed
-2026-11-18,Tue,Instagram + story,post,Survey results: your setlist,quote-post-fr (results),draft,posts/10-survey-results.md,Survey answers
-2026-11-20,Thu,Instagram + story,post,How to get there,info-post-fr,draft,posts/11-how-to-come.md,End time
-2026-11-20,Thu,YouTube,video,Birkleyn session release 3,Birkleyn thumbnail,planned,,Ruşan's release calendar
-2026-11-22,Sat,Instagram + story,post + story,J-5 last places at 18 €,countdown-post-fr; countdown-story-fr,draft,posts/12-j-5.md,Prices agreed
-2026-11-24,Mon,Instagram,story,J-3,countdown story,planned,,
-2026-11-26,Wed,Instagram,story,Demain,countdown story,planned,,
+2026-11-12,Thu,Instagram + story,post,Save the date,announce-post-fr; announce-story-fr; announce-post-tr,draft,posts/01-save-the-date.md,Instagram access
+2026-11-13,Fri,Instagram,post,The concept: une autre rive,quote-post-fr,draft,posts/02-une-autre-rive.md,
+2026-11-13,Fri,YouTube,video,Birkleyn session release,Birkleyn thumbnail,planned,,Ruşan's team
+2026-11-14,Sat,Instagram Reel + TikTok + YouTube Short,reel,Who is Ruşan Filiztek,30-45 s clip from a Birkleyn session,draft,posts/03-rusan-reel.md,Ruşan picks the moment
+2026-11-15,Sun,Instagram + story + WhatsApp,post + story,Setlist survey,survey-story-fr,draft,posts/04-survey.md,Tally form link
+2026-11-16,Mon,Instagram + story,post,Tickets open tomorrow,tickets-soon-post-fr; tickets-soon-story-fr,draft,posts/05-tickets-monday.md,Prices and date agreed
+2026-11-17,Tue,Instagram + story + WhatsApp + email,post + story,Tickets open,tickets-open-post-fr; tickets-open-story-fr,draft,posts/06-tickets-open.md,Shotgun link
+2026-11-18,Wed,Instagram Reel + TikTok,reel,Rehearsal clip,phone video from rehearsal,planned,,Clip filmed
+2026-11-19,Thu,Instagram Reel + TikTok,reel,Sürgün: exile and new roots,Ruşan talking 20-30 s,draft,posts/07-surgun.md,Ruşan films it
+2026-11-20,Fri,Instagram + story,post,Line-up reveal,lineup-post-fr,draft,posts/08-lineup.md,Friends' names
+2026-11-20,Fri,YouTube,video,Birkleyn session release,Birkleyn thumbnail,planned,,Ruşan's team
+2026-11-21,Sat,Instagram + story,post,Première rive sold out / price 15 €,soldout-post-fr,draft,posts/09-premiere-rive-epuisee.md,Only if true
+2026-11-22,Sun,Instagram + story,post,Survey results: your setlist,quote-post-fr (results),draft,posts/10-survey-results.md,Survey answers
+2026-11-23,Mon,Instagram + story,post,How to get there,info-post-fr,draft,posts/11-how-to-come.md,End time
+2026-11-24,Tue,Instagram + story + email,post + story,J-3: last places at 18 €,countdown-post-fr; countdown-story-fr,draft,posts/12-j-3.md,Prices agreed
+2026-11-25,Wed,Instagram,story,J-2,countdown story,planned,,
+2026-11-26,Thu,Instagram,story,Demain,countdown story,planned,,
 2026-11-27,Fri,Instagram + WhatsApp,story,Ce soir,tonight-story-fr,planned,,
-2026-11-28,Sat,Instagram,post,Merci + first photos,photos from the night,planned,,Photographer
+2026-11-28,Sat,Instagram + email,post,Merci + first photos,photos from the night,planned,,Photographer

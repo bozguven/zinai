@@ -1,6 +1,6 @@
 ---
 id: 06-tickets-open
-date: 2026-11-10
+date: 2026-11-17
 channel: Instagram post + story, WhatsApp groups, ambassadors
 status: draft
 ---
