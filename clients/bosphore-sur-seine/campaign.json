@@ -183,7 +183,7 @@
       "channel": "instagram + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: the opening hour (21h, live) — Ruşan's session feat. Sian",
+      "title": "Reel: the opening hour (21h, live acoustique) — from the team's 0510 video",
       "visuals": [
         "video:reel-r01"
       ],
@@ -194,16 +194,13 @@
       "caption_fr": "À 21h, la traversée commence à voix basse.\nRuşan Filiztek ouvre la nuit en live, avant que les machines ne prennent le relais.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "Gece 21.00'de alçak sesle başlıyor.\nRuşan Filiztek açılışı canlı yapıyor, sonra makineler devralıyor.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
-      "needs": [
-        "Original video file of the Sian session",
-        "Ruşan picks the 30–45 seconds"
-      ],
+      "needs": [],
       "status": "draft",
       "approval": {
         "ali": null,
         "rusan": null
       },
-      "notes": "tools/video/highlights.py shortlists the liveliest 15–30 s; Ruşan picks; tools/video/clip.py reframes to 9:16 with the hook for 3 s and the ticket end card."
+      "notes": "Cut from 0510 (1)(2).mov, 0:06.3 → 0:21.3."
     },
     {
       "id": "S04",
@@ -1080,15 +1077,15 @@
         "Eliyo [handle À CONFIRMER]"
       ],
       "needs": [
-        "Download the Cabaret Sauvage clips from Ali's Drive",
-        "Which clip shows Eliyo playing? [À CONFIRMER]",
+        "Plan 3 from Ali's Drive (Eliyo) downloaded to the Mac",
         "OK from Horde / Baajar to reuse the footage, and credit them [À CONFIRMER]"
       ],
       "status": "draft",
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Source: 'CABARET SAUVAGE HORDE & BAAJAR 04-04-25 Plan 3.mp4' (Eliyo)."
     },
     {
       "id": "G01",
@@ -1140,8 +1137,7 @@
     "title_open": "Encore ouvert",
     "items": [
       "Comptes Instagram exacts : Birkleyn Sound, Eliyo, Ruşan, Péniche Le Marcounet.",
-      "Les deux vidéos du hybrid set (H01, H02) : qui joue dessus, et OK pour les publier ?",
-      "Images du Cabaret Sauvage (X01) : laquelle montre Eliyo, et OK de Horde / Baajar pour les réutiliser ?",
+      "Images du Cabaret Sauvage (X01, Eliyo = Plan 3) : OK de Horde / Baajar pour les réutiliser, et on les crédite ?",
       "Un morceau d'Eliyo en WAV ou MP3 pour la vidéo des fenêtres (V01) et le montage J-1 (R03).",
       "Date de la répétition pour filmer le hybrid set sur la péniche (D01, V03).",
       "Qui filme et photographie le soir J."
