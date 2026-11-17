@@ -1,6 +1,6 @@
 ---
 id: 10-survey-results
-date: 2026-11-22
+date: 2026-11-25
 channel: Instagram post + story
 status: draft
 ---

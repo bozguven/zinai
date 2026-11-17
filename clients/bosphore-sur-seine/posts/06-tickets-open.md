@@ -2,8 +2,10 @@
 id: 06-tickets-open
 date: 2026-11-17
 channel: Instagram post + story, WhatsApp groups, ambassadors
-status: draft
+status: retired
 ---
+
+> Retired 17 Nov 2026: tickets were already on sale on Shotgun.
 
 # 06-tickets-open
 

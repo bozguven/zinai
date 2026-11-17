@@ -1,21 +1,22 @@
 # Bosphore sur Seine — brief
 
-Last updated: 11 November 2026. Items marked **[À CONFIRMER]** are not confirmed by Ali and Ruşan yet.
+Last updated: 17 November 2026. Items marked **[À CONFIRMER]** are not confirmed by Ali and Ruşan yet.
 
 ## The event
 
 - **Name:** Bosphore sur Seine (a series; this is edition 1)
-- **Date:** Friday 27 November 2026, doors 20:00. End time [À CONFIRMER]
+- **Date:** Friday 27 November 2026, doors 20:00, ends 04:00 (night of 27 to 28 November)
 - **Venue:** Péniche Le Marcounet, Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris.
   A 1925 barge at the foot of Pont Marie, facing Île Saint-Louis. Metro 7, Pont Marie.
 - **Capacity:** about 150 indoors [À CONFIRMER]
 - **On stage:** Eliyo Ruşan FILIZTEK & Friends. Eliyo is Ali, co-founder. The Friends' names
   are [À CONFIRMER] — never invent them.
 - **Partners shown on the flyer:** Birkleyn Sound (Ruşan's live-session platform) and the venue.
-- **Tickets:** Shotgun, sold by the venue's company with the team's company. Link [À CONFIRMER]
+- **Tickets:** on sale on Shotgun since mid-November, sold by the venue's company with the team's company. Link [À CONFIRMER]
+- **Food and drink:** the barge's own bar and food offer
 - **Prices proposed, not yet agreed [À CONFIRMER]:** Première rive 12 € (first 40),
   Rive 15 € (from 21 Nov), Dernière vague 18 € (from 24 Nov), Duo 26 €, Groupe de 6 75 €.
-- **Tickets on sale:** 17 November [À CONFIRMER]
+- **Tickets sold so far:** [À CONFIRMER] (log daily in reports/sales.csv)
 - **Website:** https://bosphore-sur-seine.vercel.app (FR, /en, /tr)
 - **Playlist:** https://samply.app/p/82842e8b-3fbb-4692-ac67-ebb6932ec6e3
 
@@ -37,6 +38,14 @@ Diyarbakır and Istanbul, in Paris since 2015 (Sorbonne). Prix des Musiques d'IC
 Kurdish, Turkish, Greek and Armenian repertoire, and has played the Olympia and Les Suds à Arles.
 His album *Exils* is built on the Turkish word *sürgün*: both exile and a cutting replanted in new
 soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
+
+## Channels and approvals
+
+- **Instagram:** the event's account exists; handle [À CONFIRMER]. Main channel.
+- **TikTok:** can be opened; same clips as Reels.
+- **Birkleyn Sound:** a Birkleyn Sound page is being set up; invite it as collaborator on Ruşan's posts.
+- **Approvals:** Ruşan and Ali approve every post (sent to them on WhatsApp). Bertuğ then runs `/publish`.
+- **Ruşan's favourite video:** his live session featuring Sian ("Dui bi Salve Regina", title as given by Ruşan). Use it first for Reels; ask his team for the original file, never re-download from YouTube.
 
 ## Audience (who we write for)
 

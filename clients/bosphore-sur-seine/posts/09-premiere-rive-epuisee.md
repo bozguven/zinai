@@ -1,6 +1,6 @@
 ---
 id: 09-premiere-rive-epuisee
-date: 2026-11-21
+date: 2026-11-24
 channel: Instagram post + story
 status: draft
 ---

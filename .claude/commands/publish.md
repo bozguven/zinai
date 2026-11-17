@@ -1,9 +1,10 @@
 ---
-description: Schedule the approved posts in Postiz
-argument-hint: "[post ids to approve now, e.g. 03 05]"
+description: Schedule posts that Ali and Ruşan approved, on Instagram (and other channels) through Postiz
+argument-hint: "<post ids Ali and Ruşan approved, e.g. 01 03>"
 ---
 
-$ARGUMENTS
+Approved by Ali and Ruşan, as relayed by me: $ARGUMENTS
 
-If I listed post ids above, those are approved by me now: set them to `status: approved`.
-Then use the publisher subagent to schedule every `status: approved` post at its calendar date and time (default 18:30 Paris for feed posts, 12:00 for stories). Show me what was scheduled and what was skipped, and why.
+If ids are listed above, set exactly those posts to `status: approved`. Then use the publisher subagent to schedule every `status: approved` post through the Postiz connector, following its Instagram procedure. Finish with a table: post, channel, type (post, Reel, story), Paris time, Postiz id, and anything skipped with the reason.
+
+If the Postiz connector is not connected, stop and tell me to run `/mcp` and sign in to Postiz.

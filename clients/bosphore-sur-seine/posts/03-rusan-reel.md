@@ -1,13 +1,13 @@
 ---
 id: 03-rusan-reel
-date: 2026-11-14
+date: 2026-11-19
 channel: Instagram Reel, TikTok, YouTube Short
 status: draft
 ---
 
 # 03-rusan-reel
 
-**Visual:** 30–45 s vertical clip from a Birkleyn session [À CONFIRMER: which one]. Hook in the first 2 seconds: the saz entry, no title card.
+**Visual:** 30–45 s vertical clip from Ruşan's favourite session, feat. Sian (original file from his team; Ruşan picks the moment). Hook in the first 2 seconds: the saz entry, no title card.
 
 ## Caption — FR
 

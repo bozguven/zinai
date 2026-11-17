@@ -1,6 +1,6 @@
 ---
 id: 07-surgun
-date: 2026-11-19
+date: 2026-11-21
 channel: Instagram Reel, TikTok
 status: draft
 ---

@@ -2,8 +2,10 @@
 id: 05-tickets-monday
 date: 2026-11-16
 channel: Instagram post + story (and reminder story on 16 Nov)
-status: draft
+status: retired
 ---
+
+> Retired 17 Nov 2026: tickets were already on sale on Shotgun.
 
 # 05-tickets-monday
 

@@ -28,9 +28,16 @@ claude                 # open ZinAI in Claude Code
 | `/week-plan` | Plans the next 7 days, drafts the posts, renders the visuals, asks what to approve |
 | `/post <topic>` | Drafts one post (FR + TR captions and visual) |
 | `/clips <video> [01:12-01:52]` | Cuts a vertical clip with subtitles and drafts its captions |
-| `/publish 03 05` | Approves posts 03 and 05 and schedules every approved post in Postiz |
+| `/approval` | Prepares the WhatsApp pack (Turkish message + images) for Ali and Ruşan |
+| `/publish 03 05` | Marks 03 and 05 as approved by Ali and Ruşan and schedules them on Instagram through Postiz |
 | `/report` or `/report weekly` | Morning brief or weekly report |
 
-Nothing is published without your approval. Postiz must be connected for `/publish` to work.
+Nothing is published without Ali and Ruşan's approval.
+
+## Connect Instagram (once)
+
+1. Create a Postiz account at postiz.com and connect the event's Instagram account (and TikTok when it exists) under Add channel.
+2. In this folder, start `claude`, run `/mcp`, choose **postiz** and sign in in the browser. The connector is declared in `.mcp.json`; no API key is stored here.
+3. Ask: "list my Postiz channels". You should see Instagram.
 
 To change a visual's text, edit `visuals.json` and run `node render.mjs bosphore-sur-seine <visual-id>`.

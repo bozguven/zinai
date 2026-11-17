@@ -1,6 +1,6 @@
 ---
 id: 04-survey
-date: 2026-11-15
+date: 2026-11-19
 channel: Instagram post + story (question sticker), WhatsApp
 status: draft
 ---
