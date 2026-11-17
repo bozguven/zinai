@@ -58,10 +58,10 @@
     "variant": "soldout",
     "lang": "fr",
     "fields": {
-      "kicker": "Première rive",
-      "big": "Épuisée",
+      "kicker": "Early Birds",
+      "big": "Épuisés",
       "bigSize": 150,
-      "line": "Merci. Places à <b>15 €</b> jusqu'au 23.11",
+      "line": "Merci. Places à <b>18 €</b>",
       "windows": {
         "count": 40,
         "lit": 40
@@ -99,7 +99,7 @@
         ],
         [
           "Horaires",
-          "20h – 4h"
+          "20h30 – 4h"
         ],
         [
           "Billet",
@@ -115,7 +115,7 @@
     "lang": "fr",
     "fields": {
       "big": "J-2",
-      "line": "Dernières places à <b>18 €</b>"
+      "line": "Dernières places à <b>20 €</b>"
     }
   },
   {
@@ -125,7 +125,7 @@
     "lang": "fr",
     "fields": {
       "big": "J-2",
-      "line": "Dernières places à <b>18 €</b>"
+      "line": "Dernières places à <b>20 €</b>"
     }
   },
   {
@@ -136,7 +136,7 @@
     "fields": {
       "big": "Ce soir",
       "bigSize": 210,
-      "line": "Portes à <b>20h</b>, pont Marie"
+      "line": "Portes à <b>20h30</b>, pont Marie"
     }
   }
 ]

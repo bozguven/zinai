@@ -11,15 +11,15 @@ status: draft
 
 ## Caption — FR
 
-Première rive : épuisée. Merci. 🌙
+Early Birds : épuisés. Merci. 🌙
 
-Les 40 premières fenêtres sont allumées. Les places passent à 15 € jusqu'au 23 novembre.
+Les premières fenêtres sont allumées. Les places sont maintenant à 18 €.
 
 ## Caption — TR
 
-Première rive tükendi. Teşekkürler. 🌙
+Early Birds tükendi. Teşekkürler. 🌙
 
-İlk 40 pencerenin ışığı yandı. Biletler 23 Kasım'a kadar 15 €.
+İlk pencerelerin ışığı yandı. Biletler artık 18 €.
 
 ## Hashtags
 
@@ -27,4 +27,4 @@ Première rive tükendi. Teşekkürler. 🌙
 
 ## Notes for the team
 
-Publish only if the first 40 are really sold. If not, post 'Dernier jour à 12 €' on 20 Nov instead.
+Publish only when Early Birds are really sold out on Shotgun. If not, post 'Derniers Early Birds à 15 €' instead.

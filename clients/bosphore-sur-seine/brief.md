@@ -5,17 +5,17 @@ Last updated: 17 November 2026. Items marked **[À CONFIRMER]** are not confirme
 ## The event
 
 - **Name:** Bosphore sur Seine (a series; this is edition 1)
-- **Date:** Friday 27 November 2026, doors 20:00, ends 04:00 (night of 27 to 28 November)
+- **Date:** Friday 27 November 2026, 20:30 to 04:00 (as on Shotgun)
 - **Venue:** Péniche Le Marcounet, Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris.
   A 1925 barge at the foot of Pont Marie, facing Île Saint-Louis. Metro 7, Pont Marie.
 - **Capacity:** about 150 indoors [À CONFIRMER]
 - **On stage:** Eliyo Ruşan FILIZTEK & Friends. Eliyo is Ali, co-founder. The Friends' names
   are [À CONFIRMER] — never invent them.
 - **Partners shown on the flyer:** Birkleyn Sound (Ruşan's live-session platform) and the venue.
-- **Tickets:** on sale on Shotgun since mid-November, sold by the venue's company with the team's company. Link [À CONFIRMER]
+- **Tickets:** on sale on Shotgun: https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house
+  Event title there: "Bosphore Sur Seine · World – Folk – House". Organisers: Péniche Marcounet and L'HEUR DU SPECTACLE. Line-up on Shotgun: Rusan Filiztek, ELIYO ("Rusan Filiztek & Orchestre Eliyo & Friends"). Tags: Folk, House.
 - **Food and drink:** the barge's own bar and food offer
-- **Prices proposed, not yet agreed [À CONFIRMER]:** Première rive 12 € (first 40),
-  Rive 15 € (from 21 Nov), Dernière vague 18 € (from 24 Nov), Duo 26 €, Groupe de 6 75 €.
+- **Prices (Shotgun, 17 Nov):** Early Birds 15 €, Regular 18 €, Late 20 €. Quantities per tier [À CONFIRMER]. No duo or group ticket.
 - **Tickets sold so far:** [À CONFIRMER] (log daily in reports/sales.csv)
 - **Website:** https://bosphore-sur-seine.vercel.app (FR, /en, /tr)
 - **Playlist:** https://samply.app/p/82842e8b-3fbb-4692-ac67-ebb6932ec6e3
@@ -41,9 +41,8 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 ## Channels and approvals
 
-- **Instagram:** the event's account exists; handle [À CONFIRMER]. Main channel.
+- **Instagram:** posts go out from the **Birkleyn Sound** account (handle [À CONFIRMER], probably @birkleynsound). Main channel. Invite Péniche Marcounet as collaborator on announcement posts when the team agrees.
 - **TikTok:** can be opened; same clips as Reels.
-- **Birkleyn Sound:** a Birkleyn Sound page is being set up; invite it as collaborator on Ruşan's posts.
 - **Approvals:** Ruşan and Ali approve every post (sent to them on WhatsApp). Bertuğ then runs `/publish`.
 - **Ruşan's favourite video:** his live session featuring Sian ("Dui bi Salve Regina", title as given by Ruşan). Use it first for Reels; ask his team for the original file, never re-download from YouTube.
 
