@@ -383,7 +383,8 @@
       "caption_tr": "27 Kasım'da teknede:\n\nRuşan Filiztek\nEliyo Orkestrası\n& Friends: [À CONFIRMER: isimler ve enstrümanlar]\n\nBir gece, iki kıyı, tek sahne.",
       "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
       "needs": [
-        "The Friends' names, instruments and Instagram handles"
+        "The Friends' names, instruments and Instagram handles",
+        "DJ name(s) and set times, so the line-up shows the house part of the night"
       ],
       "status": "draft",
       "approval": {
@@ -1043,6 +1044,91 @@
         "ali": null,
         "rusan": null
       }
+    },
+    {
+      "id": "FB01",
+      "date": "2026-11-18",
+      "time": "11:00",
+      "channel": "facebook",
+      "format": "event",
+      "mode": "manual",
+      "title": "Facebook event co-hosted by Birkleyn Sound and Péniche Le Marcounet (reaches the folk / culture crowd that follows events on Facebook)",
+      "visuals": [
+        "announce-post-fr"
+      ],
+      "text_fr": "Bosphore sur Seine · World – Folk – House\nVendredi 27 novembre, 20h30 → 4h, Péniche Le Marcounet (Port des Célestins, Paris 4e).\nSur scène : Ruşan Filiztek & l'Orchestre Eliyo & Friends, puis la nuit continue en house avec [DJ À CONFIRMER].\nBillets dès 15 € : https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=facebook&utm_medium=event&utm_campaign=bss1",
+      "checklist": [
+        "Create the event from the Birkleyn Sound Facebook Page",
+        "Add Péniche Le Marcounet as co-host",
+        "Ticket link = the Shotgun URL above",
+        "Post the Reels in the event's discussion as they go out"
+      ],
+      "needs": [
+        "DJ name(s) and set time",
+        "OK from Ali and Ruşan to create it"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "D01",
+      "date": "2026-11-25",
+      "time": "13:00",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: \"Le saz rencontre la house\": the saz played live over the DJ's beat (the hook of the night)",
+      "visuals": [
+        "video:reel-d01"
+      ],
+      "caption_fr": "Le saz rencontre la house. 🌉\nDe 20h30 à minuit le live, puis la nuit continue jusqu'à 4h.\n\nVendredi sur la péniche. Billets : lien en bio.",
+      "caption_tr": "Saz house'la buluşuyor. 🌉\nÖnce canlı müzik, sonra sabah 4'e kadar house.\n\nCuma teknede. Biletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #house #péniche #worldmusic",
+      "shots": [
+        "Le DJ lance un beat house, un musicien joue du saz par-dessus (15–25 s)",
+        "Gros plan des mains sur le saz, puis plan large avec les platines",
+        "Filmé à la répétition, téléphone vertical"
+      ],
+      "needs": [
+        "DJ name and handle [À CONFIRMER]",
+        "Live / DJ times [À CONFIRMER] (the caption's 'minuit' is a placeholder)",
+        "A musician can play over the DJ set"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "D02",
+      "date": "2026-11-24",
+      "time": "20:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "title": "Story: 15 seconds of the DJ's sound, with a link sticker (\"la nuit continue en house\")",
+      "visuals": [
+        "video:story-d02"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-d02",
+        "label": "Billets"
+      },
+      "needs": [
+        "A clip or mix from the DJ (SoundCloud, video of a past set)",
+        "DJ handle to mention [À CONFIRMER]"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
     }
   ],
   "video_plan": {
@@ -1060,9 +1146,14 @@
     "title": "À décider ce soir",
     "items": [
       "Valider le plan : répondre avec les codes (ex. P01 S02 R01), ou dire ce qu'il faut changer.",
+      "La partie house : qui sont les DJ (noms, comptes Instagram) et à quelle heure le live laisse la place au DJ ?",
+      "Les DJ ont-ils des mixes ou des vidéos de sets qu'on peut utiliser (SoundCloud, Instagram, vidéo d'une soirée) ?",
+      "Saz + house : un musicien peut-il jouer du saz sur le set du DJ, et peut-on le filmer à la répétition ? C'est la vidéo qui vend la soirée.",
+      "Facebook : OK pour créer un événement Facebook co-organisé par Birkleyn Sound et la péniche ? (le public des soirées Metin Kemal Kahraman ou Livaneli y est)",
+      "Les soirées que vous aimez : qu'est-ce qui vous plaît (l'affiche, l'ambiance, le public, le format) ? Des captures d'écran suffisent.",
       "Pub Meta : quel compte publicitaire (Birkleyn Sound ?) et quel budget. La suggestion est de 150 € du 19 au 27, rien n'est lancé sans accord.",
       "Shotgun : qui a l'accès au Smartboard (la péniche ou L'HEUR DU SPECTACLE) pour connecter le pixel Meta ce soir.",
-      "Instagram : les comptes exacts de Birkleyn Sound, Ruşan, Sian et de la Péniche Marcounet (pour les collabs).",
+      "Instagram : les comptes exacts de Birkleyn Sound, Ruşan, Sian, de la Péniche Marcounet et des DJ (pour les collabs). Birkleyn Sound doit être un compte professionnel relié à une page Facebook.",
       "Musique : les morceaux de Ruşan sont-ils sur Spotify / dans la musique d'Instagram ? Sinon, les fichiers WAV de 2 morceaux de la playlist Samply.",
       "Vidéos : les fichiers originaux de la session avec Sian et de 2 autres sessions Birkleyn.",
       "Tournages : qui filme « Ruşan explique » (#1 le saz, #2 le halay) et la répétition, et quand a lieu la répétition.",
