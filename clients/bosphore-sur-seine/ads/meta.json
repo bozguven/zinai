@@ -1,10 +1,12 @@
 {
   "status": "all campaigns are created PAUSED; a person launches them after Ali and Ruşan approve",
-  "account": "Birkleyn Sound ad account [À CONFIRMER]",
+  "account": "Birkleyn Sound ad account (confirmed 17 Nov)",
   "identity": "Birkleyn Sound Facebook Page + Instagram account",
   "budget_total_eur": {
     "suggested": 150,
-    "confirmed": null
+    "confirmed": 150,
+    "confirmed_on": "2026-11-17",
+    "by": "Ali and Ruşan"
   },
   "tracking": {
     "pixel": "Meta Pixel connected in Shotgun Smartboard (SG01); optimise for Purchase",
@@ -34,9 +36,14 @@
         ],
         "interests": [
           "Istanbul",
-          "Turkish music",
-          "World music",
-          "Anatolian rock"
+          "Organic house / Deep house",
+          "Electronic dance music",
+          "Cabaret Sauvage",
+          "Les Suds à Arles",
+          "Jazz à Vienne",
+          "Les Vieilles Charrues",
+          "Acid Pauli",
+          "World music"
         ],
         "note": "Meta interest names may differ; pick the closest available"
       },
@@ -46,19 +53,19 @@
         "Instagram Feed"
       ],
       "creatives": [
-        "R01 (Reel, 9:16)",
-        "C01 (carousel, 4:5)"
+        "H01 (Reel, 9:16)",
+        "H02 (Reel, 9:16)"
       ],
       "copy": [
         {
           "lang": "fr",
-          "primary": "Une nuit Istanbul–Paris sur une péniche, du folk d'Anatolie à la house. Vendredi 27 novembre, pont Marie.",
+          "primary": "De 23h à minuit, les cordes rencontrent les machines. Une nuit Istanbul–Paris sur la Seine, jusqu'à 4h.",
           "headline": "Bosphore sur Seine · 27.11",
           "cta": "En savoir plus"
         },
         {
           "lang": "tr",
-          "primary": "Pont Marie'nin dibinde bir teknede İstanbul–Paris gecesi. 27 Kasım Cuma, 20.30'dan 04.00'e.",
+          "primary": "23.00'ten gece yarısına teller makinelerle buluşuyor. Seine'in üzerinde bir İstanbul–Paris gecesi, 04.00'e kadar.",
           "headline": "Bosphore sur Seine · 27.11",
           "cta": "Daha fazla bilgi"
         }
@@ -81,10 +88,13 @@
           "French"
         ],
         "interests": [
-          "World music",
-          "Turkish culture",
-          "Jazz",
-          "Live music venues in Paris"
+          "Istanbul",
+          "Organic house / Deep house",
+          "Cabaret Sauvage",
+          "Les Suds à Arles",
+          "Jazz à Vienne",
+          "Les Vieilles Charrues",
+          "Live music"
         ],
         "note": "Two ad sets: Turkish speakers, and French speakers with the interests"
       },
@@ -94,7 +104,8 @@
         "Instagram Feed"
       ],
       "creatives": [
-        "R01 (Reel, 9:16)",
+        "H01 (Reel, 9:16)",
+        "X01 (Reel, 9:16)",
         "C01 (carousel, 4:5)",
         "tickets-open-story-fr (story, 9:16)"
       ],
@@ -102,13 +113,13 @@
       "copy": [
         {
           "lang": "fr",
-          "primary": "Ruşan Filiztek & l'Orchestre Eliyo & Friends, sur la Seine jusqu'à 4h. Billets dès 15 €.",
+          "primary": "Istanbul accoste au pont Marie : live, hybrid set, Eliyo et un invité surprise jusqu'à 4h. Billets dès 15 €.",
           "headline": "Vendredi 27 novembre, pont Marie",
           "cta": "Acheter des billets"
         },
         {
           "lang": "tr",
-          "primary": "Ruşan Filiztek & Eliyo Orkestrası & Friends, gece 04.00'e kadar Seine'in üzerinde. Biletler 15 €'dan.",
+          "primary": "İstanbul Pont Marie'ye yanaşıyor: canlı müzik, hybrid set, Eliyo ve sürpriz konuk, 04.00'e kadar. Biletler 15 €'dan.",
           "headline": "27 Kasım Cuma, Pont Marie",
           "cta": "Bilet al"
         }
@@ -125,7 +136,7 @@
       "budget_eur": 50,
       "audience": {
         "custom": [
-          "Watched 50% of R01 or R02 (last 14 days)",
+          "Watched 50% of H01, H02 or X01 (last 14 days)",
           "Engaged with the Birkleyn Sound Instagram (last 30 days)",
           "Viewed the Shotgun event page (pixel, last 14 days), excluding buyers"
         ]
@@ -143,13 +154,13 @@
       "copy": [
         {
           "lang": "fr",
-          "primary": "Dernières places pour vendredi. Une nuit Istanbul–Paris sur la Seine, 20h30 → 4h.",
+          "primary": "La péniche se remplit. Dernières traversées pour vendredi, 20h30 → 4h.",
           "headline": "Ce vendredi, pont Marie",
           "cta": "Acheter des billets"
         },
         {
           "lang": "tr",
-          "primary": "Cuma için son biletler. Seine'in üzerinde İstanbul–Paris gecesi, 20.30 → 04.00.",
+          "primary": "Tekne doluyor. Cuma için son biletler, 20.30 → 04.00.",
           "headline": "Bu cuma, Pont Marie",
           "cta": "Bilet al"
         }

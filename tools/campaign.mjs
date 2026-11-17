@@ -172,7 +172,7 @@ ul{margin:0;padding-left:18px;font-size:13.5px}.needs li{color:#a33a26}mark{back
 .st{font-weight:700;color:var(--ink)}.st-approved,.st-scheduled,.st-done{color:#2f7d4a}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--grey);margin-top:8px}
 .hide{display:none!important}
-.decide{margin:22px 0 6px;background:#faf6d8;border-radius:12px;padding:14px 18px}.decide h2{font:700 17px Unbounded,system-ui,sans-serif;color:var(--blue);margin:0 0 8px}.decide ol{margin:0;padding-left:22px;font-size:15px}.decide li{margin:3px 0}
+.decide{margin:22px 0 6px;background:#faf6d8;border-radius:12px;padding:14px 18px}.decide h2{font:700 17px Unbounded,system-ui,sans-serif;color:var(--blue);margin:0 0 8px}.decide ol{margin:0;padding-left:22px;font-size:15px}.decide li{margin:3px 0}.decide ul.done{margin:0 0 14px;padding-left:22px;list-style:'✓  '}.decide h2+ul,.decide h2+ol{margin-top:0}
 </style></head><body>
 <div class="top"><h1>Bosphore sur Seine · Campagne</h1>
 <p class="sub">Tout ce qui est prévu jusqu'au 29 novembre. Rien ne part sans l'accord d'Ali et Ruşan. Mis à jour le ${esc(c.updated)}.</p>
@@ -182,7 +182,7 @@ ul{margin:0;padding-left:18px;font-size:13.5px}.needs li{color:#a33a26}mark{back
 ${Object.entries(label).map(([m, l]) => `<button aria-pressed="false" data-f="${m}">${l} (${counts[m]})</button>`).join('\n')}
 </div></div>
 <main>
-${c.decisions ? `<section class="decide"><h2>${esc(c.decisions.title)}</h2><ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
+${c.decisions ? `<section class="decide">${c.decisions.done ? `<h2>${esc(c.decisions.title)}</h2><ul class="done">${c.decisions.done.map((x) => `<li>${mark(x)}</li>`).join('')}</ul><h2>${esc(c.decisions.title_open || 'Encore ouvert')}</h2>` : `<h2>${esc(c.decisions.title)}</h2>`}<ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
 ${order.map((d) => `<section class="day"><h2>${fmtDay(d)}</h2><div class="grid">${days[d].map(card).join('\n')}</div></section>`).join('\n')}
 <div class="legend"><span><b>Auto</b> : programmé par Postiz après accord.</span><span><b>Manuel</b> : story avec sticker (sondage, quiz, question, lien, compte à rebours), à poster depuis le téléphone.</span><span><b>Shotgun</b> : à faire dans le Smartboard.</span><span><b>Pub Meta</b> : créée en pause, lancée par une personne.</span></div>
 </main>

@@ -13,7 +13,9 @@ Built and run by Bertuğ. First client: **Bosphore sur Seine** (27 November 2026
    the marketing skills in `.claude/skills/` pick it up too.
 2. Read `clients/bosphore-sur-seine/campaign.json` (or run `node tools/campaign.mjs list`) to see what is
    planned, drafted, approved, scheduled or done. It is the single source of truth for everything scheduled.
-3. Use the marketing skills when they fit: `social`, `events`, `launch`, `ads`, `ad-creative`,
+3. **All French copy follows `.claude/skills/voix-horde/SKILL.md`** (Horde's voice: *vous*, the Istanbul → Paris
+   crossing, Istanbul in every piece, never saz or halay). Run its self-check before handing over copy.
+4. Use the marketing skills when they fit: `social`, `events`, `launch`, `ads`, `ad-creative`,
    `influencer-marketing`, `referrals`, `copywriting`, `video`, `analytics`.
 
 ## Rules (never break these)
@@ -35,7 +37,7 @@ Every post is written for a bilingual French–Turkish audience in Paris:
   (partners, English pages, international reach).
 - **Visual text:** French by default; Turkish versions on request.
 - Write natively in each language. Don't translate word for word: a Turkish caption should read as
-  if a young Istanbul lycéen wrote it, a French one as a Parisian would.
+  if a young Istanbul lycéen wrote it; the French one follows the voix-horde skill.
 
 ## Layout
 

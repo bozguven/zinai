@@ -14,9 +14,9 @@
       "site": {
         "stage": "on-sale",
         "banner": {
-          "fr": "Billets en vente : Early Birds à 15 €",
-          "en": "Tickets on sale: Early Birds at 15 €",
-          "tr": "Biletler satışta: Early Birds 15 €"
+          "fr": "Istanbul accoste le 27 novembre · Billets dès 15 €",
+          "en": "Istanbul docks in Paris on 27 November · Tickets from 15 €",
+          "tr": "İstanbul 27 Kasım'da Paris'e yanaşıyor · Biletler 15 €'dan"
         }
       },
       "notes": "Merge v2 into main; Vercel deploys in seconds.",
@@ -37,6 +37,7 @@
       "mode": "shotgun",
       "title": "Shotgun Smartboard setup (venue or L'HEUR DU SPECTACLE account)",
       "checklist": [
+        "Replace the event description with the new text (item SG00)",
         "Connect the Meta Pixel on the event (needed for ads that optimise for ticket purchases)",
         "Switch on the reward programme (buyers get a link and cashback per ticket they sell)",
         "Create a promoter tracking link for each of the 20 ambassadors",
@@ -44,7 +45,7 @@
         "Check the artists on the line-up have Spotify / Bandsintown profiles so the event syncs there"
       ],
       "needs": [
-        "Access to the Smartboard of Péniche Marcounet or L'HEUR DU SPECTACLE"
+        "Eliyo or Ruşan logs in (only they have Smartboard access)"
       ],
       "status": "draft",
       "visuals": [],
@@ -92,9 +93,9 @@
       "collaborators": [
         "Péniche Marcounet [handle À CONFIRMER]"
       ],
-      "caption_fr": "Le 27 novembre, le Bosphore descend la Seine. 🌉\n\nUne nuit sur une péniche au pied du pont Marie, où les musiques d'Istanbul et de Paris se répondent, du folk à la house.\nSur scène : Ruşan Filiztek & l'Orchestre Eliyo & Friends.\n\nVendredi 27 novembre, 20h30 → 4h\nPéniche Le Marcounet, Paris 4e\nBillets dès 15 € : lien en bio.",
-      "caption_tr": "27 Kasım'da Boğaz, Seine'e akıyor. 🌉\n\nPont Marie'nin dibinde bir tekne; İstanbul'un ve Paris'in müzikleri birbirine cevap veriyor, folk'tan house'a.\nSahnede: Ruşan Filiztek & Eliyo Orkestrası & Friends.\n\n27 Kasım Cuma, 20.30 → 04.00\nPéniche Le Marcounet, Paris 4e\nBiletler 15 €'dan başlıyor: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Ce soir-là, le Bosphore remonte la Seine et vient s'amarrer au pied du pont Marie. 🌙\nMontez à bord : on quitte Istanbul à 21h, on accoste à l'aube.\n\nLive, hybrid set, puis Eliyo et un invité surprise jusqu'à 4h.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "O gece Boğaz Seine'e akıyor, Pont Marie'nin dibine demir atıyor. 🌙\n21.00'de İstanbul'dan kalkıyoruz, sabaha karşı varıyoruz.\n\nCanlı müzik, hybrid set, sonra Eliyo ve sürpriz bir konuk, 04.00'e kadar.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "status": "draft",
       "needs": [],
       "approval": {
@@ -182,7 +183,7 @@
       "channel": "instagram + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: Ruşan's favourite session, feat. Sian",
+      "title": "Reel: the opening hour (21h, live) — Ruşan's session feat. Sian",
       "visuals": [
         "video:reel-r01"
       ],
@@ -190,9 +191,9 @@
         "Ruşan Filiztek [handle À CONFIRMER]",
         "Sian [handle À CONFIRMER]"
       ],
-      "caption_fr": "Ruşan Filiztek joue du saz comme on raconte une histoire. 🎶\nIci avec Sian, en live session pour Birkleyn Sound.\n\nLe 27 novembre, il monte sur la péniche avec l'Orchestre Eliyo & Friends.\nBillets : lien en bio.",
-      "caption_tr": "Ruşan Filiztek sazı bir hikâye anlatır gibi çalıyor. 🎶\nBurada Sian'la, Birkleyn Sound için canlı kayıtta.\n\n27 Kasım'da Eliyo Orkestrası & Friends ile teknede.\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "À 21h, la traversée commence à voix basse.\nRuşan Filiztek ouvre la nuit en live, avant que les machines ne prennent le relais.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Gece 21.00'de alçak sesle başlıyor.\nRuşan Filiztek açılışı canlı yapıyor, sonra makineler devralıyor.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "needs": [
         "Original video file of the Sian session",
         "Ruşan picks the 30–45 seconds"
@@ -212,7 +213,7 @@
       "format": "story",
       "mode": "manual",
       "sticker": "question",
-      "title": "Question sticker: \"Quelle chanson veux-tu entendre au saz ?\"",
+      "title": "Question sticker: \"Quel son d'Istanbul voulez-vous entendre à l'aube ?\"",
       "visuals": [
         "survey-story-fr"
       ],
@@ -235,19 +236,19 @@
       "format": "story",
       "mode": "manual",
       "sticker": "quiz",
-      "title": "Quiz: \"Ruşan vit à Paris depuis…\" 2015 / 2009 / 2020",
+      "title": "Quiz: \"À quelle heure monte l'invité surprise ?\" 23h / 00h / 2h (answer 2h)",
       "visuals": [
         "quiz-story-fr"
       ],
       "sticker_spec": {
         "type": "quiz",
-        "question": "Ruşan vit à Paris depuis…",
+        "question": "À quelle heure monte l'invité surprise ?",
         "options": [
-          "2009",
-          "2015",
-          "2020"
+          "23h",
+          "00h",
+          "2h"
         ],
-        "correct": "2015"
+        "answer": "2h"
       },
       "status": "draft",
       "needs": [],
@@ -283,7 +284,7 @@
       "channel": "instagram",
       "format": "carousel",
       "mode": "auto",
-      "title": "Carousel: \"La nuit du 27 en 5 points\"",
+      "title": "Carousel: \"La traversée du 27, en cinq escales\"",
       "visuals": [
         "c01-1",
         "c01-2",
@@ -291,9 +292,9 @@
         "c01-4",
         "c01-5"
       ],
-      "caption_fr": "Tout ce qu'il faut savoir sur le 27 novembre, en 5 images. ✨\nEnregistre ce post et envoie-le à la personne qui viendra avec toi.\n\nBillets : lien en bio.",
-      "caption_tr": "27 Kasım hakkında bilmen gereken her şey, 5 karede. ✨\nKaydet ve seninle gelecek kişiye gönder.\n\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "La traversée du 27, en cinq escales. 🌉\nGardez-la, envoyez-la à ceux qui montent à bord avec vous.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "27'si gecesi, beş durakta. 🌉\nKaydet, seninle gelecek olanlara gönder.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "status": "draft",
       "needs": [],
       "approval": {
@@ -309,7 +310,7 @@
       "format": "story",
       "mode": "manual",
       "sticker": "link",
-      "title": "Rehearsal behind the scenes + link sticker",
+      "title": "Rehearsal: 10–20 s of the hybrid set + link sticker",
       "visuals": [
         "video:story-s06"
       ],
@@ -335,34 +336,11 @@
       "format": "push notification",
       "mode": "shotgun",
       "title": "Shotgun push to followers",
-      "text_fr": "Bosphore sur Seine, vendredi 27 : une nuit Istanbul–Paris sur une péniche, jusqu'à 4h. 🌉",
+      "text_fr": "Istanbul accoste vendredi 27 au pont Marie : live, hybrid set, Eliyo, invité surprise.",
       "notes": "If Early Birds are almost gone, use instead: \"Derniers Early Birds à 15 € pour Bosphore sur Seine, vendredi 27.\"",
       "status": "draft",
       "visuals": [],
       "needs": [],
-      "approval": {
-        "ali": null,
-        "rusan": null
-      }
-    },
-    {
-      "id": "R02",
-      "date": "2026-11-21",
-      "time": "18:30",
-      "channel": "instagram + tiktok",
-      "format": "reel",
-      "mode": "auto",
-      "title": "Reel: Ruşan on \"sürgün\" (exile and new roots)",
-      "visuals": [
-        "video:reel-r02"
-      ],
-      "caption_fr": "En turc, sürgün veut dire l'exil. Mais c'est aussi la bouture qu'on replante dans une nouvelle terre.\n\nC'est l'histoire de l'album Exils de Ruşan Filiztek, et un peu la nôtre : on est tous arrivés à Paris avec une rive dans nos bagages.\n\nLe 27 novembre, on les réunit sur la Seine. 🌉",
-      "caption_tr": "Sürgün hem ayrılık demek, hem de yeni bir toprağa dikilen fidan.\n\nRuşan Filiztek'in Exils albümünün hikâyesi bu; biraz da bizim hikâyemiz: hepimiz Paris'e bir kıyıyla geldik.\n\n27 Kasım'da hepsini Seine'de buluşturuyoruz. 🌉",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
-      "needs": [
-        "Ruşan films 20–30 s talking to camera (phone is fine)"
-      ],
-      "status": "draft",
       "approval": {
         "ali": null,
         "rusan": null
@@ -375,16 +353,15 @@
       "channel": "instagram",
       "format": "post",
       "mode": "auto",
-      "title": "Line-up reveal",
+      "title": "Programme reveal: live → hybrid set → Eliyo → surprise guest",
       "visuals": [
-        "lineup-post-fr"
+        "programme-post-fr"
       ],
-      "caption_fr": "Sur la péniche le 27 novembre :\n\nRuşan Filiztek\nl'Orchestre Eliyo\n& Friends : [À CONFIRMER : noms et instruments]\n\nUne nuit, deux rives, une scène.",
-      "caption_tr": "27 Kasım'da teknede:\n\nRuşan Filiztek\nEliyo Orkestrası\n& Friends: [À CONFIRMER: isimler ve enstrümanlar]\n\nBir gece, iki kıyı, tek sahne.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Voici la traversée. 🖤\n\n21h → 23h · Live acoustique, Ruşan Filiztek & musiciens\n23h → 00h · Hybrid set\n00h → 02h · Eliyo\n02h → 04h · Invité surprise\n\nEmbarquement 20h30, Péniche Le Marcounet, Pont Marie.\nBillets : lien en bio",
+      "caption_tr": "İşte yolculuk. 🖤\n\n21.00 → 23.00 · Akustik canlı, Ruşan Filiztek & müzisyenler\n23.00 → 00.00 · Hybrid set\n00.00 → 02.00 · Eliyo\n02.00 → 04.00 · Sürpriz konuk\n\nBiniş 20.30, Péniche Le Marcounet, Pont Marie.\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "needs": [
-        "The Friends' names, instruments and Instagram handles",
-        "DJ name(s) and set times, so the line-up shows the house part of the night"
+        "The Friends' names, instruments and Instagram handles"
       ],
       "status": "draft",
       "approval": {
@@ -399,9 +376,9 @@
       "channel": "instagram",
       "format": "story",
       "mode": "auto",
-      "title": "Story: line-up reveal (re-share of P08)",
+      "title": "Story: the programme (re-share of P08)",
       "visuals": [
-        "lineup-post-fr"
+        "programme-story-fr"
       ],
       "needs": [
         "The Friends' names"
@@ -439,8 +416,8 @@
       "format": "newsletter",
       "mode": "shotgun",
       "title": "Shotgun newsletter to the organisers' followers",
-      "subject_fr": "Vendredi 27 : le Bosphore descend la Seine",
-      "body_fr": "Une nuit Istanbul–Paris sur la Péniche Le Marcounet, au pied du pont Marie.\nRuşan Filiztek & l'Orchestre Eliyo & Friends, du folk d'Anatolie à la house, de 20h30 à 4h.\n\nBillets : Early Birds 15 €, Regular 18 €, Late 20 €.\nhttps://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house",
+      "subject_fr": "Istanbul accoste vendredi. Il reste des traversées.",
+      "body_fr": "Vendredi 27 novembre, le Bosphore remonte la Seine jusqu'au pont Marie.\n\n21h · Live acoustique, Ruşan Filiztek & musiciens\n23h · Hybrid set\nMinuit · Eliyo\n2h · Invité surprise\n\nEmbarquement 20h30 à la Péniche Le Marcounet. Billets dès 15 € sur Shotgun.",
       "needs": [
         "Smartboard access; Péniche Marcounet agrees to email its followers"
       ],
@@ -468,33 +445,6 @@
         "url": "https://bosphore-sur-seine.vercel.app/#infos",
         "label": "Infos"
       },
-      "status": "draft",
-      "needs": [],
-      "approval": {
-        "ali": null,
-        "rusan": null
-      }
-    },
-    {
-      "id": "C02",
-      "date": "2026-11-23",
-      "time": "18:30",
-      "channel": "instagram",
-      "format": "carousel",
-      "mode": "auto",
-      "title": "Carousel: \"Qui est Ruşan Filiztek ?\"",
-      "visuals": [
-        "c02-1",
-        "c02-2",
-        "c02-3",
-        "c02-4"
-      ],
-      "collaborators": [
-        "Ruşan Filiztek [handle À CONFIRMER]"
-      ],
-      "caption_fr": "Saz, oud, voix, et une vie entre plusieurs rives. Avant le 27, voici Ruşan Filiztek. 🎶\n\nBillets : lien en bio.",
-      "caption_tr": "Saz, ud, ses ve birkaç kıyı arasında geçen bir hayat. 27'sinden önce, karşınızda Ruşan Filiztek. 🎶\n\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
       "status": "draft",
       "needs": [],
       "approval": {
@@ -561,9 +511,9 @@
       "visuals": [
         "info-post-fr"
       ],
-      "caption_fr": "Comment venir sur la péniche ?\n\nMétro 7, Pont Marie : 2 minutes à pied.\nLe Marcounet est amarré au pied du pont, côté Hôtel de Ville, face à l'île Saint-Louis.\nDe 20h30 à 4h du matin. Bar et cuisine à bord.\nTon billet est sur ton téléphone : il suffit de le montrer à l'entrée.",
-      "caption_tr": "Tekneye nasıl gelinir?\n\nMetro 7, Pont Marie: 2 dakika yürüme.\nLe Marcounet köprünün dibinde, Hôtel de Ville tarafında, Île Saint-Louis'nin karşısında.\n20.30'dan gece 04.00'e kadar. Teknede bar ve mutfak var.\nBiletin telefonunda; girişte göstermen yeterli.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Pour embarquer : métro 7, Pont Marie, deux minutes à pied.\nLa péniche vous attend au Port des Célestins, face à l'île Saint-Louis. Votre billet est sur votre téléphone.\n\nEmbarquement 20h30 → 4h.",
+      "caption_tr": "Nasıl gelinir: 7 numaralı metro, Pont Marie, iki dakika yürüme.\nTekne Port des Célestins'te, Saint-Louis adasının karşısında. Biletin telefonunda.\n\nBiniş 20.30 → 04.00.",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "status": "draft",
       "needs": [],
       "approval": {
@@ -578,7 +528,7 @@
       "channel": "instagram",
       "format": "story",
       "mode": "auto",
-      "title": "Story: the songs you asked for (from S04 answers)",
+      "title": "Story: the Istanbul sounds you asked for (from S04 answers)",
       "visuals": [
         "results-story-fr"
       ],
@@ -599,7 +549,7 @@
       "format": "push notification",
       "mode": "shotgun",
       "title": "Shotgun push: J-2",
-      "text_fr": "J-2 avant Bosphore sur Seine : vendredi, 20h30, péniche Le Marcounet. Les dernières places partent. 🌙",
+      "text_fr": "J-2. La péniche se remplit : dernières traversées en ligne.",
       "status": "draft",
       "visuals": [],
       "needs": [],
@@ -619,9 +569,9 @@
       "visuals": [
         "countdown-post-fr"
       ],
-      "caption_fr": "J-2. 🌉\n\nVendredi, on se retrouve sur la Seine de 20h30 à 4h.\nSi tu attendais un signe pour réserver, c'est celui-là.",
-      "caption_tr": "Son 2 gün. 🌉\n\nCuma akşamı 20.30'dan 04.00'e kadar Seine'in üzerindeyiz.\nBilet almak için bir işaret bekliyorsan, işte bu.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "J-2. La péniche se remplit, la Seine aussi.\nDernières traversées en ligne. S'il reste de la place, au tarif Late, à l'embarquement.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "2 gün kaldı. Tekne doluyor.\nSon biletler online. Yer kalırsa kapıda, Late fiyatıyla.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "notes": "Visual says \"Dernières places à 20 €\": only if Late is the tier on sale that day.",
       "status": "draft",
       "needs": [],
@@ -641,9 +591,9 @@
       "site": {
         "stage": "tomorrow",
         "banner": {
-          "fr": "Demain soir, 20h30, pont Marie",
-          "en": "Tomorrow night, 8:30 pm, Pont Marie",
-          "tr": "Yarın akşam 20.30, Pont Marie"
+          "fr": "Demain, Istanbul accoste au pont Marie · Dernières traversées",
+          "en": "Tomorrow, Istanbul docks at Pont Marie · Last tickets",
+          "tr": "Yarın İstanbul Pont Marie'ye yanaşıyor · Son biletler"
         }
       },
       "status": "draft",
@@ -687,15 +637,16 @@
       "channel": "instagram + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: \"Paris ↔ Istanbul\" montage from Birkleyn sessions",
+      "title": "Reel: J-1 montage cut on the beat (hybrid set + Cabaret Sauvage footage)",
       "visuals": [
         "video:reel-r03"
       ],
-      "caption_fr": "Demain, deux rives sur une seule péniche. 🌉\nRuşan Filiztek & l'Orchestre Eliyo & Friends, de 20h30 à 4h.\n\nBillets : lien en bio.",
-      "caption_tr": "Yarın iki kıyı tek bir teknede. 🌉\nRuşan Filiztek & Eliyo Orkestrası & Friends, 20.30'dan 04.00'e.\n\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Demain, Istanbul accoste à Paris.\nLive à 21h, hybrid set à 23h, Eliyo à minuit, et à 2h quelqu'un qu'on ne nomme pas.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Yarın İstanbul Paris'e yanaşıyor.\n21.00'de canlı, 23.00'te hybrid set, gece yarısı Eliyo, 02.00'de adını vermediğimiz biri.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "needs": [
-        "Original files of 2–3 Birkleyn sessions"
+        "Hybrid-set clips (have them) + Cabaret Sauvage clips (Ali's Drive)",
+        "A track by Eliyo for the montage"
       ],
       "status": "draft",
       "approval": {
@@ -715,9 +666,9 @@
       "site": {
         "stage": "tonight",
         "banner": {
-          "fr": "Ce soir, 20h30 → 4h, pont Marie",
-          "en": "Tonight, 8:30 pm → 4 am, Pont Marie",
-          "tr": "Bu gece 20.30 → 04.00, Pont Marie"
+          "fr": "Ce soir · Embarquement 20h30 au pont Marie",
+          "en": "Tonight · Boarding 8:30 pm at Pont Marie",
+          "tr": "Bu gece · Biniş 20.30, Pont Marie"
         }
       },
       "status": "draft",
@@ -762,7 +713,7 @@
       "format": "push notification",
       "mode": "shotgun",
       "title": "Shotgun push: Ce soir",
-      "text_fr": "Ce soir sur la Seine : Bosphore sur Seine, 20h30 → 4h, péniche Le Marcounet. 🌉",
+      "text_fr": "Ce soir, Istanbul accoste au pont Marie. Embarquement 20h30.",
       "status": "draft",
       "visuals": [],
       "needs": [],
@@ -791,11 +742,12 @@
         "rusan": null
       },
       "shots": [
-        "20h30 : la passerelle et les premières personnes qui montent (5 s)",
-        "Le premier morceau : mains sur le saz, en gros plan (10 s)",
-        "La salle de dos vers la scène (5 s)",
-        "Le premier halay (10–15 s)",
-        "Tout en vertical ; pas de visages en gros plan sans accord"
+        "20h30 : la passerelle et les premières personnes qui embarquent (5 s)",
+        "21h : le live, en gros plan sur les mains (10 s)",
+        "23h : le hybrid set, plan large (10 s)",
+        "Minuit : Eliyo, de dos, face à la salle (10 s)",
+        "2h : on ne montre pas l'invité avant qu'il joue",
+        "Tout en vertical ; pas de visage en gros plan sans accord ; pas de verres à l'image"
       ]
     },
     {
@@ -806,8 +758,8 @@
       "format": "newsletter",
       "mode": "shotgun",
       "title": "Thank-you email to ticket buyers",
-      "subject_fr": "Merci pour cette nuit sur la Seine",
-      "body_fr": "Merci d'avoir été là vendredi. Les photos arrivent sur Instagram @Birkleyn Sound [handle À CONFIRMER].\nOn prépare la prochaine rive : inscris-toi pour être prévenu·e en premier : https://bosphore-sur-seine.vercel.app/#rejoindre",
+      "subject_fr": "Merci d'être montés à bord",
+      "body_fr": "Istanbul est repartie à l'aube. Merci d'avoir fait la traversée avec nous.\nLes photos et la vidéo arrivent cette semaine sur Instagram. La prochaine escale se prépare : vous serez les premiers prévenus.",
       "status": "draft",
       "visuals": [],
       "needs": [],
@@ -851,9 +803,9 @@
       "visuals": [
         "photos from the night"
       ],
-      "caption_fr": "Merci. 🌙\nUne nuit, deux rives, et vous. On se retrouve bientôt pour la suivante.",
-      "caption_tr": "Teşekkürler. 🌙\nBir gece, iki kıyı ve siz. Bir sonrakinde görüşmek üzere.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Merci d'être montés à bord. 🌙\nIstanbul est repartie à l'aube ; elle reviendra.",
+      "caption_tr": "Gemiye bindiğiniz için teşekkürler. 🌙\nİstanbul sabaha karşı geri döndü; yine gelecek.",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "needs": [
         "Photos from the photographer"
       ],
@@ -874,9 +826,9 @@
       "visuals": [
         "soldout-post-fr"
       ],
-      "caption_fr": "Early Birds : épuisés. Merci. 🌙\n\nLes premières fenêtres sont allumées. Les places sont maintenant à 18 €.",
-      "caption_tr": "Early Birds tükendi. Teşekkürler. 🌙\n\nİlk pencerelerin ışığı yandı. Biletler artık 18 €.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Les Early Birds ont largué les amarres. Merci. 🖤\nLa traversée continue au tarif Regular, 18 €.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Early Birds tükendi. Teşekkürler. 🖤\nYolculuk Regular fiyatla devam ediyor, 18 €.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "trigger": "Early Birds sold out on Shotgun",
       "status": "draft",
       "needs": [],
@@ -892,47 +844,19 @@
       "channel": "instagram + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: \"La rive s'allume\": every window follows a note of Ruşan's track",
+      "title": "Reel: \"La rive s'allume\" — every window lights on a note of an Eliyo track",
       "visuals": [
         "video:loop-rive"
       ],
       "preview_note": "Preview without sound. The final version is driven by the track: each window lights with its note (tools/video/alive.py --audio).",
-      "caption_fr": "Chaque fenêtre de la rive suit une note. 🎶\nMets le son.\n\nVendredi 27 novembre, Péniche Le Marcounet, 20h30 → 4h.\nBillets : lien en bio.",
-      "caption_tr": "Kıyıdaki her pencere bir notayla yanıyor. 🎶\nSesi aç.\n\n27 Kasım Cuma, Péniche Le Marcounet, 20.30 → 04.00.\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Chaque fenêtre de la rive s'allume sur une note d'Eliyo. 🖤\nMettez le son.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Kıyıdaki her pencere Eliyo'nun bir notasıyla yanıyor. 🖤\nSesi aç.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "collaborators": [
         "Ruşan Filiztek [handle À CONFIRMER]"
       ],
       "needs": [
-        "WAV or MP3 of one track (from the Samply playlist) and the 15 seconds to use"
-      ],
-      "status": "draft",
-      "approval": {
-        "ali": null,
-        "rusan": null
-      }
-    },
-    {
-      "id": "V02",
-      "date": "2026-11-22",
-      "time": "13:00",
-      "channel": "instagram + tiktok + youtube shorts",
-      "format": "reel",
-      "mode": "auto",
-      "title": "Reel series \"Ruşan explique\" #1: le saz in 20 seconds (subtitled)",
-      "visuals": [
-        "video:reel-v02"
-      ],
-      "caption_fr": "Ruşan explique #1 : le saz. 🎶\nVingt secondes sur l'instrument qui portera la nuit du 27.\n\nÉpisode 2 mardi.\nBillets : lien en bio.",
-      "caption_tr": "Ruşan anlatıyor #1: saz. 🎶\n27 Kasım gecesini taşıyacak enstrüman, 20 saniyede.\n\n2. bölüm salı.\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
-      "shots": [
-        "Ruşan face caméra, saz en main, téléphone vertical à hauteur des yeux",
-        "Première phrase = l'accroche (ex. « Ce que tu entends là, c'est un saz »), puis il joue 5 s",
-        "20–30 s au total, lumière de fenêtre, pas de musique de fond"
-      ],
-      "needs": [
-        "Ruşan films the episode (see shots)"
+        "An Eliyo track as WAV or MP3 (he is on Spotify; the file has to come from him) and the 15 seconds to use"
       ],
       "status": "draft",
       "approval": {
@@ -951,70 +875,18 @@
       "visuals": [
         "video:reel-v03"
       ],
-      "caption_fr": "J-4. On répète. 🎶\n\nRuşan Filiztek & l'Orchestre Eliyo & Friends, vendredi sur la péniche.\nBillets : lien en bio.",
-      "caption_tr": "4 gün kaldı. Prova zamanı. 🎶\n\nRuşan Filiztek & Eliyo Orkestrası & Friends, cuma teknede.\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "J-4. Les cordes s'accordent, les machines chauffent.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "4 gün kaldı. Teller akort ediliyor, makineler ısınıyor.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "shots": [
-        "6 à 10 plans verticaux de 5–10 s pendant une répétition",
-        "Mains sur le saz, la voix, l'orchestre en large, un rire entre deux morceaux",
-        "Un plan de 20 s du morceau le plus fort, téléphone posé, pour la piste son"
+        "6 à 10 plans verticaux de 5–10 s pendant la répétition",
+        "Les mains sur les cordes, les machines, la table de mixage",
+        "Un plan large du hybrid set, un rire entre deux morceaux",
+        "20 s du moment le plus fort, téléphone posé, pour la piste son"
       ],
       "needs": [
         "Rehearsal shots (see list)",
         "Audio of the strongest rehearsal take or the track"
-      ],
-      "status": "draft",
-      "approval": {
-        "ali": null,
-        "rusan": null
-      }
-    },
-    {
-      "id": "V04",
-      "date": "2026-11-24",
-      "time": "13:00",
-      "channel": "instagram + tiktok + youtube shorts",
-      "format": "reel",
-      "mode": "auto",
-      "title": "Reel series \"Ruşan explique\" #2: les pas du halay",
-      "visuals": [
-        "video:reel-v04"
-      ],
-      "caption_fr": "Ruşan explique #2 : le halay.\nLes pas en vingt secondes. Vendredi, on les fait ensemble sur la péniche. 🤝\n\nBillets : lien en bio.",
-      "caption_tr": "Ruşan anlatıyor #2: halay.\nAdımlar 20 saniyede. Cuma günü teknede hep beraber. 🤝\n\nBiletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk #halay",
-      "shots": [
-        "Ruşan + 2–3 amis en ligne, filmés en pied",
-        "Les pas au ralenti une fois, puis en vrai avec la musique",
-        "20–30 s"
-      ],
-      "needs": [
-        "Ruşan and 2–3 friends film the steps"
-      ],
-      "status": "draft",
-      "approval": {
-        "ali": null,
-        "rusan": null
-      }
-    },
-    {
-      "id": "V05",
-      "date": "2026-11-25",
-      "time": "20:00",
-      "channel": "instagram",
-      "format": "story",
-      "mode": "manual",
-      "title": "Story call: \"Montre-nous ton halay\": followers post theirs and tag us, we repost the best",
-      "visuals": [
-        "video:reel-v04"
-      ],
-      "sticker": "mention",
-      "sticker_spec": {
-        "type": "text + mention",
-        "text": "Montre-nous ton halay 👇 Tague-nous, on repartage."
-      },
-      "needs": [
-        "Decide whether there is a prize (e.g. 2 places): Ali and Ruşan"
       ],
       "status": "draft",
       "approval": {
@@ -1033,9 +905,9 @@
       "visuals": [
         "video:reel-v06"
       ],
-      "caption_fr": "Le 27 novembre, la rive s'est allumée. 🌙\nMerci d'être venus. On revient vite.",
-      "caption_tr": "27 Kasım'da kıyının ışıkları yandı. 🌙\nGeldiğiniz için teşekkürler. Yakında yine buradayız.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "caption_fr": "Le 27 novembre, Istanbul a remonté la Seine. 🌙\nMerci à tous ceux qui étaient à bord. La prochaine traversée se prépare.",
+      "caption_tr": "27 Kasım'da İstanbul Seine'e aktı. 🌙\nGemideki herkese teşekkürler. Bir sonraki yolculuk hazırlanıyor.",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "needs": [
         "All the night's vertical clips (team + people who tag us, with their OK)"
       ],
@@ -1052,11 +924,11 @@
       "channel": "facebook",
       "format": "event",
       "mode": "manual",
-      "title": "Facebook event co-hosted by Birkleyn Sound and Péniche Le Marcounet (reaches the folk / culture crowd that follows events on Facebook)",
+      "title": "Facebook event (Horde-style description) co-hosted by Birkleyn Sound and Péniche Le Marcounet",
       "visuals": [
         "announce-post-fr"
       ],
-      "text_fr": "Bosphore sur Seine · World – Folk – House\nVendredi 27 novembre, 20h30 → 4h, Péniche Le Marcounet (Port des Célestins, Paris 4e).\nSur scène : Ruşan Filiztek & l'Orchestre Eliyo & Friends, puis la nuit continue en house avec [DJ À CONFIRMER].\nBillets dès 15 € : https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=facebook&utm_medium=event&utm_campaign=bss1",
+      "text_fr": "Le 27 novembre, un vapur quitte Karaköy à la tombée du jour. Il remonte le Bosphore, traverse la nuit et vient s'amarrer au pied du pont Marie. À bord : des voix d'Istanbul, des cordes, des machines, et une foule qui ne sait plus très bien de quelle rive elle vient.\n\nEmbarquez à 20h30. La traversée commence en douceur, en live, puis glisse vers la house jusqu'à l'aube. À 2h, quelqu'un d'autre prend la barre. On ne vous dit pas qui.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live acoustique : Ruşan Filiztek & musiciens\n● 23h → 00h · Hybrid set : machines et instruments\n● 00h → 02h · Eliyo\n● 02h → 04h · Invité surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne uniquement tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#BosphoreSurSeine · Instagram : Birkleyn Sound [handle À CONFIRMER]\n\nBillets : https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=facebook&utm_medium=event&utm_campaign=bss1",
       "checklist": [
         "Create the event from the Birkleyn Sound Facebook Page",
         "Add Péniche Le Marcounet as co-host",
@@ -1064,8 +936,7 @@
         "Post the Reels in the event's discussion as they go out"
       ],
       "needs": [
-        "DJ name(s) and set time",
-        "OK from Ali and Ruşan to create it"
+        "Péniche Le Marcounet's Facebook Page to add as co-host"
       ],
       "status": "draft",
       "approval": {
@@ -1080,22 +951,20 @@
       "channel": "instagram + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: \"Le saz rencontre la house\": the saz played live over the DJ's beat (the hook of the night)",
+      "title": "Reel: the hybrid set rehearsed on the barge (strings + machines)",
       "visuals": [
         "video:reel-d01"
       ],
-      "caption_fr": "Le saz rencontre la house. 🌉\nDe 20h30 à minuit le live, puis la nuit continue jusqu'à 4h.\n\nVendredi sur la péniche. Billets : lien en bio.",
-      "caption_tr": "Saz house'la buluşuyor. 🌉\nÖnce canlı müzik, sonra sabah 4'e kadar house.\n\nCuma teknede. Biletler: link bio'da.",
-      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #house #péniche #worldmusic",
+      "caption_fr": "Les cordes et les machines répètent leur rencontre.\nVendredi, elles jouent pour vous, de 23h à minuit.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Teller ve makineler buluşmalarının provasını yapıyor.\nCuma 23.00'ten gece yarısına senin için çalıyorlar.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "shots": [
-        "Le DJ lance un beat house, un musicien joue du saz par-dessus (15–25 s)",
-        "Gros plan des mains sur le saz, puis plan large avec les platines",
-        "Filmé à la répétition, téléphone vertical"
+        "Le hybrid set filmé à la répétition : beat d'Eliyo, un musicien joue par-dessus (15–25 s)",
+        "Gros plan des mains sur les cordes, puis plan large avec les machines",
+        "Téléphone vertical, lumière de la péniche si possible"
       ],
       "needs": [
-        "DJ name and handle [À CONFIRMER]",
-        "Live / DJ times [À CONFIRMER] (the caption's 'minuit' is a placeholder)",
-        "A musician can play over the DJ set"
+        "Rehearsal date (to film)"
       ],
       "status": "draft",
       "approval": {
@@ -1110,7 +979,7 @@
       "channel": "instagram",
       "format": "story",
       "mode": "manual",
-      "title": "Story: 15 seconds of the DJ's sound, with a link sticker (\"la nuit continue en house\")",
+      "title": "Story: 15 s of Eliyo (music sticker from Spotify) + link sticker: \"À minuit, Eliyo prend la barre\"",
       "visuals": [
         "video:story-d02"
       ],
@@ -1121,19 +990,134 @@
         "label": "Billets"
       },
       "needs": [
-        "A clip or mix from the DJ (SoundCloud, video of a past set)",
-        "DJ handle to mention [À CONFIRMER]"
+        "Eliyo's Instagram handle [À CONFIRMER]"
       ],
       "status": "draft",
       "approval": {
         "ali": null,
         "rusan": null
       }
+    },
+    {
+      "id": "SG00",
+      "date": "2026-11-18",
+      "time": "10:00",
+      "channel": "shotgun",
+      "format": "event description",
+      "mode": "shotgun",
+      "title": "Shotgun: replace the event description with the Horde-style text (same text as the Facebook event)",
+      "text_fr": "Le 27 novembre, un vapur quitte Karaköy à la tombée du jour. Il remonte le Bosphore, traverse la nuit et vient s'amarrer au pied du pont Marie. À bord : des voix d'Istanbul, des cordes, des machines, et une foule qui ne sait plus très bien de quelle rive elle vient.\n\nEmbarquez à 20h30. La traversée commence en douceur, en live, puis glisse vers la house jusqu'à l'aube. À 2h, quelqu'un d'autre prend la barre. On ne vous dit pas qui.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live acoustique : Ruşan Filiztek & musiciens\n● 23h → 00h · Hybrid set : machines et instruments\n● 00h → 02h · Eliyo\n● 02h → 04h · Invité surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne uniquement tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#BosphoreSurSeine · Instagram : Birkleyn Sound [handle À CONFIRMER]",
+      "needs": [
+        "Eliyo or Ruşan logs in to the Smartboard"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "H01",
+      "date": "2026-11-19",
+      "time": "13:00",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: the hybrid set — strings meet machines (from the team's 0814 video)",
+      "visuals": [
+        "video:reel-h01"
+      ],
+      "caption_fr": "De 23h à minuit, les cordes rencontrent les machines.\nUne heure où Istanbul et Paris jouent sur la même ligne.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "23.00'ten gece yarısına, teller makinelerle buluşuyor.\nİstanbul ile Paris'in aynı ritimde çaldığı bir saat.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
+      "needs": [
+        "Who plays in this video? Credit them in the caption if they want [À CONFIRMER]"
+      ],
+      "notes": "Cut from 0814(1).mov, 1:10.8 → 1:25.8 (highest-energy moment). Also the creative for ads A01/A02.",
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "H02",
+      "date": "2026-11-22",
+      "time": "13:00",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: the hybrid set, second cut (from the team's other 0814 video)",
+      "visuals": [
+        "video:reel-h02"
+      ],
+      "caption_fr": "Au milieu de la nuit, il y a une heure où l'on ne sait plus de quelle rive vient le son.\nC'est celle-là qu'on vous garde pour le 27.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Gecenin ortasında öyle bir an var ki, sesin hangi kıyıdan geldiğini bilemiyorsun.\n27'sinde o anı sana saklıyoruz.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
+      "notes": "Cut from 0814.MOV, 0:23.4 → 0:38.4.",
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "needs": []
+    },
+    {
+      "id": "X01",
+      "date": "2026-11-21",
+      "time": "18:30",
+      "channel": "instagram + tiktok",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: Eliyo at Horde × Baajar's Orient Express (Cabaret Sauvage, April 2025) — \"à minuit, c'est lui\"",
+      "visuals": [
+        "video:reel-x01"
+      ],
+      "caption_fr": "Avril, Cabaret Sauvage, une nuit Horde × Baajar. Eliyo était aux platines.\nLe 27, c'est lui qui tient la barre, de minuit à 2h.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Nisan'da Cabaret Sauvage, bir Horde × Baajar gecesi. DJ kabininde Eliyo vardı.\n27'sinde gece yarısından 02.00'ye dümen onda.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
+      "collaborators": [
+        "Eliyo [handle À CONFIRMER]"
+      ],
+      "needs": [
+        "Download the Cabaret Sauvage clips from Ali's Drive",
+        "Which clip shows Eliyo playing? [À CONFIRMER]",
+        "OK from Horde / Baajar to reuse the footage, and credit them [À CONFIRMER]"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "G01",
+      "date": "2026-11-25",
+      "time": "20:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "title": "Story: \"À 2h, quelqu'un monte à bord. On ne dit pas qui.\" + question sticker \"Vos paris ?\"",
+      "visuals": [
+        "guest-story-fr"
+      ],
+      "sticker": "question",
+      "sticker_spec": {
+        "type": "question",
+        "question": "Vos paris ?"
+      },
+      "notes": "Repost the funniest guesses on the 26th; never confirm or deny a name.",
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "needs": []
     }
   ],
   "video_plan": {
     "why": "Instagram pushes Reels to people who don't follow the account; the first 3 seconds decide the view. Short looping clips (7–15 s) and live moments (15–30 s) sell nights better than posters.",
-    "rhythm": "One Reel a day from 19 to 26 Nov, alternating session clips, the 'Ruşan explique' series, rehearsal and the rive loop; every story moves.",
+    "rhythm": "A Reel almost every day from 19 to 26 Nov: hybrid set (H01, H02, D01), the opening live (R01), Eliyo at Cabaret Sauvage (X01), the rive loop on an Eliyo track (V01), rehearsal (V03), J-1 montage (R03). Every story moves.",
     "rules": [
       "Start on the strongest sound or image, never on a title card",
       "Subtitles on every spoken clip",
@@ -1143,24 +1127,24 @@
   },
   "decisions": {
     "date": "2026-11-17",
-    "title": "À décider ce soir",
+    "title": "Décidé ce soir",
+    "done": [
+      "Plan validé dans l'ensemble ; la langue française suit Horde (vous, récit de traversée, Istanbul partout).",
+      "Programme : 21h–23h live acoustique (Ruşan & musiciens) · 23h–00h hybrid set · 00h–02h Eliyo · 02h–04h invité surprise.",
+      "Plus de saz ni de halay dans aucun contenu.",
+      "Pub Meta : compte Birkleyn Sound, budget 150 €. Créées en pause, lancées par vous.",
+      "Shotgun : Eliyo et Ruşan ont l'accès ; pixel Meta et nouvelle description à faire (SG00, SG01).",
+      "Événement Facebook : oui (FB01, texte prêt).",
+      "Billets : quantités non publiées ; vente à l'embarquement possible s'il reste de la place, au tarif Late."
+    ],
+    "title_open": "Encore ouvert",
     "items": [
-      "Valider le plan : répondre avec les codes (ex. P01 S02 R01), ou dire ce qu'il faut changer.",
-      "La partie house : qui sont les DJ (noms, comptes Instagram) et à quelle heure le live laisse la place au DJ ?",
-      "Les DJ ont-ils des mixes ou des vidéos de sets qu'on peut utiliser (SoundCloud, Instagram, vidéo d'une soirée) ?",
-      "Saz + house : un musicien peut-il jouer du saz sur le set du DJ, et peut-on le filmer à la répétition ? C'est la vidéo qui vend la soirée.",
-      "Facebook : OK pour créer un événement Facebook co-organisé par Birkleyn Sound et la péniche ? (le public des soirées Metin Kemal Kahraman ou Livaneli y est)",
-      "Les soirées que vous aimez : qu'est-ce qui vous plaît (l'affiche, l'ambiance, le public, le format) ? Des captures d'écran suffisent.",
-      "Pub Meta : quel compte publicitaire (Birkleyn Sound ?) et quel budget. La suggestion est de 150 € du 19 au 27, rien n'est lancé sans accord.",
-      "Shotgun : qui a l'accès au Smartboard (la péniche ou L'HEUR DU SPECTACLE) pour connecter le pixel Meta ce soir.",
-      "Instagram : les comptes exacts de Birkleyn Sound, Ruşan, Sian, de la Péniche Marcounet et des DJ (pour les collabs). Birkleyn Sound doit être un compte professionnel relié à une page Facebook.",
-      "Musique : les morceaux de Ruşan sont-ils sur Spotify / dans la musique d'Instagram ? Sinon, les fichiers WAV de 2 morceaux de la playlist Samply.",
-      "Vidéos : les fichiers originaux de la session avec Sian et de 2 autres sessions Birkleyn.",
-      "Tournages : qui filme « Ruşan explique » (#1 le saz, #2 le halay) et la répétition, et quand a lieu la répétition.",
-      "Le soir J : qui filme pour les stories et l'after-movie, et y a-t-il un photographe.",
-      "Défi halay : un lot (2 places ?) ou seulement un repartage.",
-      "Site : mettre en ligne la nouvelle version (bouton Shotgun) et confirmer la réponse « achat sur place au tarif Late ».",
-      "Line-up : les noms des Friends, et combien de billets Early Birds au total (pour annoncer « épuisé » au bon moment)."
+      "Comptes Instagram exacts : Birkleyn Sound, Eliyo, Ruşan, Péniche Le Marcounet.",
+      "Les deux vidéos du hybrid set (H01, H02) : qui joue dessus, et OK pour les publier ?",
+      "Images du Cabaret Sauvage (X01) : laquelle montre Eliyo, et OK de Horde / Baajar pour les réutiliser ?",
+      "Un morceau d'Eliyo en WAV ou MP3 pour la vidéo des fenêtres (V01) et le montage J-1 (R03).",
+      "Date de la répétition pour filmer le hybrid set sur la péniche (D01, V03).",
+      "Qui filme et photographie le soir J."
     ]
   }
 }
