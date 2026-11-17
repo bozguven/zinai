@@ -65,7 +65,7 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 - **Filming:** there will be things to film and photos; no "halay challenge".
 - **References they like (old nights, same scene):** Horde × Baajar *Orient Express* (Cabaret Sauvage, 4 Apr 2025, Eliyo on the line-up), *Shock Kulturel* (Baajar, Petit Bain), Generic Music *Istanbul* × Oceanvs Orientalis, ReSolute × Cosmic Days (Acid Pauli), Rituel Days. Scene: organic / downtempo / deep house with live instruments.
 - **Audience references from Ruşan:** Les Suds à Arles, Jazz à Vienne, Les Vieilles Charrues (festival-goers who like live music; use as Meta interests and lookalike thinking).
-- **Video from the team:** two vertical 4K clips of a hybrid set outdoors (instrument + machines, laptop, mountains), in Bertuğ's Downloads (0814.MOV, 0814(1).mov). Six clips of the Horde & Baajar night at Cabaret Sauvage (4 Apr 2025) are in Ali's Google Drive folder; Eliyo is in the five "Plan" clips (2, 3, 5, 8, 9). The "Dance Kurde" clip is not used.
+- **Video from the team:** two vertical 4K clips of a hybrid set outdoors (instrument + machines, laptop, mountains), in Bertuğ's Downloads (0814.MOV, 0814(1).mov). Six clips of the Horde & Baajar night at Cabaret Sauvage (4 Apr 2025) are in Ali's Google Drive folder; Eliyo is in the "Plan" clips; X01 uses Plan 3 (downloaded to the Mac). The "Dance Kurde" clip is not used.
 
 ## Audience (who we write for)
 
