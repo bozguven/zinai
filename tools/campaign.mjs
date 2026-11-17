@@ -12,6 +12,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CLIENT = process.env.ZINAI_CLIENT || 'bosphore-sur-seine';
@@ -104,7 +105,12 @@ function buildBoard() {
         const id = v.slice(6), src = path.join(OUT, 'video', id + '.mp4');
         if (!fs.existsSync(src)) return `<div class="ph">🎬 vidéo à monter<br>(${esc(id)})</div>`;
         fs.mkdirSync(path.join(dir, 'video'), { recursive: true });
-        fs.copyFileSync(src, path.join(dir, 'video', id + '.mp4'));
+        const dst = path.join(dir, 'video', id + '.mp4');
+        if (fs.statSync(src).size > 6e6) {            // preview copy for the board: 720p, light enough to stream on a phone
+          if (!fs.existsSync(dst) || fs.statSync(dst).mtimeMs < fs.statSync(src).mtimeMs)
+            execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, '-vf', 'scale=720:-2', '-c:v', 'libx264', '-preset', 'veryfast',
+              '-crf', '27', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', dst]);
+        } else fs.copyFileSync(src, dst);
         const small = fs.statSync(src).size < 1.5e6;   // short loops play inline; Reels wait for a tap
         return `<button class="media vid" data-src="video/${esc(id)}.mp4" data-kind="video" aria-label="Lire la vidéo ${esc(id)}"><video src="video/${esc(id)}.mp4#t=0.5" muted loop playsinline preload="metadata"${small ? ' autoplay' : ''}></video><span class="play" aria-hidden="true">▶</span></button>`;
       }
