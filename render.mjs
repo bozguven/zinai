@@ -23,7 +23,7 @@ for (const v of visuals) {
   await page.goto(template);
   await page.waitForSelector('body[data-ready="1"]');
   await page.waitForFunction(() => [...document.images].every((i) => i.complete));
-  await page.locator('.card').screenshot({ path: resolve(outDir, `${v.id}.png`) });
+  await page.locator('.card').screenshot({ path: resolve(outDir, `${v.id}.png`), omitBackground: !!v.transparent });
   await page.close();
   console.log('rendered', v.id);
 }

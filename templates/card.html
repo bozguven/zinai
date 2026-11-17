@@ -100,6 +100,7 @@ const C = window.CARD || { format: 'post', variant: 'announce', lang: 'fr', fiel
 const t = L[C.lang || 'fr'];
 const k = C.format !== 'story' ? 1 : (C.variant === 'tickets' || C.variant === 'soldout') ? 1.05 : 1.3;
 const f = C.fields || {};
+if (C.transparent) document.head.insertAdjacentHTML('beforeend', '<style>body,.card{background:transparent!important}</style>');
 const wordmark = `<div class="wordmark"><span>Bosphore</span><span>sur Seine</span></div>`;
 const foot = `<div class="foot">${t.date}<br><span class="venue">${t.venue}</span></div>`;
 const windows = (n, lit) => `<div class="windows">${Array.from({ length: n }, (_, i) => `<i class="${i < lit ? 'on' : ''}"></i>`).join('')}</div>`;

@@ -51,6 +51,7 @@ clients/<client>/
 .claude/agents/     strategist, copywriter, designer, clipper, publisher, analyst, ads-manager, web-updater
 .claude/commands/   /today, /campaign, /week-plan, /post, /clips, /approval, /publish, /site, /ads, /report
 tools/campaign.mjs  today | list | pending | approve | status | board
+tools/video/        highlights.py, clip.py (Reels with hook + subtitles + end card), beatcut.py, alive.py (animated rive)
 .mcp.json           the Postiz connector (official, OAuth)
 templates/          HTML templates for Instagram posts (1080×1350) and stories (1080×1920)
 assets/             artwork cut from the client's flyer
@@ -74,6 +75,13 @@ Only the publisher subagent schedules, only `status: approved` items with `mode:
   checks SEO, and merges to `main` (Vercel deploys) only when Bertuğ says go live.
 - `meta-ads`: the ads-manager prepares them from `ads/meta.json` and creates them paused, only with a
   confirmed budget. A person launches them.
+
+## Video first
+
+Instagram shows Reels to people who don't follow the account, and the first 3 seconds decide the view.
+So: about one Reel a day in the last 10 days, every story moves (loops, rehearsal clips), each Reel also
+goes to TikTok and YouTube Shorts, and the best Reel after 48 h becomes the ad creative. The clipper agent
+and `tools/video/` do the editing; the team films (shot lists are on each campaign item under `shots`).
 
 ## Connectors
 

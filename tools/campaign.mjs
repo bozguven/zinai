@@ -100,6 +100,13 @@ function buildBoard() {
 
   const card = (i) => {
     const imgs = (i.visuals || []).map((v) => {
+      if (v.startsWith('video:')) {
+        const id = v.slice(6), src = path.join(OUT, 'video', id + '.mp4');
+        if (!fs.existsSync(src)) return `<div class="ph">🎬 vidéo à monter<br>(${esc(id)})</div>`;
+        fs.mkdirSync(path.join(dir, 'video'), { recursive: true });
+        fs.copyFileSync(src, path.join(dir, 'video', id + '.mp4'));
+        return `<video src="video/${esc(id)}.mp4" muted loop autoplay playsinline preload="metadata"></video>`;
+      }
       const src = path.join(OUT, v + '.png');
       if (!fs.existsSync(src)) return `<div class="ph">${esc(v)}</div>`;
       fs.copyFileSync(src, path.join(dir, 'img', v + '.png'));
@@ -121,9 +128,11 @@ function buildBoard() {
     if (i.checklist) blocks.push(`<ul class="check">${i.checklist.map((x) => `<li>${mark(x)}</li>`).join('')}</ul>`);
     if (i.collaborators) blocks.push(`<p class="tags">Collab : ${mark(i.collaborators.join(', '))}</p>`);
     if (i.needs?.length) blocks.push(`<ul class="needs">${i.needs.map((x) => `<li>${mark(x)}</li>`).join('')}</ul>`);
+    if (i.preview_note) blocks.push(`<p class="tags">${mark(i.preview_note)}</p>`);
+    if (i.shots) blocks.push(`<details><summary>Plans à filmer</summary><ul class="check">${i.shots.map((x) => `<li>${mark(x)}</li>`).join('')}</ul></details>`);
     if (i.trigger) blocks.push(`<p class="tags">Déclencheur : ${esc(i.trigger)}</p>`);
     const ap = i.approval || {};
-    return `<article class="card m-${i.mode}" data-mode="${i.mode}" data-status="${i.status}">
+    return `<article class="card m-${i.mode}" data-mode="${i.mode}" data-video="${i.format === 'reel' || (i.visuals || []).some((v) => v.startsWith('video:')) ? 1 : 0}" data-status="${i.status}">
   <header><span class="id">${esc(i.id)}</span><span class="time">${esc(i.time)}</span><span class="badge">${label[i.mode] || i.mode}</span></header>
   <p class="meta">${esc(i.channel)} · ${esc(i.format)}</p>
   <h3>${mark(i.title)}</h3>
@@ -154,7 +163,7 @@ main{padding:10px 20px 60px;max-width:1500px;margin:0 auto}
 .badge{margin-left:auto;font-size:12px;background:var(--soft);border-radius:99px;padding:1px 9px}
 .m-manual .badge{background:#f6f0c4}.m-meta-ads .badge{background:#f8ddd8}
 .meta{margin:0;font-size:13px;color:var(--grey)}h3{margin:0;font-size:16px;line-height:1.25}
-.imgs{display:flex;gap:6px;overflow-x:auto}.imgs img{height:190px;border-radius:6px;border:1px solid #e5e6ee}
+.imgs{display:flex;gap:6px;overflow-x:auto}.imgs video{height:190px;border-radius:6px;border:1px solid #e5e6ee;background:#fff}.imgs img{height:190px;border-radius:6px;border:1px solid #e5e6ee}
 .ph{height:120px;min-width:90px;display:grid;place-items:center;font-size:12px;text-align:center;padding:6px;background:var(--soft);border-radius:6px;color:var(--grey)}
 details{background:var(--soft);border-radius:6px;padding:4px 9px}summary{cursor:pointer;font-weight:700;font-size:12px;color:var(--blue)}details p{margin:4px 0}
 .tags{margin:0;font-size:12.5px;color:var(--grey)}.sticker{margin:0;font-size:13.5px;background:#faf6d8;border-radius:6px;padding:4px 9px}
@@ -163,21 +172,24 @@ ul{margin:0;padding-left:18px;font-size:13.5px}.needs li{color:#a33a26}mark{back
 .st{font-weight:700;color:var(--ink)}.st-approved,.st-scheduled,.st-done{color:#2f7d4a}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--grey);margin-top:8px}
 .hide{display:none!important}
+.decide{margin:22px 0 6px;background:#faf6d8;border-radius:12px;padding:14px 18px}.decide h2{font:700 17px Unbounded,system-ui,sans-serif;color:var(--blue);margin:0 0 8px}.decide ol{margin:0;padding-left:22px;font-size:15px}.decide li{margin:3px 0}
 </style></head><body>
 <div class="top"><h1>Bosphore sur Seine · Campagne</h1>
-<p class="sub">Tout ce qui est prévu jusqu'au 28 novembre. Rien ne part sans l'accord d'Ali et Ruşan. Mis à jour le ${esc(c.updated)}.</p>
+<p class="sub">Tout ce qui est prévu jusqu'au 29 novembre. Rien ne part sans l'accord d'Ali et Ruşan. Mis à jour le ${esc(c.updated)}.</p>
 <div class="filters" role="group" aria-label="Filtrer">
 <button aria-pressed="true" data-f="all">Tout (${c.items.length})</button>
+<button aria-pressed="false" data-f="video">Vidéo (${c.items.filter((i) => i.format === 'reel' || (i.visuals || []).some((v) => v.startsWith('video:'))).length})</button>
 ${Object.entries(label).map(([m, l]) => `<button aria-pressed="false" data-f="${m}">${l} (${counts[m]})</button>`).join('\n')}
 </div></div>
 <main>
+${c.decisions ? `<section class="decide"><h2>${esc(c.decisions.title)}</h2><ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
 ${order.map((d) => `<section class="day"><h2>${fmtDay(d)}</h2><div class="grid">${days[d].map(card).join('\n')}</div></section>`).join('\n')}
 <div class="legend"><span><b>Auto</b> : programmé par Postiz après accord.</span><span><b>Manuel</b> : story avec sticker (sondage, quiz, question, lien, compte à rebours), à poster depuis le téléphone.</span><span><b>Shotgun</b> : à faire dans le Smartboard.</span><span><b>Pub Meta</b> : créée en pause, lancée par une personne.</span></div>
 </main>
 <script>
 const bs=[...document.querySelectorAll('.filters button')];
 bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;
-document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',f!=='all'&&c.dataset.mode!==f));
+document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',f!=='all'&&(f==='video'?c.dataset.video!=='1':c.dataset.mode!==f)));
 document.querySelectorAll('.day').forEach(s=>s.classList.toggle('hide',!s.querySelector('.card:not(.hide)')));});
 </script></body></html>`;
   fs.writeFileSync(path.join(dir, 'index.html'), html);

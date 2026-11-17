@@ -336,5 +336,83 @@
       "titleSize": 80,
       "body": "Le 27 novembre, sur la Seine."
     }
+  },
+  {
+    "id": "ov-rive",
+    "format": "story",
+    "variant": "countdown",
+    "lang": "fr",
+    "transparent": true,
+    "fields": {
+      "art": "none",
+      "big": "27.11",
+      "bigSize": 190,
+      "line": "La rive s'allume.<br><b>20h30 → 4h</b>, pont Marie"
+    }
+  },
+  {
+    "id": "ov-rive-tr",
+    "format": "story",
+    "variant": "countdown",
+    "lang": "tr",
+    "transparent": true,
+    "fields": {
+      "art": "none",
+      "big": "27.11",
+      "bigSize": 190,
+      "line": "Kıyının ışıkları yanıyor.<br><b>20.30 → 04.00</b>, Pont Marie"
+    }
+  },
+  {
+    "id": "ov-tonight",
+    "format": "story",
+    "variant": "countdown",
+    "lang": "fr",
+    "transparent": true,
+    "fields": {
+      "art": "none",
+      "big": "Ce soir",
+      "bigSize": 125,
+      "line": "Portes à <b>20h30</b>, pont Marie"
+    }
+  },
+  {
+    "id": "hook-r01",
+    "format": "story",
+    "variant": "slide",
+    "lang": "fr",
+    "transparent": true,
+    "fields": {
+      "art": "none",
+      "kicker": "Live session · Birkleyn Sound",
+      "title": "Ruşan Filiztek feat. Sian",
+      "titleSize": 84
+    }
+  },
+  {
+    "id": "hook-r02",
+    "format": "story",
+    "variant": "slide",
+    "lang": "fr",
+    "transparent": true,
+    "fields": {
+      "art": "none",
+      "kicker": "Répétition",
+      "title": "10 jours avant la péniche",
+      "titleSize": 84
+    }
+  },
+  {
+    "id": "ov-tomorrow",
+    "format": "story",
+    "variant": "countdown",
+    "lang": "fr",
+    "transparent": true,
+    "fields": {
+      "art": "none",
+      "big": "Demain",
+      "bigSize": 130,
+      "line": "<b>20h30 → 4h</b>, pont Marie"
+    }
   }
 ]

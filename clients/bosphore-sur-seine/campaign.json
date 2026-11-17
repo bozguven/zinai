@@ -110,8 +110,9 @@
       "format": "story",
       "mode": "manual",
       "sticker": "countdown",
-      "title": "Countdown sticker to 27 Nov 20:30 (followers tap \"remind me\")",
+      "title": "Countdown sticker on the moving loop: the rive lights up window by window",
       "visuals": [
+        "video:loop-rive",
         "countdown-sticker-story-fr"
       ],
       "sticker_spec": {
@@ -124,7 +125,8 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Post the MP4 as a story, add the countdown sticker and a music sticker. Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute."
     },
     {
       "id": "S03",
@@ -182,7 +184,7 @@
       "mode": "auto",
       "title": "Reel: Ruşan's favourite session, feat. Sian",
       "visuals": [
-        "clip-r01 (9:16 MP4, 30–45 s)"
+        "video:reel-r01"
       ],
       "collaborators": [
         "Ruşan Filiztek [handle À CONFIRMER]",
@@ -199,7 +201,8 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "tools/video/highlights.py shortlists the liveliest 15–30 s; Ruşan picks; tools/video/clip.py reframes to 9:16 with the hook for 3 s and the ticket end card."
     },
     {
       "id": "S04",
@@ -308,7 +311,7 @@
       "sticker": "link",
       "title": "Rehearsal behind the scenes + link sticker",
       "visuals": [
-        "rehearsal video (phone, 9:16)"
+        "video:story-s06"
       ],
       "sticker_spec": {
         "type": "link",
@@ -351,7 +354,7 @@
       "mode": "auto",
       "title": "Reel: Ruşan on \"sürgün\" (exile and new roots)",
       "visuals": [
-        "clip-r02 (Ruşan talking, 20–30 s)"
+        "video:reel-r02"
       ],
       "caption_fr": "En turc, sürgün veut dire l'exil. Mais c'est aussi la bouture qu'on replante dans une nouvelle terre.\n\nC'est l'histoire de l'album Exils de Ruşan Filiztek, et un peu la nôtre : on est tous arrivés à Paris avec une rive dans nos bagages.\n\nLe 27 novembre, on les réunit sur la Seine. 🌉",
       "caption_tr": "Sürgün hem ayrılık demek, hem de yeni bir toprağa dikilen fidan.\n\nRuşan Filiztek'in Exils albümünün hikâyesi bu; biraz da bizim hikâyemiz: hepimiz Paris'e bir kıyıyla geldik.\n\n27 Kasım'da hepsini Seine'de buluşturuyoruz. 🌉",
@@ -658,8 +661,9 @@
       "format": "story",
       "mode": "manual",
       "sticker": "link",
-      "title": "\"Demain\" story + link sticker",
+      "title": "\"Demain\" moving story (windows pulse) + link sticker",
       "visuals": [
+        "video:loop-tomorrow",
         "tomorrow-story-fr"
       ],
       "sticker_spec": {
@@ -672,7 +676,8 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute."
     },
     {
       "id": "R03",
@@ -683,7 +688,7 @@
       "mode": "auto",
       "title": "Reel: \"Paris ↔ Istanbul\" montage from Birkleyn sessions",
       "visuals": [
-        "clip-r03 (montage, 20–30 s)"
+        "video:reel-r03"
       ],
       "caption_fr": "Demain, deux rives sur une seule péniche. 🌉\nRuşan Filiztek & l'Orchestre Eliyo & Friends, de 20h30 à 4h.\n\nBillets : lien en bio.",
       "caption_tr": "Yarın iki kıyı tek bir teknede. 🌉\nRuşan Filiztek & Eliyo Orkestrası & Friends, 20.30'dan 04.00'e.\n\nBiletler: link bio'da.",
@@ -695,7 +700,8 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Built with tools/video/beatcut.py: shots cut on the beat of the track."
     },
     {
       "id": "W04",
@@ -729,8 +735,9 @@
       "format": "story",
       "mode": "manual",
       "sticker": "link",
-      "title": "\"Ce soir\" story + link sticker",
+      "title": "\"Ce soir\" moving story (windows pulse) + link sticker",
       "visuals": [
+        "video:loop-tonight",
         "tonight-story-fr"
       ],
       "sticker_spec": {
@@ -743,7 +750,8 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute."
     },
     {
       "id": "SG04",
@@ -780,7 +788,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "shots": [
+        "20h30 : la passerelle et les premières personnes qui montent (5 s)",
+        "Le premier morceau : mains sur le saz, en gros plan (10 s)",
+        "La salle de dos vers la scène (5 s)",
+        "Le premier halay (10–15 s)",
+        "Tout en vertical ; pas de visages en gros plan sans accord"
+      ]
     },
     {
       "id": "E02",
@@ -868,6 +883,193 @@
         "ali": null,
         "rusan": null
       }
+    },
+    {
+      "id": "V01",
+      "date": "2026-11-20",
+      "time": "13:00",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: \"La rive s'allume\": every window follows a note of Ruşan's track",
+      "visuals": [
+        "video:loop-rive"
+      ],
+      "preview_note": "Preview without sound. The final version is driven by the track: each window lights with its note (tools/video/alive.py --audio).",
+      "caption_fr": "Chaque fenêtre de la rive suit une note. 🎶\nMets le son.\n\nVendredi 27 novembre, Péniche Le Marcounet, 20h30 → 4h.\nBillets : lien en bio.",
+      "caption_tr": "Kıyıdaki her pencere bir notayla yanıyor. 🎶\nSesi aç.\n\n27 Kasım Cuma, Péniche Le Marcounet, 20.30 → 04.00.\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "collaborators": [
+        "Ruşan Filiztek [handle À CONFIRMER]"
+      ],
+      "needs": [
+        "WAV or MP3 of one track (from the Samply playlist) and the 15 seconds to use"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "V02",
+      "date": "2026-11-22",
+      "time": "13:00",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel series \"Ruşan explique\" #1: le saz in 20 seconds (subtitled)",
+      "visuals": [
+        "video:reel-v02"
+      ],
+      "caption_fr": "Ruşan explique #1 : le saz. 🎶\nVingt secondes sur l'instrument qui portera la nuit du 27.\n\nÉpisode 2 mardi.\nBillets : lien en bio.",
+      "caption_tr": "Ruşan anlatıyor #1: saz. 🎶\n27 Kasım gecesini taşıyacak enstrüman, 20 saniyede.\n\n2. bölüm salı.\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "shots": [
+        "Ruşan face caméra, saz en main, téléphone vertical à hauteur des yeux",
+        "Première phrase = l'accroche (ex. « Ce que tu entends là, c'est un saz »), puis il joue 5 s",
+        "20–30 s au total, lumière de fenêtre, pas de musique de fond"
+      ],
+      "needs": [
+        "Ruşan films the episode (see shots)"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "V03",
+      "date": "2026-11-23",
+      "time": "13:00",
+      "channel": "instagram + tiktok",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: rehearsal montage cut on the beat (J-4)",
+      "visuals": [
+        "video:reel-v03"
+      ],
+      "caption_fr": "J-4. On répète. 🎶\n\nRuşan Filiztek & l'Orchestre Eliyo & Friends, vendredi sur la péniche.\nBillets : lien en bio.",
+      "caption_tr": "4 gün kaldı. Prova zamanı. 🎶\n\nRuşan Filiztek & Eliyo Orkestrası & Friends, cuma teknede.\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "shots": [
+        "6 à 10 plans verticaux de 5–10 s pendant une répétition",
+        "Mains sur le saz, la voix, l'orchestre en large, un rire entre deux morceaux",
+        "Un plan de 20 s du morceau le plus fort, téléphone posé, pour la piste son"
+      ],
+      "needs": [
+        "Rehearsal shots (see list)",
+        "Audio of the strongest rehearsal take or the track"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "V04",
+      "date": "2026-11-24",
+      "time": "13:00",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel series \"Ruşan explique\" #2: les pas du halay",
+      "visuals": [
+        "video:reel-v04"
+      ],
+      "caption_fr": "Ruşan explique #2 : le halay.\nLes pas en vingt secondes. Vendredi, on les fait ensemble sur la péniche. 🤝\n\nBillets : lien en bio.",
+      "caption_tr": "Ruşan anlatıyor #2: halay.\nAdımlar 20 saniyede. Cuma günü teknede hep beraber. 🤝\n\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk #halay",
+      "shots": [
+        "Ruşan + 2–3 amis en ligne, filmés en pied",
+        "Les pas au ralenti une fois, puis en vrai avec la musique",
+        "20–30 s"
+      ],
+      "needs": [
+        "Ruşan and 2–3 friends film the steps"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "V05",
+      "date": "2026-11-25",
+      "time": "20:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "title": "Story call: \"Montre-nous ton halay\": followers post theirs and tag us, we repost the best",
+      "visuals": [
+        "video:reel-v04"
+      ],
+      "sticker": "mention",
+      "sticker_spec": {
+        "type": "text + mention",
+        "text": "Montre-nous ton halay 👇 Tague-nous, on repartage."
+      },
+      "needs": [
+        "Decide whether there is a prize (e.g. 2 places): Ali and Ruşan"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "V06",
+      "date": "2026-11-29",
+      "time": "18:30",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "After-movie Reel (30 s) cut on the beat from the night's footage",
+      "visuals": [
+        "video:reel-v06"
+      ],
+      "caption_fr": "Le 27 novembre, la rive s'est allumée. 🌙\nMerci d'être venus. On revient vite.",
+      "caption_tr": "27 Kasım'da kıyının ışıkları yandı. 🌙\nGeldiğiniz için teşekkürler. Yakında yine buradayız.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "needs": [
+        "All the night's vertical clips (team + people who tag us, with their OK)"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
     }
-  ]
+  ],
+  "video_plan": {
+    "why": "Instagram pushes Reels to people who don't follow the account; the first 3 seconds decide the view. Short looping clips (7–15 s) and live moments (15–30 s) sell nights better than posters.",
+    "rhythm": "One Reel a day from 19 to 26 Nov, alternating session clips, the 'Ruşan explique' series, rehearsal and the rive loop; every story moves.",
+    "rules": [
+      "Start on the strongest sound or image, never on a title card",
+      "Subtitles on every spoken clip",
+      "Each Reel also goes to TikTok and YouTube Shorts",
+      "The best Reel after 48 h becomes the Meta ad creative (A02)"
+    ]
+  },
+  "decisions": {
+    "date": "2026-11-17",
+    "title": "À décider ce soir",
+    "items": [
+      "Valider le plan : répondre avec les codes (ex. P01 S02 R01), ou dire ce qu'il faut changer.",
+      "Pub Meta : quel compte publicitaire (Birkleyn Sound ?) et quel budget. La suggestion est de 150 € du 19 au 27, rien n'est lancé sans accord.",
+      "Shotgun : qui a l'accès au Smartboard (la péniche ou L'HEUR DU SPECTACLE) pour connecter le pixel Meta ce soir.",
+      "Instagram : les comptes exacts de Birkleyn Sound, Ruşan, Sian et de la Péniche Marcounet (pour les collabs).",
+      "Musique : les morceaux de Ruşan sont-ils sur Spotify / dans la musique d'Instagram ? Sinon, les fichiers WAV de 2 morceaux de la playlist Samply.",
+      "Vidéos : les fichiers originaux de la session avec Sian et de 2 autres sessions Birkleyn.",
+      "Tournages : qui filme « Ruşan explique » (#1 le saz, #2 le halay) et la répétition, et quand a lieu la répétition.",
+      "Le soir J : qui filme pour les stories et l'after-movie, et y a-t-il un photographe.",
+      "Défi halay : un lot (2 places ?) ou seulement un repartage.",
+      "Site : mettre en ligne la nouvelle version (bouton Shotgun) et confirmer la réponse « achat sur place au tarif Late ».",
+      "Line-up : les noms des Friends, et combien de billets Early Birds au total (pour annoncer « épuisé » au bon moment)."
+    ]
+  }
 }

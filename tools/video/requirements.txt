@@ -1,0 +1,6 @@
+# Video tools for ZinAI (ffmpeg must also be installed)
+numpy
+scipy
+pillow
+librosa          # ISC — beats, onsets, frequency bands
+faster-whisper   # MIT — subtitles for spoken clips (downloads the "small" model on first use)

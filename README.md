@@ -35,6 +35,7 @@ claude                 # open ZinAI in Claude Code
 | `/publish P01 S03` | Marks P01 and S03 approved by Ali and Ruşan; schedules auto posts in Postiz, the rest goes to `/today`, `/site` or `/ads` |
 | `/site W02` | Updates the website banner and ticket stage, checks SEO, proposes the commit |
 | `/ads A01` | Ad setup sheet; `/ads create A01` makes it paused (budget confirmed only) |
+| `/clips <video>` | Shortlists moments, cuts a 9:16 Reel with hook, subtitles and end card (tools/video) |
 | `/report` or `/report weekly` | Morning brief or weekly report |
 
 Nothing is published without Ali and Ruşan's approval.
