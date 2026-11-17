@@ -2,5 +2,8 @@
   "website": "https://bosphore-sur-seine.vercel.app",
   "website_repo": "../bosphore-sur-seine",
   "shotgun": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house",
-  "board_artifact": null
+  "board_artifact": {
+    "slug": "a0d57526-c666-420b-b89c-36f30a64a5ee",
+    "url": "https://claude.ai/artifact/LruYGSHQSEJbo4sBEKP1bB"
+  }
 }
