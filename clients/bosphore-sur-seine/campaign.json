@@ -1,0 +1,873 @@
+{
+  "client": "bosphore-sur-seine",
+  "timezone": "Europe/Paris",
+  "updated": "2026-11-17",
+  "items": [
+    {
+      "id": "W01",
+      "date": "2026-11-18",
+      "time": "09:00",
+      "channel": "website",
+      "format": "site update",
+      "mode": "website",
+      "title": "Website v2 goes live with the Shotgun button and a \"Billets en vente\" banner",
+      "site": {
+        "stage": "on-sale",
+        "banner": {
+          "fr": "Billets en vente : Early Birds à 15 €",
+          "en": "Tickets on sale: Early Birds at 15 €",
+          "tr": "Biletler satışta: Early Birds 15 €"
+        }
+      },
+      "notes": "Merge v2 into main; Vercel deploys in seconds.",
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "SG01",
+      "date": "2026-11-18",
+      "time": "10:00",
+      "channel": "shotgun",
+      "format": "setup",
+      "mode": "shotgun",
+      "title": "Shotgun Smartboard setup (venue or L'HEUR DU SPECTACLE account)",
+      "checklist": [
+        "Connect the Meta Pixel on the event (needed for ads that optimise for ticket purchases)",
+        "Switch on the reward programme (buyers get a link and cashback per ticket they sell)",
+        "Create a promoter tracking link for each of the 20 ambassadors",
+        "Complete the organiser public page (photo, bio, links to Birkleyn Sound Instagram and the website)",
+        "Check the artists on the line-up have Spotify / Bandsintown profiles so the event syncs there"
+      ],
+      "needs": [
+        "Access to the Smartboard of Péniche Marcounet or L'HEUR DU SPECTACLE"
+      ],
+      "status": "draft",
+      "visuals": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S01",
+      "date": "2026-11-18",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "link",
+      "title": "\"Billets en vente\" story with a link sticker",
+      "visuals": [
+        "tickets-open-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-s01",
+        "label": "Billets"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "P01",
+      "date": "2026-11-18",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "carousel",
+      "mode": "auto",
+      "title": "Announcement (FR + TR slides)",
+      "visuals": [
+        "announce-post-fr",
+        "announce-post-tr"
+      ],
+      "collaborators": [
+        "Péniche Marcounet [handle À CONFIRMER]"
+      ],
+      "caption_fr": "Le 27 novembre, le Bosphore descend la Seine. 🌉\n\nUne nuit sur une péniche au pied du pont Marie, où les musiques d'Istanbul et de Paris se répondent, du folk à la house.\nSur scène : Ruşan Filiztek & l'Orchestre Eliyo & Friends.\n\nVendredi 27 novembre, 20h30 → 4h\nPéniche Le Marcounet, Paris 4e\nBillets dès 15 € : lien en bio.",
+      "caption_tr": "27 Kasım'da Boğaz, Seine'e akıyor. 🌉\n\nPont Marie'nin dibinde bir tekne; İstanbul'un ve Paris'in müzikleri birbirine cevap veriyor, folk'tan house'a.\nSahnede: Ruşan Filiztek & Eliyo Orkestrası & Friends.\n\n27 Kasım Cuma, 20.30 → 04.00\nPéniche Le Marcounet, Paris 4e\nBiletler 15 €'dan başlıyor: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S02",
+      "date": "2026-11-18",
+      "time": "20:30",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "countdown",
+      "title": "Countdown sticker to 27 Nov 20:30 (followers tap \"remind me\")",
+      "visuals": [
+        "countdown-sticker-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "countdown",
+        "name": "Bosphore sur Seine",
+        "ends": "2026-11-27T20:30"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S03",
+      "date": "2026-11-19",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "poll",
+      "title": "Poll: \"Le 27, tu es plutôt…\" Bosphore / Seine",
+      "visuals": [
+        "poll-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "poll",
+        "question": "Le 27, tu es plutôt…",
+        "options": [
+          "Bosphore",
+          "Seine"
+        ]
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "A01",
+      "date": "2026-11-19",
+      "time": "10:00",
+      "channel": "meta-ads",
+      "format": "campaign",
+      "mode": "meta-ads",
+      "title": "Meta ads \"Découverte\" starts (video views, 19–22 Nov)",
+      "ref": "ads/meta.json#A01",
+      "needs": [
+        "Ad account and budget",
+        "R01 video"
+      ],
+      "status": "draft",
+      "visuals": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "R01",
+      "date": "2026-11-19",
+      "time": "18:30",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: Ruşan's favourite session, feat. Sian",
+      "visuals": [
+        "clip-r01 (9:16 MP4, 30–45 s)"
+      ],
+      "collaborators": [
+        "Ruşan Filiztek [handle À CONFIRMER]",
+        "Sian [handle À CONFIRMER]"
+      ],
+      "caption_fr": "Ruşan Filiztek joue du saz comme on raconte une histoire. 🎶\nIci avec Sian, en live session pour Birkleyn Sound.\n\nLe 27 novembre, il monte sur la péniche avec l'Orchestre Eliyo & Friends.\nBillets : lien en bio.",
+      "caption_tr": "Ruşan Filiztek sazı bir hikâye anlatır gibi çalıyor. 🎶\nBurada Sian'la, Birkleyn Sound için canlı kayıtta.\n\n27 Kasım'da Eliyo Orkestrası & Friends ile teknede.\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "needs": [
+        "Original video file of the Sian session",
+        "Ruşan picks the 30–45 seconds"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S04",
+      "date": "2026-11-19",
+      "time": "20:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "question",
+      "title": "Question sticker: \"Quelle chanson veux-tu entendre au saz ?\"",
+      "visuals": [
+        "survey-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "question",
+        "question": "Quelle chanson veux-tu entendre au saz ?"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S05",
+      "date": "2026-11-20",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "quiz",
+      "title": "Quiz: \"Ruşan vit à Paris depuis…\" 2015 / 2009 / 2020",
+      "visuals": [
+        "quiz-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "quiz",
+        "question": "Ruşan vit à Paris depuis…",
+        "options": [
+          "2009",
+          "2015",
+          "2020"
+        ],
+        "correct": "2015"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "A02",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "channel": "meta-ads",
+      "format": "campaign",
+      "mode": "meta-ads",
+      "title": "Meta ads \"Billets\" starts (ticket sales, 20–26 Nov)",
+      "ref": "ads/meta.json#A02",
+      "needs": [
+        "Ad account and budget",
+        "Meta Pixel on Shotgun (SG01)"
+      ],
+      "status": "draft",
+      "visuals": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "C01",
+      "date": "2026-11-20",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "carousel",
+      "mode": "auto",
+      "title": "Carousel: \"La nuit du 27 en 5 points\"",
+      "visuals": [
+        "c01-1",
+        "c01-2",
+        "c01-3",
+        "c01-4",
+        "c01-5"
+      ],
+      "caption_fr": "Tout ce qu'il faut savoir sur le 27 novembre, en 5 images. ✨\nEnregistre ce post et envoie-le à la personne qui viendra avec toi.\n\nBillets : lien en bio.",
+      "caption_tr": "27 Kasım hakkında bilmen gereken her şey, 5 karede. ✨\nKaydet ve seninle gelecek kişiye gönder.\n\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S06",
+      "date": "2026-11-21",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "link",
+      "title": "Rehearsal behind the scenes + link sticker",
+      "visuals": [
+        "rehearsal video (phone, 9:16)"
+      ],
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-s06",
+        "label": "Billets"
+      },
+      "needs": [
+        "10–20 s phone video from a rehearsal"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "SG02",
+      "date": "2026-11-21",
+      "time": "17:00",
+      "channel": "shotgun",
+      "format": "push notification",
+      "mode": "shotgun",
+      "title": "Shotgun push to followers",
+      "text_fr": "Bosphore sur Seine, vendredi 27 : une nuit Istanbul–Paris sur une péniche, jusqu'à 4h. 🌉",
+      "notes": "If Early Birds are almost gone, use instead: \"Derniers Early Birds à 15 € pour Bosphore sur Seine, vendredi 27.\"",
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "R02",
+      "date": "2026-11-21",
+      "time": "18:30",
+      "channel": "instagram + tiktok",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: Ruşan on \"sürgün\" (exile and new roots)",
+      "visuals": [
+        "clip-r02 (Ruşan talking, 20–30 s)"
+      ],
+      "caption_fr": "En turc, sürgün veut dire l'exil. Mais c'est aussi la bouture qu'on replante dans une nouvelle terre.\n\nC'est l'histoire de l'album Exils de Ruşan Filiztek, et un peu la nôtre : on est tous arrivés à Paris avec une rive dans nos bagages.\n\nLe 27 novembre, on les réunit sur la Seine. 🌉",
+      "caption_tr": "Sürgün hem ayrılık demek, hem de yeni bir toprağa dikilen fidan.\n\nRuşan Filiztek'in Exils albümünün hikâyesi bu; biraz da bizim hikâyemiz: hepimiz Paris'e bir kıyıyla geldik.\n\n27 Kasım'da hepsini Seine'de buluşturuyoruz. 🌉",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "needs": [
+        "Ruşan films 20–30 s talking to camera (phone is fine)"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "P08",
+      "date": "2026-11-22",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "post",
+      "mode": "auto",
+      "title": "Line-up reveal",
+      "visuals": [
+        "lineup-post-fr"
+      ],
+      "caption_fr": "Sur la péniche le 27 novembre :\n\nRuşan Filiztek\nl'Orchestre Eliyo\n& Friends : [À CONFIRMER : noms et instruments]\n\nUne nuit, deux rives, une scène.",
+      "caption_tr": "27 Kasım'da teknede:\n\nRuşan Filiztek\nEliyo Orkestrası\n& Friends: [À CONFIRMER: isimler ve enstrümanlar]\n\nBir gece, iki kıyı, tek sahne.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "needs": [
+        "The Friends' names, instruments and Instagram handles"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S07",
+      "date": "2026-11-22",
+      "time": "20:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "auto",
+      "title": "Story: line-up reveal (re-share of P08)",
+      "visuals": [
+        "lineup-post-fr"
+      ],
+      "needs": [
+        "The Friends' names"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "A03",
+      "date": "2026-11-23",
+      "time": "10:00",
+      "channel": "meta-ads",
+      "format": "campaign",
+      "mode": "meta-ads",
+      "title": "Meta ads \"Retargeting\" starts (23–27 Nov)",
+      "ref": "ads/meta.json#A03",
+      "needs": [
+        "Ad account and budget"
+      ],
+      "status": "draft",
+      "visuals": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "E01",
+      "date": "2026-11-23",
+      "time": "11:00",
+      "channel": "shotgun",
+      "format": "newsletter",
+      "mode": "shotgun",
+      "title": "Shotgun newsletter to the organisers' followers",
+      "subject_fr": "Vendredi 27 : le Bosphore descend la Seine",
+      "body_fr": "Une nuit Istanbul–Paris sur la Péniche Le Marcounet, au pied du pont Marie.\nRuşan Filiztek & l'Orchestre Eliyo & Friends, du folk d'Anatolie à la house, de 20h30 à 4h.\n\nBillets : Early Birds 15 €, Regular 18 €, Late 20 €.\nhttps://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house",
+      "needs": [
+        "Smartboard access; Péniche Marcounet agrees to email its followers"
+      ],
+      "status": "draft",
+      "visuals": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S08",
+      "date": "2026-11-23",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "link",
+      "title": "\"Comment venir\" story with a link to the website info",
+      "visuals": [
+        "info-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://bosphore-sur-seine.vercel.app/#infos",
+        "label": "Infos"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "C02",
+      "date": "2026-11-23",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "carousel",
+      "mode": "auto",
+      "title": "Carousel: \"Qui est Ruşan Filiztek ?\"",
+      "visuals": [
+        "c02-1",
+        "c02-2",
+        "c02-3",
+        "c02-4"
+      ],
+      "collaborators": [
+        "Ruşan Filiztek [handle À CONFIRMER]"
+      ],
+      "caption_fr": "Saz, oud, voix, et une vie entre plusieurs rives. Avant le 27, voici Ruşan Filiztek. 🎶\n\nBillets : lien en bio.",
+      "caption_tr": "Saz, ud, ses ve birkaç kıyı arasında geçen bir hayat. 27'sinden önce, karşınızda Ruşan Filiztek. 🎶\n\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "W02",
+      "date": "2026-11-24",
+      "time": "10:00",
+      "channel": "website",
+      "format": "site update",
+      "mode": "website",
+      "title": "Website: ticket tiers updated from Shotgun (sold out / on sale)",
+      "site": {
+        "tiers": "copy the state shown on Shotgun"
+      },
+      "needs": [
+        "Today's tier status from Shotgun"
+      ],
+      "status": "draft",
+      "visuals": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S09",
+      "date": "2026-11-24",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "poll",
+      "title": "Poll: \"Tu viens avec qui ?\" Ma bande / Mon +1",
+      "visuals": [
+        "poll2-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "poll",
+        "question": "Le 27, tu viens avec qui ?",
+        "options": [
+          "Ma bande",
+          "Mon +1"
+        ]
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "P11",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "post",
+      "mode": "auto",
+      "title": "How to get there (20h30 → 4h)",
+      "visuals": [
+        "info-post-fr"
+      ],
+      "caption_fr": "Comment venir sur la péniche ?\n\nMétro 7, Pont Marie : 2 minutes à pied.\nLe Marcounet est amarré au pied du pont, côté Hôtel de Ville, face à l'île Saint-Louis.\nDe 20h30 à 4h du matin. Bar et cuisine à bord.\nTon billet est sur ton téléphone : il suffit de le montrer à l'entrée.",
+      "caption_tr": "Tekneye nasıl gelinir?\n\nMetro 7, Pont Marie: 2 dakika yürüme.\nLe Marcounet köprünün dibinde, Hôtel de Ville tarafında, Île Saint-Louis'nin karşısında.\n20.30'dan gece 04.00'e kadar. Teknede bar ve mutfak var.\nBiletin telefonunda; girişte göstermen yeterli.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S10",
+      "date": "2026-11-25",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "auto",
+      "title": "Story: the songs you asked for (from S04 answers)",
+      "visuals": [
+        "results-story-fr"
+      ],
+      "needs": [
+        "S04 answers; Ali and Ruşan choose what to show"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "SG03",
+      "date": "2026-11-25",
+      "time": "18:00",
+      "channel": "shotgun",
+      "format": "push notification",
+      "mode": "shotgun",
+      "title": "Shotgun push: J-2",
+      "text_fr": "J-2 avant Bosphore sur Seine : vendredi, 20h30, péniche Le Marcounet. Les dernières places partent. 🌙",
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "P12",
+      "date": "2026-11-25",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "post",
+      "mode": "auto",
+      "title": "J-2: last places",
+      "visuals": [
+        "countdown-post-fr"
+      ],
+      "caption_fr": "J-2. 🌉\n\nVendredi, on se retrouve sur la Seine de 20h30 à 4h.\nSi tu attendais un signe pour réserver, c'est celui-là.",
+      "caption_tr": "Son 2 gün. 🌉\n\nCuma akşamı 20.30'dan 04.00'e kadar Seine'in üzerindeyiz.\nBilet almak için bir işaret bekliyorsan, işte bu.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "notes": "Visual says \"Dernières places à 20 €\": only if Late is the tier on sale that day.",
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "W03",
+      "date": "2026-11-26",
+      "time": "09:00",
+      "channel": "website",
+      "format": "site update",
+      "mode": "website",
+      "title": "Website banner: \"Demain soir\"",
+      "site": {
+        "stage": "tomorrow",
+        "banner": {
+          "fr": "Demain soir, 20h30, pont Marie",
+          "en": "Tomorrow night, 8:30 pm, Pont Marie",
+          "tr": "Yarın akşam 20.30, Pont Marie"
+        }
+      },
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S11",
+      "date": "2026-11-26",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "link",
+      "title": "\"Demain\" story + link sticker",
+      "visuals": [
+        "tomorrow-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-s11",
+        "label": "Billets"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "R03",
+      "date": "2026-11-26",
+      "time": "18:30",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: \"Paris ↔ Istanbul\" montage from Birkleyn sessions",
+      "visuals": [
+        "clip-r03 (montage, 20–30 s)"
+      ],
+      "caption_fr": "Demain, deux rives sur une seule péniche. 🌉\nRuşan Filiztek & l'Orchestre Eliyo & Friends, de 20h30 à 4h.\n\nBillets : lien en bio.",
+      "caption_tr": "Yarın iki kıyı tek bir teknede. 🌉\nRuşan Filiztek & Eliyo Orkestrası & Friends, 20.30'dan 04.00'e.\n\nBiletler: link bio'da.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "needs": [
+        "Original files of 2–3 Birkleyn sessions"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "W04",
+      "date": "2026-11-27",
+      "time": "09:00",
+      "channel": "website",
+      "format": "site update",
+      "mode": "website",
+      "title": "Website banner: \"Ce soir\"",
+      "site": {
+        "stage": "tonight",
+        "banner": {
+          "fr": "Ce soir, 20h30 → 4h, pont Marie",
+          "en": "Tonight, 8:30 pm → 4 am, Pont Marie",
+          "tr": "Bu gece 20.30 → 04.00, Pont Marie"
+        }
+      },
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S12",
+      "date": "2026-11-27",
+      "time": "12:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "sticker": "link",
+      "title": "\"Ce soir\" story + link sticker",
+      "visuals": [
+        "tonight-story-fr"
+      ],
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-s12",
+        "label": "Billets"
+      },
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "SG04",
+      "date": "2026-11-27",
+      "time": "15:00",
+      "channel": "shotgun",
+      "format": "push notification",
+      "mode": "shotgun",
+      "title": "Shotgun push: Ce soir",
+      "text_fr": "Ce soir sur la Seine : Bosphore sur Seine, 20h30 → 4h, péniche Le Marcounet. 🌉",
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "S13",
+      "date": "2026-11-27",
+      "time": "21:00",
+      "channel": "instagram",
+      "format": "story",
+      "mode": "manual",
+      "title": "Live stories during the night (doors, first song, the dance floor)",
+      "visuals": [
+        "filmed on site"
+      ],
+      "needs": [
+        "Someone on the team films 3–5 short clips"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "E02",
+      "date": "2026-11-28",
+      "time": "11:00",
+      "channel": "shotgun",
+      "format": "newsletter",
+      "mode": "shotgun",
+      "title": "Thank-you email to ticket buyers",
+      "subject_fr": "Merci pour cette nuit sur la Seine",
+      "body_fr": "Merci d'avoir été là vendredi. Les photos arrivent sur Instagram @Birkleyn Sound [handle À CONFIRMER].\nOn prépare la prochaine rive : inscris-toi pour être prévenu·e en premier : https://bosphore-sur-seine.vercel.app/#rejoindre",
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "W05",
+      "date": "2026-11-28",
+      "time": "12:00",
+      "channel": "website",
+      "format": "site update",
+      "mode": "website",
+      "title": "Website: thank-you message and sign-up for the next edition",
+      "site": {
+        "stage": "after",
+        "banner": {
+          "fr": "Merci ! Inscris-toi pour la prochaine rive",
+          "en": "Thank you! Sign up for the next edition",
+          "tr": "Teşekkürler! Bir sonraki buluşma için kaydol"
+        }
+      },
+      "status": "draft",
+      "visuals": [],
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "P13",
+      "date": "2026-11-28",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "carousel",
+      "mode": "auto",
+      "title": "Merci + first photos",
+      "visuals": [
+        "photos from the night"
+      ],
+      "caption_fr": "Merci. 🌙\nUne nuit, deux rives, et vous. On se retrouve bientôt pour la suivante.",
+      "caption_tr": "Teşekkürler. 🌙\nBir gece, iki kıyı ve siz. Bir sonrakinde görüşmek üzere.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "needs": [
+        "Photos from the photographer"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "P09",
+      "date": "trigger",
+      "time": "18:30",
+      "channel": "instagram",
+      "format": "post",
+      "mode": "auto",
+      "title": "Early Birds sold out (post the same day it happens)",
+      "visuals": [
+        "soldout-post-fr"
+      ],
+      "caption_fr": "Early Birds : épuisés. Merci. 🌙\n\nLes premières fenêtres sont allumées. Les places sont maintenant à 18 €.",
+      "caption_tr": "Early Birds tükendi. Teşekkürler. 🌙\n\nİlk pencerelerin ışığı yandı. Biletler artık 18 €.",
+      "hashtags": "#BosphoreSurSeine #Paris #Istanbul #saz #péniche #worldmusic #folk",
+      "trigger": "Early Birds sold out on Shotgun",
+      "status": "draft",
+      "needs": [],
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    }
+  ]
+}

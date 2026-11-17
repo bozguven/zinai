@@ -6,24 +6,27 @@
     "lang": "fr"
   },
   {
-    "id": "announce-story-fr",
-    "format": "story",
-    "variant": "announce",
-    "lang": "fr"
-  },
-  {
     "id": "announce-post-tr",
     "format": "post",
     "variant": "announce",
     "lang": "tr"
   },
   {
-    "id": "quote-post-fr",
-    "format": "post",
-    "variant": "quote",
+    "id": "announce-story-fr",
+    "format": "story",
+    "variant": "announce",
+    "lang": "fr"
+  },
+  {
+    "id": "tickets-open-story-fr",
+    "format": "story",
+    "variant": "tickets",
     "lang": "fr",
     "fields": {
-      "quote": "Une autre rive, un même mouvement."
+      "kicker": "Billetterie ouverte",
+      "big": "27.11",
+      "bigSize": 230,
+      "line": "<b>Billets dès 15 €</b><br>Lien juste en dessous"
     }
   },
   {
@@ -34,38 +37,6 @@
     "fields": {
       "question": "Quelle chanson veux-tu entendre au saz le 27 ?",
       "stickerHint": "Sticker « question » ici"
-    }
-  },
-  {
-    "id": "tickets-open-story-fr",
-    "format": "story",
-    "variant": "tickets",
-    "lang": "fr",
-    "fields": {
-      "kicker": "Billetterie ouverte",
-      "big": "27.11",
-      "line": "<b>Billets en vente</b><br>Lien en bio",
-      "windows": {
-        "count": 40,
-        "lit": 0
-      },
-      "bigSize": 230
-    }
-  },
-  {
-    "id": "soldout-post-fr",
-    "format": "post",
-    "variant": "soldout",
-    "lang": "fr",
-    "fields": {
-      "kicker": "Early Birds",
-      "big": "Épuisés",
-      "bigSize": 150,
-      "line": "Merci. Places à <b>18 €</b>",
-      "windows": {
-        "count": 40,
-        "lit": 40
-      }
     }
   },
   {
@@ -109,6 +80,22 @@
     }
   },
   {
+    "id": "soldout-post-fr",
+    "format": "post",
+    "variant": "soldout",
+    "lang": "fr",
+    "fields": {
+      "kicker": "Early Birds",
+      "big": "Épuisés",
+      "bigSize": 150,
+      "line": "Merci. Places à <b>18 €</b>",
+      "windows": {
+        "count": 40,
+        "lit": 40
+      }
+    }
+  },
+  {
     "id": "countdown-post-fr",
     "format": "post",
     "variant": "countdown",
@@ -135,8 +122,219 @@
     "lang": "fr",
     "fields": {
       "big": "Ce soir",
-      "bigSize": 210,
+      "bigSize": 125,
       "line": "Portes à <b>20h30</b>, pont Marie"
+    }
+  },
+  {
+    "id": "quote-post-fr",
+    "format": "post",
+    "variant": "quote",
+    "lang": "fr",
+    "fields": {
+      "quote": "Une autre rive, un même mouvement."
+    }
+  },
+  {
+    "id": "countdown-sticker-story-fr",
+    "format": "story",
+    "variant": "survey",
+    "lang": "fr",
+    "fields": {
+      "question": "Le compte à rebours est lancé. Vendredi 27, 20h30.",
+      "stickerHint": "Sticker « compte à rebours » ici"
+    }
+  },
+  {
+    "id": "poll-story-fr",
+    "format": "story",
+    "variant": "survey",
+    "lang": "fr",
+    "fields": {
+      "question": "Le 27, tu es plutôt…",
+      "stickerHint": "Sticker sondage : Bosphore / Seine"
+    }
+  },
+  {
+    "id": "quiz-story-fr",
+    "format": "story",
+    "variant": "survey",
+    "lang": "fr",
+    "fields": {
+      "question": "Ruşan vit à Paris depuis…",
+      "stickerHint": "Sticker quiz : 2009 / 2015 / 2020"
+    }
+  },
+  {
+    "id": "poll2-story-fr",
+    "format": "story",
+    "variant": "survey",
+    "lang": "fr",
+    "fields": {
+      "question": "Le 27, tu viens avec qui ?",
+      "stickerHint": "Sticker sondage : Ma bande / Mon +1"
+    }
+  },
+  {
+    "id": "info-story-fr",
+    "format": "story",
+    "variant": "info",
+    "lang": "fr",
+    "fields": {
+      "kicker": "Comment venir",
+      "rows": [
+        [
+          "Métro",
+          "Ligne 7, Pont Marie"
+        ],
+        [
+          "Où",
+          "Au pied du pont Marie, face à l'île Saint-Louis"
+        ],
+        [
+          "Horaires",
+          "20h30 – 4h"
+        ],
+        [
+          "Billet",
+          "Sur ton téléphone"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "tomorrow-story-fr",
+    "format": "story",
+    "variant": "countdown",
+    "lang": "fr",
+    "fields": {
+      "big": "Demain",
+      "bigSize": 130,
+      "line": "<b>20h30 → 4h</b>, pont Marie"
+    }
+  },
+  {
+    "id": "c01-1",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "full",
+      "count": "1/5",
+      "kicker": "Vendredi 27 novembre",
+      "title": "La nuit du 27 en 5 points",
+      "titleSize": 100
+    }
+  },
+  {
+    "id": "c01-2",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "pylon",
+      "count": "2/5",
+      "kicker": "Sur scène",
+      "title": "Ruşan Filiztek & l'Orchestre Eliyo & Friends",
+      "titleSize": 80,
+      "body": "Saz, voix et invités, pour une nuit entre deux rives."
+    }
+  },
+  {
+    "id": "c01-3",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "left",
+      "count": "3/5",
+      "kicker": "Le son",
+      "title": "Du folk d'Anatolie à la house",
+      "titleSize": 96,
+      "body": "Des sons d'hier aux grooves d'aujourd'hui."
+    }
+  },
+  {
+    "id": "c01-4",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "pylon",
+      "count": "4/5",
+      "kicker": "Le lieu",
+      "title": "Une péniche de 1925 au pied du pont Marie",
+      "titleSize": 80,
+      "body": "De <b>20h30</b> à <b>4h</b>. Bar et cuisine à bord."
+    }
+  },
+  {
+    "id": "c01-5",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "left",
+      "count": "5/5",
+      "kicker": "Les billets",
+      "titleHtml": "Early Birds 15 €<br>Regular 18 €<br>Late 20 €",
+      "titleSize": 80,
+      "body": "Sur Shotgun : lien en bio."
+    }
+  },
+  {
+    "id": "c02-1",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "full",
+      "count": "1/4",
+      "kicker": "Avant le 27",
+      "title": "Qui est Ruşan Filiztek ?",
+      "titleSize": 100
+    }
+  },
+  {
+    "id": "c02-2",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "pylon",
+      "count": "2/4",
+      "kicker": "Les rives",
+      "title": "Adana, Diyarbakır, Istanbul, Paris",
+      "titleSize": 84,
+      "body": "Né à Adana, il a grandi entre Diyarbakır et Istanbul. Il vit à Paris depuis 2015."
+    }
+  },
+  {
+    "id": "c02-3",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "left",
+      "count": "3/4",
+      "kicker": "Le musicien",
+      "title": "Saz, oud et voix",
+      "titleSize": 100,
+      "body": "Prix des Musiques d'ICI en 2019. L'Olympia, Les Suds à Arles."
+    }
+  },
+  {
+    "id": "c02-4",
+    "format": "post",
+    "variant": "slide",
+    "lang": "fr",
+    "fields": {
+      "art": "pylon",
+      "count": "4/4",
+      "kicker": "Exils",
+      "title": "Sürgün : l'exil, et la bouture qu'on replante",
+      "titleSize": 80,
+      "body": "Le 27 novembre, sur la Seine."
     }
   }
 ]

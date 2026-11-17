@@ -54,6 +54,12 @@
 
   .sticker { margin-top: 56px; width: 100%; height: 420px; border: 5px dashed var(--pont); border-radius: 36px; display: grid; place-items: center; font-weight: 500; font-size: 36px; color: var(--pont); }
 
+  .wm-small { font-family: var(--display); font-weight: 900; font-size: 30px; text-transform: uppercase; }
+  .slide-title { font-family: var(--display); font-weight: 900; line-height: 1.04; margin-top: 22px; color: var(--bleu); letter-spacing: -0.01em; max-width: 920px; }
+  .v-slide .line { max-width: 620px; }
+  .story .rows { max-width: 640px; gap: 36px; }
+  .story .rows dt { font-size: 40px; }
+  .story .rows dd { font-size: 58px; }
   .spacer { flex: 1; }
   .foot { font-weight: 700; font-size: 38px; line-height: 1.2; position: relative; z-index: 3; }
   .foot .venue { color: var(--encre); font-weight: 500; }
@@ -85,9 +91,9 @@
 <div id="root"></div>
 <script>
 const L = {
-  fr: { credit: 'Eliyo Ruşan FILIZTEK & Friends', date: '27.11.2026', when: 'Vendredi 27 novembre<br>Portes à 20h30', venue: 'Péniche Le Marcounet, Paris', address: "Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris", friends: '& Friends' },
-  tr: { credit: 'Eliyo Ruşan FILIZTEK & Friends', date: '27.11.2026', when: '27 Kasım Cuma<br>Kapılar 20.30', venue: 'Péniche Le Marcounet, Paris', address: "Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris", friends: '& Friends' },
-  en: { credit: 'Eliyo Ruşan FILIZTEK & Friends', date: '27.11.2026', when: 'Friday 27 November<br>Doors 8:30 pm', venue: 'Péniche Le Marcounet, Paris', address: "Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris", friends: '& Friends' },
+  fr: { credit: 'Eliyo Ruşan FILIZTEK & Friends', date: '27.11.2026', when: 'Vendredi 27 novembre<br>20h30 → 4h', venue: 'Péniche Le Marcounet, Paris', address: "Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris", friends: '& Friends' },
+  tr: { credit: 'Eliyo Ruşan FILIZTEK & Friends', date: '27.11.2026', when: '27 Kasım Cuma<br>20.30 → 04.00', venue: 'Péniche Le Marcounet, Paris', address: "Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris", friends: '& Friends' },
+  en: { credit: 'Eliyo Ruşan FILIZTEK & Friends', date: '27.11.2026', when: 'Friday 27 November<br>8:30 pm → 4 am', venue: 'Péniche Le Marcounet, Paris', address: "Port des Célestins, Quai de l'Hôtel de Ville, 75004 Paris", friends: '& Friends' },
 };
 const esc = (s) => String(s ?? '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]);
 const C = window.CARD || { format: 'post', variant: 'announce', lang: 'fr', fields: {} };
@@ -97,7 +103,7 @@ const f = C.fields || {};
 const wordmark = `<div class="wordmark"><span>Bosphore</span><span>sur Seine</span></div>`;
 const foot = `<div class="foot">${t.date}<br><span class="venue">${t.venue}</span></div>`;
 const windows = (n, lit) => `<div class="windows">${Array.from({ length: n }, (_, i) => `<i class="${i < lit ? 'on' : ''}"></i>`).join('')}</div>`;
-const art = { announce: 'full', quote: 'left', tickets: 'pylon', soldout: 'pylon', lineup: 'left', info: 'pylon', countdown: 'full', survey: 'full' }[C.variant] || 'none';
+const art = f.art || { slide: 'none', announce: 'full', quote: 'left', tickets: 'pylon', soldout: 'pylon', lineup: 'left', info: 'pylon', countdown: 'full', survey: 'full' }[C.variant] || 'none';
 const artFile = { full: '../assets/art.png', left: '../assets/art-left.png', pylon: '../assets/art-pylon.png' }[art];
 
 let body = '';
@@ -106,7 +112,7 @@ switch (C.variant) {
     body = `<div class="top"><span>${esc(t.credit)}</span><span>${t.date}</span></div>
       <h1 class="title"><span class="l1">Bosphore</span><span class="l2">sur Seine</span></h1>
       <p class="when">${t.when}</p><div class="spacer"></div>
-      <div class="foot">${esc(t.address)}</div>`;
+      <div class="foot">Péniche Le Marcounet<br><span class="venue">${esc(t.address)}</span></div>`;
     break;
   case 'quote':
     body = `${wordmark}<p class="quote">${esc(f.quote)}</p><div class="spacer"></div>${foot}`;
@@ -132,6 +138,13 @@ switch (C.variant) {
   case 'countdown':
     body = `${wordmark}<p class="big" style="font-size:${Math.round((f.bigSize || 360) * k)}px;margin-top:${C.format === 'story' ? 140 : 70}px">${esc(f.big)}</p>
       <p class="line">${f.line || ''}</p><div class="spacer"></div>${foot}`;
+    break;
+  case 'slide':
+    body = `<div class="top"><span class="wm-small">Bosphore sur Seine</span><span>${esc(f.count || '')}</span></div>
+      <p class="kicker">${esc(f.kicker || '')}</p>
+      <p class="slide-title" style="font-size:${Math.round((f.titleSize || 92) * (C.format === 'story' ? 1.2 : 1))}px">${f.titleHtml || esc(f.title)}</p>
+      ${f.body ? `<p class="line">${f.body}</p>` : ''}
+      <div class="spacer"></div>${foot}`;
     break;
   case 'survey':
     body = `${wordmark}<p class="quote" style="font-size:82px">${esc(f.question)}</p>

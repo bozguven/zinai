@@ -1,0 +1,159 @@
+{
+  "status": "all campaigns are created PAUSED; a person launches them after Ali and Ruşan approve",
+  "account": "Birkleyn Sound ad account [À CONFIRMER]",
+  "identity": "Birkleyn Sound Facebook Page + Instagram account",
+  "budget_total_eur": {
+    "suggested": 150,
+    "confirmed": null
+  },
+  "tracking": {
+    "pixel": "Meta Pixel connected in Shotgun Smartboard (SG01); optimise for Purchase",
+    "fallback_if_no_pixel": "optimise for Landing page views to the Shotgun URL",
+    "utm": "utm_source=instagram&utm_medium=paid&utm_campaign=bss1-<campaign id>"
+  },
+  "rules": [
+    "No alcohol in visuals or copy (Loi Évin)",
+    "Cut any ad whose cost per result is twice the campaign average after 2 days",
+    "Never raise a budget without approval"
+  ],
+  "campaigns": [
+    {
+      "id": "A01",
+      "name": "BSS1 · Découverte",
+      "objective": "Engagement (ThruPlay video views)",
+      "dates": [
+        "2026-11-19",
+        "2026-11-22"
+      ],
+      "budget_eur": 30,
+      "audience": {
+        "location": "Paris + 20 km",
+        "age": "22-40",
+        "languages": [
+          "Turkish"
+        ],
+        "interests": [
+          "Istanbul",
+          "Turkish music",
+          "World music",
+          "Anatolian rock"
+        ],
+        "note": "Meta interest names may differ; pick the closest available"
+      },
+      "placements": [
+        "Instagram Reels",
+        "Instagram Stories",
+        "Instagram Feed"
+      ],
+      "creatives": [
+        "R01 (Reel, 9:16)",
+        "C01 (carousel, 4:5)"
+      ],
+      "copy": [
+        {
+          "lang": "fr",
+          "primary": "Une nuit Istanbul–Paris sur une péniche, du folk d'Anatolie à la house. Vendredi 27 novembre, pont Marie.",
+          "headline": "Bosphore sur Seine · 27.11",
+          "cta": "En savoir plus"
+        },
+        {
+          "lang": "tr",
+          "primary": "Pont Marie'nin dibinde bir teknede İstanbul–Paris gecesi. 27 Kasım Cuma, 20.30'dan 04.00'e.",
+          "headline": "Bosphore sur Seine · 27.11",
+          "cta": "Daha fazla bilgi"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "name": "BSS1 · Billets",
+      "objective": "Sales (Purchase via Shotgun Meta Pixel)",
+      "dates": [
+        "2026-11-20",
+        "2026-11-26"
+      ],
+      "budget_eur": 70,
+      "audience": {
+        "location": "Paris + 20 km",
+        "age": "22-40",
+        "languages": [
+          "Turkish",
+          "French"
+        ],
+        "interests": [
+          "World music",
+          "Turkish culture",
+          "Jazz",
+          "Live music venues in Paris"
+        ],
+        "note": "Two ad sets: Turkish speakers, and French speakers with the interests"
+      },
+      "placements": [
+        "Instagram Reels",
+        "Instagram Stories",
+        "Instagram Feed"
+      ],
+      "creatives": [
+        "R01 (Reel, 9:16)",
+        "C01 (carousel, 4:5)",
+        "tickets-open-story-fr (story, 9:16)"
+      ],
+      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=paid&utm_campaign=bss1-a02",
+      "copy": [
+        {
+          "lang": "fr",
+          "primary": "Ruşan Filiztek & l'Orchestre Eliyo & Friends, sur la Seine jusqu'à 4h. Billets dès 15 €.",
+          "headline": "Vendredi 27 novembre, pont Marie",
+          "cta": "Acheter des billets"
+        },
+        {
+          "lang": "tr",
+          "primary": "Ruşan Filiztek & Eliyo Orkestrası & Friends, gece 04.00'e kadar Seine'in üzerinde. Biletler 15 €'dan.",
+          "headline": "27 Kasım Cuma, Pont Marie",
+          "cta": "Bilet al"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "name": "BSS1 · Retargeting",
+      "objective": "Sales (Purchase) to warm audiences",
+      "dates": [
+        "2026-11-23",
+        "2026-11-27"
+      ],
+      "budget_eur": 50,
+      "audience": {
+        "custom": [
+          "Watched 50% of R01 or R02 (last 14 days)",
+          "Engaged with the Birkleyn Sound Instagram (last 30 days)",
+          "Viewed the Shotgun event page (pixel, last 14 days), excluding buyers"
+        ]
+      },
+      "placements": [
+        "Instagram Stories",
+        "Instagram Reels"
+      ],
+      "creatives": [
+        "tickets-open-story-fr",
+        "countdown-story-fr",
+        "R03 (Reel)"
+      ],
+      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=paid&utm_campaign=bss1-a03",
+      "copy": [
+        {
+          "lang": "fr",
+          "primary": "Dernières places pour vendredi. Une nuit Istanbul–Paris sur la Seine, 20h30 → 4h.",
+          "headline": "Ce vendredi, pont Marie",
+          "cta": "Acheter des billets"
+        },
+        {
+          "lang": "tr",
+          "primary": "Cuma için son biletler. Seine'in üzerinde İstanbul–Paris gecesi, 20.30 → 04.00.",
+          "headline": "Bu cuma, Pont Marie",
+          "cta": "Bilet al"
+        }
+      ]
+    }
+  ]
+}
