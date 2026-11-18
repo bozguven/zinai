@@ -7,22 +7,22 @@ cd "$(dirname "$0")/../.."
 ROOT=$(pwd)
 OUT=$ROOT/out/${ZINAI_CLIENT:-bosphore-sur-seine}
 BR=publish-media
-WT=$(mktemp -d)
+STAGE=$(mktemp -d)
 mapfile -t files < <(node tools/publish/meta.mjs media)
 [ ${#files[@]} -eq 0 ] && { echo "Nothing approved to upload."; exit 0; }
-if git ls-remote --exit-code --heads origin $BR >/dev/null 2>&1; then
-  git fetch -q origin $BR && git worktree add -q -f "$WT" FETCH_HEAD
-  (cd "$WT" && git checkout -q -B $BR)
-else
-  git worktree add -q -f --detach "$WT" && (cd "$WT" && git checkout -q --orphan $BR && git rm -rq . 2>/dev/null || true)
-  printf 'Videos of APPROVED ZinAI campaign items, used by .github/workflows/publish.yml.\n' > "$WT/README.md"
-fi
+# Build the branch content in a separate index: only README + the approved media, nothing from main.
+export GIT_INDEX_FILE=$STAGE/index
+PARENT=""
+if [ -z "${FRESH:-}" ] && git fetch -q origin $BR 2>/dev/null; then PARENT=$(git rev-parse FETCH_HEAD); git read-tree "$PARENT"; else git read-tree --empty; fi
+printf 'Videos of APPROVED ZinAI campaign items, used by .github/workflows/publish.yml.\n' > "$STAGE/README.md"
+git update-index --add --cacheinfo 100644,$(git hash-object -w "$STAGE/README.md"),README.md
 for f in "${files[@]}"; do
   [ -f "$OUT/$f" ] || { echo "missing locally: $f"; continue; }
-  mkdir -p "$WT/$(dirname "$f")" && cp "$OUT/$f" "$WT/$f"
+  git update-index --add --cacheinfo 100644,$(git hash-object -w "$OUT/$f"),"$f"
 done
-cd "$WT" && git add -A
-if git diff --cached --quiet; then echo "Already up to date."; else
-  git commit -qm "media for approved items: ${files[*]}" && git push -q origin HEAD:$BR && echo "Uploaded: ${files[*]}"
-fi
-cd "$ROOT" && git worktree remove -f "$WT"
+TREE=$(git write-tree)
+if [ -n "$PARENT" ] && [ "$TREE" = "$(git rev-parse "$PARENT^{tree}")" ]; then echo "Already up to date."; rm -rf "$STAGE"; exit 0; fi
+COMMIT=$(git commit-tree "$TREE" ${PARENT:+-p $PARENT} -m "media for approved items: ${files[*]}")
+unset GIT_INDEX_FILE
+git push -q ${FORCE:+-f} origin "$COMMIT:refs/heads/$BR" && echo "Uploaded: ${files[*]}"
+rm -rf "$STAGE"
