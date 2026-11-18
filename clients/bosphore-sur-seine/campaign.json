@@ -1395,7 +1395,7 @@
       "visuals": [
         "video:story-cd18"
       ],
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "yes (relayed by Bertuğ in chat, 18 Nov 20:2x)",
         "rusan": "yes (relayed by Bertuğ in chat, 18 Nov 20:2x)"
@@ -1406,7 +1406,16 @@
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "notes": "First API test post. Horde × Baajar OK confirmed by Bertuğ 18 Nov."
+      "notes": "First API test post. Horde × Baajar OK confirmed by Bertuğ 18 Nov.",
+      "attempts": {
+        "instagram_story": 1
+      },
+      "published": {
+        "instagram_story": {
+          "id": "18082192631414002",
+          "at": "2026-11-18T19:38:41.824Z"
+        }
+      }
     },
     {
       "id": "CD19",
