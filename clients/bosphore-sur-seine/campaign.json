@@ -1678,5 +1678,31 @@
     "ads": "Meta (Instagram + Facebook): 9:16 for Reels/Stories placements, 4:5 feed versions for Feed placements. Created paused.",
     "shotgun": "Pixel, description (SG00), push notifications and newsletter on the key days.",
     "website": "Banner and ticket stage follow the campaign (W items)."
-  }
+  },
+  "channel_plan_fr": [
+    [
+      "Instagram Reels",
+      "Les Reels style « E10 » tous les 1–2 jours (Eliyo, Jusqu'à 4h, En bande, La surprise de 2h), puis l'orchestre et le saxophone dès qu'ils sont filmés."
+    ],
+    [
+      "Stories Instagram + Facebook",
+      "Chaque jour à 10h le compte à rebours J-9 → Ce soir, avec le lien Billets ; plus les sondages, quiz et questions."
+    ],
+    [
+      "Facebook",
+      "L'événement co-organisé avec la péniche (couverture prête) ; chaque Reel aussi sur la Page en 4:5."
+    ],
+    [
+      "TikTok + YouTube Shorts",
+      "Les mêmes Reels, le même jour, 30 min après Instagram."
+    ],
+    [
+      "Pubs Meta",
+      "Instagram et Facebook, en 9:16 et 4:5. Créées en pause, budget 150 €."
+    ],
+    [
+      "Shotgun + site",
+      "Pixel, description, push et newsletter ; le bandeau du site suit la campagne."
+    ]
+  ]
 }

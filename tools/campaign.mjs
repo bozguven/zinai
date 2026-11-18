@@ -198,6 +198,7 @@ ${Object.entries(label).map(([m, l]) => `<button aria-pressed="false" data-f="${
 </div></div>
 <main>
 ${c.decisions ? `<section class="decide">${c.decisions.done ? `<h2>${esc(c.decisions.title)}</h2><ul class="done">${c.decisions.done.map((x) => `<li>${mark(x)}</li>`).join('')}</ul><h2>${esc(c.decisions.title_open || 'Encore ouvert')}</h2>` : `<h2>${esc(c.decisions.title)}</h2>`}<ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
+${c.channel_plan_fr ? `<section class="decide" style="background:#eef0fa"><h2>Les canaux</h2><ul style="margin:0;padding-left:20px">${c.channel_plan_fr.map(([k, v]) => `<li><b>${esc(k)}</b> : ${mark(v)}</li>`).join('')}</ul></section>` : ''}
 ${order.map((d) => `<section class="day"><h2>${fmtDay(d)}</h2><div class="grid">${days[d].map(card).join('\n')}</div></section>`).join('\n')}
 <div class="legend"><span><b>Auto</b> : programmé par Postiz après accord.</span><span><b>Manuel</b> : story avec sticker (sondage, quiz, question, lien, compte à rebours), à poster depuis le téléphone.</span><span><b>Shotgun</b> : à faire dans le Smartboard.</span><span><b>Pub Meta</b> : créée en pause, lancée par une personne.</span></div>
 </main>
