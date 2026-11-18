@@ -28,7 +28,7 @@ This skill describes the style. Never copy Horde's sentences: write our own, abo
 
 ## 2. Vocabulary
 
-**Use:** Istanbul, la brise d'Istanbul, l'orchestre, le saxophone (only once confirmed), les platines, la house, monter, Eliyo, le Bosphore, la Seine, la traversée, l'escale, la rive / l'autre rive, le vapur,
+**Use:** Istanbul, la brise d'Istanbul, l'orchestre, le saxophone (confirmed: Michaël Wakko Havard), le son d'Istanbul, le son du Bosphore, le pont, le seuil, la trace, les Balkans, l'Anatolie, les platines, la house, monter, Eliyo, le Bosphore, la Seine, la traversée, l'escale, la rive / l'autre rive, le vapur,
 le pont, la péniche, à bord, embarquer, la nuit, l'aube, les lumières, le reflet, le courant, la
 dérive, la transe douce, le groove, le set, le live, hybride, les machines, les cordes, la voix,
 invité·e surprise.
@@ -67,7 +67,7 @@ Horde's layout: one tale paragraph, an invitation paragraph, then info blocks wi
 🖤 LA TRAVERSÉE
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ● 21h → 23h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul
-● 23h → 00h · Hybrid set : platines, orchestre et saxophone [saxophone À CONFIRMER]
+● 23h → 00h · Hybrid set : platines, orchestre et le saxophone de Michaël Wakko Havard
 ● 00h → 02h · Eliyo, house
 ● 02h → 04h · Surprise
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬

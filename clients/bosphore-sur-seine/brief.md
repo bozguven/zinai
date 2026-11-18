@@ -1,6 +1,6 @@
 # Bosphore sur Seine — brief
 
-Last updated: 17 November 2026. Items marked **[À CONFIRMER]** are not confirmed by Ali and Ruşan yet.
+Last updated: 18 November 2026. Items marked **[À CONFIRMER]** are not confirmed by Ali and Ruşan yet.
 
 ## The event
 
@@ -47,7 +47,7 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 ## Channels and approvals
 
-- **Instagram:** posts go out from the **Birkleyn Sound** account, a professional account (confirmed 17 Nov; handle [À CONFIRMER], probably @birkleynsound). Main channel. Invite Péniche Marcounet as collaborator on announcement posts when the team agrees.
+- **Instagram:** posts go out from the **Birkleyn Sound** account **@birkleyn_sound** (professional, linked to the Facebook Page; confirmed by the API 18 Nov). ZinAI publishes to it itself (Meta Graph API). Main channel. Invite Péniche Marcounet as collaborator on announcement posts when the team agrees.
 - **TikTok:** can be opened; same clips as Reels.
 - **Approvals:** Ruşan and Ali approve every post (sent to them on WhatsApp). Bertuğ then runs `/publish`.
 - **Ruşan's favourite video:** his live session featuring Sian ("Dui bi Salve Regina", title as given by Ruşan). Use it first for Reels; ask his team for the original file, never re-download from YouTube.
@@ -56,7 +56,7 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 - **Shape of the night, as Ali and Ruşan now want it sold (18 Nov, 2h):**
   1. **21h–23h · Live orchestra: "Istanbul breeze"** (*la brise d'Istanbul*): Ruşan Filiztek and the orchestra. Sold as orchestra and Istanbul mood, never as saz.
-  2. **23h–00h · Hybrid set: DJ + live instruments, with a saxophone as the highlight** — saxophone **[À CONFIRMER]** ("we might add"): content may tease it only as a draft until confirmed.
+  2. **23h–00h · Hybrid set: DJ + live instruments, with a saxophone as the highlight.** Saxophone **confirmed (18 Nov): Michaël Wakko Havard.** Photos: his WhatsApp profile pictures (B&W baritone shot on stage; colour portrait with tenor sax, sunglasses), in `assets/people/` [Instagram handle À CONFIRMER].
   3. **00h–02h · Eliyo, house.** The main focus of all content: hype, dance, our demographic.
   4. **02h–04h · The finale is a surprise** (Turkish rock anthems). **Never reveal or hint at the genre.** Say only that the end of the night is a surprise / *on ne dit rien*.
 - **Saz:** not mentioned and **not shown** in any new content (no saz footage either). Exception: V07, kept only to get Ali and Ruşan's feedback.
@@ -80,6 +80,10 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 - **Filming:** there will be things to film and photos; no "halay challenge".
 - **References they like (old nights, same scene):** Horde × Baajar *Orient Express* (Cabaret Sauvage, 4 Apr 2025, Eliyo on the line-up), *Shock Kulturel* (Baajar, Petit Bain), Generic Music *Istanbul* × Oceanvs Orientalis, ReSolute × Cosmic Days (Acid Pauli), Rituel Days. Scene: organic / downtempo / deep house with live instruments.
 - **Audience references from Ruşan:** Les Suds à Arles, Jazz à Vienne, Les Vieilles Charrues (festival-goers who like live music; use as Meta interests and lookalike thinking).
+- **Horde × Baajar footage:** OK to reuse confirmed by Bertuğ, 18 Nov (credit stays on screen: "Images : Horde × Baajar, Cabaret Sauvage, 2025").
+- **New clips (18 Nov, from WhatsApp):** six phone clips of **Eliyo's own past sets** (red club with neon logo, DJ booth duo, DJ + trumpet). Venue not named in content (it is another club; its neon logo shows: crop or keep it small). In `/home/claude/media/new18/` (w1–w6).
+- **Coming 19 Nov:** videos of the boat (Péniche Le Marcounet).
+- **Music:** "My Friends" (Rafa Barrios) suggested 18 Nov, **not used** (no file, no rights; team said skip). Use the night's own sound.
 - **Video from the team:** two vertical 4K clips of a hybrid set outdoors (instrument + machines, laptop, mountains), in Bertuğ's Downloads (0814.MOV, 0814(1).mov). Six clips of the Horde & Baajar night at Cabaret Sauvage (4 Apr 2025) are in Ali's Google Drive folder; Eliyo is in the "Plan" clips; X01 uses Plan 3 (downloaded to the Mac). The "Dance Kurde" clip is not used.
 
 ## Audience (who we write for)
@@ -92,6 +96,15 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 Past nights by the team drew a halay crowd. This series aims at a curated Istanbul–Paris soirée.
 A halay can close the night, but it is never the promise.
+
+## Keywords (Ali and Ruşan, 18 Nov): put weight on these in every piece
+
+- **Sound of Istanbul** / **le son d'Istanbul** · **Sound of Bosphore** / **le son du Bosphore**
+- **Pont** (the bridge: Pont Marie, the bridges of Istanbul, Paris ↔ Istanbul)
+- **Seuil** (TR *eşik*): the threshold, the crossing from one shore to the other, from evening to night
+- **Balkan** · **Anatolie** (TR *Anadolu*): the routes the music travels, not "folklore"
+- **Trace** (TR *iz*): what the night leaves, what the music carries from one city to the other
+Use them as images, not a list: one or two per caption, the hook first. Hashtags may add #SoundOfIstanbul.
 
 ## Voice
 
