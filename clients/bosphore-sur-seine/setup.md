@@ -9,7 +9,12 @@ What has to be connected or confirmed before ZinAI can publish. Update the boxes
 - [ ] **Shotgun Smartboard:** Eliyo or Ruşan logs in for SG00 (new description) and SG01 (Meta Pixel).
 - [ ] **Meta Pixel:** create it in Business Suite → All tools → Events Manager, paste its ID in Shotgun (SG01).
 - [ ] **Ads:** Ads Manager is reachable from Business Suite. Create A01–A03 **paused** from `ads/meta.json` (budget 150 € confirmed); a person launches them.
-- [ ] **ZinAI ↔ Meta (optional, free):** let ZinAI schedule Facebook posts and publish Instagram posts itself through Meta's official Graph API, with Bertuğ's own Meta developer app. Without it: Bertuğ schedules from the upload packs, or Claude fills Business Suite in his Chrome on request.
+- [x] **ZinAI publisher built** (18 Nov): `tools/publish/meta.mjs` + `.github/workflows/publish.yml`, runs on GitHub every 10 min (dry run tested).
+- [ ] **Meta developer app + Page token** (Bertuğ): developers.facebook.com → app with Instagram + Pages permissions → long-lived Page token → GitHub repo → Settings → Secrets and variables → Actions → secret `META_PAGE_TOKEN`.
+- [ ] **Test:** Actions → publish → Run workflow → command `check` (shows the Page and @account).
+- [ ] **Switch on:** repo variable `PUBLISH_ENABLED` = `true`.
+- [ ] **Approval by id** from Ali and Ruşan (E10, E13, E15, E14, CD19–CD27), then `/publish <ids>` uploads their videos and the publisher posts them on time.
+- [ ] **Horde × Baajar OK** → clears `blocked_by` on those items.
 - [ ] **ZinAI ↔ Buffer (optional, free):** Buffer's free plan includes one API key; with it ZinAI can queue TikTok and YouTube Shorts. The key stays in Buffer / the Mac keychain, never in this repo.
 
 ## Waiting on Ali and Ruşan
