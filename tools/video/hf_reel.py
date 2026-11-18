@@ -32,7 +32,18 @@ def sh(cmd, **kw):
 def beats_of(project, wav):
     out = subprocess.run(HF + ['beats', wav, '--json'], cwd=project, capture_output=True, text=True).stdout
     d = json.loads(out[out.index('{'):])
-    return d['bpm'], d['beatTimes']
+    bpm, bt = d.get('bpm'), d.get('beatTimes') or []
+    if not bpm:  # HyperFrames found no steady beat: fall back to librosa, then to a house default
+        try:
+            import librosa
+            y, sr = librosa.load(wav, sr=22050, mono=True)
+            t, frames = librosa.beat.beat_track(y=y, sr=sr)
+            bpm = float(t[0] if hasattr(t, '__len__') else t) or None
+            bt = list(librosa.frames_to_time(frames, sr=sr))
+        except Exception:
+            bpm = None
+        bpm = bpm or 122.0
+    return bpm, bt
 
 
 def build(recipe_path, render=False):
@@ -97,7 +108,9 @@ def build(recipe_path, render=False):
         if b_ <= a_: continue
         texts.append((f't{k+1}', tx, round(a_*B, 3), round((b_-a_)*B, 3)))
     def tstyle(tx):
-        return ' style="font-size:200px"' if tx.get('style') == 'mega' and len(tx['text']) > 4 else ''
+        if tx.get('style') == 'mega' and len(tx['text']) > 4: return ' style="font-size:200px"'
+        if tx.get('style') == 'hook' and len(tx['text']) > 12: return f' style="font-size:{max(84, int(1500 / len(tx["text"])))}px"'  # long hooks stay inside the frame
+        return ''
     tdivs = '\n'.join(f'      <div id="{i}" class="t {tx.get("style","line")} clip"{tstyle(tx)} data-start="{s}" data-duration="{d}" data-track-index="4">{E(tx["text"])}</div>' for i, tx, s, d in texts)
     es = round(end_from*B, 3); ed = round(dur - es, 3)
     info_s = round(es + 2*B, 3); cta_s = info_s if fmt == 'story' else round(es + 4*B, 3)  # stories don't loop: show the CTA early

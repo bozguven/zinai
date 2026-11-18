@@ -1016,8 +1016,8 @@
         "rusan": null
       },
       "visuals": [
-        "shotgun/shotgun-cover-square",
-        "shotgun/shotgun-cover-wide"
+        "shotgun-cover-square",
+        "shotgun-cover-wide"
       ],
       "shotgun_fields": {
         "title": "Bosphore sur Seine · Le son d'Istanbul sur la Seine",
@@ -1286,7 +1286,8 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Saxophone confirmed 18 Nov: Michaël Wakko Havard. Still needs rehearsal footage."
     },
     {
       "id": "E13",
@@ -1659,6 +1660,80 @@
         "where": "under the yellow pill"
       },
       "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
+    },
+    {
+      "id": "E16",
+      "date": "2026-11-20",
+      "time": "18:30",
+      "channel": "instagram reel + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: \"Le son d'Istanbul\": Eliyo's own sets (new clips, 18 Nov), keywords Balkans / Anatolie / trace",
+      "visuals": [
+        "video:reel-e16"
+      ],
+      "variants": {
+        "instagram_reel": "video:reel-e16",
+        "tiktok": "video:reel-e16",
+        "youtube_shorts": "video:reel-e16"
+      },
+      "caption_fr": "Le son d'Istanbul a traversé les Balkans et l'Anatolie. Partout où il passe, il laisse une trace. 🖤\nÀ minuit, Eliyo prend la barre : la house jusqu'à 2h.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "İstanbul'un sesi Balkanlar'dan, Anadolu'dan geçti; geçtiği her yerde iz bırakıyor. 🖤\nGece yarısı dümen Eliyo'da: 02.00'ye kadar house.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #Paris #house #péniche #Eliyo",
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "notes": "HyperFrames (videos/e16). Images: Eliyo's sets (phone clips sent 18 Nov); sound: Plan 5 (Horde × Baajar). Venue of the clips not named."
+    },
+    {
+      "id": "SX02",
+      "date": "2026-11-21",
+      "time": "13:00",
+      "channel": "instagram",
+      "format": "post",
+      "mode": "auto",
+      "title": "Post: the saxophone is confirmed, Michaël Wakko Havard (23h hybrid set)",
+      "visuals": [
+        "sax-mwh-post"
+      ],
+      "caption_fr": "23h. Michaël Wakko Havard monte à bord avec son saxophone. Les platines, l'orchestre, le son du Bosphore : la nuit passe le seuil. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "23.00. Michaël Wakko Havard saksafonuyla gemide. DJ, orkestra, Boğaz'ın sesi: gece eşiği geçiyor. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saxophone #Paris #péniche",
+      "collaborators": [
+        "Michaël Wakko Havard [handle À CONFIRMER]"
+      ],
+      "needs": [
+        "Michaël's OK to use his photo (WhatsApp profile picture) and his Instagram handle for the collab"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "notes": "Image post: the API publisher only does video for now, so this one goes through Business Suite or becomes a 6 s video. Photo: assets/people/michael-wakko-havard-stage.jpg"
+    },
+    {
+      "id": "SX03",
+      "date": "2026-11-21",
+      "time": "20:00",
+      "channel": "instagram story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Story: Michaël Wakko Havard (same visual, 9:16) + mention sticker @Michaël",
+      "visuals": [
+        "sax-mwh-story"
+      ],
+      "sticker": "mention",
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "needs": [
+        "Michaël's Instagram handle"
+      ]
     }
   ],
   "video_plan": {

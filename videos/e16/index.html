@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Unbounded"; font-weight: 900; src: url("assets/fonts/unbounded-latin-900-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 500; src: url("assets/fonts/fira-sans-condensed-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fira Sans Condensed"; font-weight: 700; src: url("assets/fonts/fira-sans-condensed-latin-700-normal.woff2") format("woff2"); }
+      :root { --ink: #f6f2e6; --window: #decf58; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Fira Sans Condensed", sans-serif; color: var(--ink); }
+      .shot { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; z-index: 1; }
+      .full { position: absolute; inset: 0; }
+      #shade { z-index: 2; background: linear-gradient(180deg, #000a 0%, #0004 24%, transparent 40%, transparent 72%, #000a 100%); }
+      #black { z-index: 3; background: #000; }
+      #endshade { z-index: 3; background: linear-gradient(180deg, #0d1330cc 0%, #0d1330aa 55%, #0d1330ee 100%); }
+      .t { position: absolute; left: 0; width: 1080px; text-align: center; z-index: 10; text-wrap: balance; text-shadow: 0 4px 30px #0009; }
+      #brand { top: 250px; font: 700 30px/1 "Fira Sans Condensed"; letter-spacing: 0.32em; opacity: 0.9; }
+      .hook { top: 560px; padding: 0 70px; font: 900 170px/0.98 "Unbounded"; letter-spacing: -0.04em; }
+      .line { top: 600px; padding: 0 120px; font: 900 90px/1.03 "Unbounded"; letter-spacing: -0.03em; }
+      .mega { top: 520px; font: 900 300px/0.95 "Unbounded"; letter-spacing: -0.05em; }
+      .sub { top: 860px; padding: 0 120px; font: 900 76px/1.05 "Unbounded"; letter-spacing: -0.03em; }
+      .tag { top: 470px; font: 700 40px/1 "Fira Sans Condensed"; letter-spacing: 0.24em; color: var(--window); }
+      #endline { top: 470px; padding: 0 130px; font: 900 88px/1.04 "Unbounded"; letter-spacing: -0.03em; }
+      #info { top: 840px; font: 700 44px/1.35 "Fira Sans Condensed"; }
+      #cta { top: 1020px; }
+      #cta span { display: inline-block; padding: 18px 40px; border-radius: 999px; background: var(--window); color: #141a3a; font: 700 44px/1 "Fira Sans Condensed"; text-shadow: none; }
+      #credit { top: 1270px; font: 500 26px/1 "Fira Sans Condensed"; opacity: 0.75; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15.738" data-width="1080" data-height="1920" data-fps="30">
+      <video id="s1" class="shot clip" src="assets/media/v2.mp4" data-start="0.0" data-duration="1.967" data-media-start="6.0" data-track-index="0" muted playsinline></video>
+      <video id="s2" class="shot clip" src="assets/media/v1.mp4" data-start="1.967" data-duration="1.967" data-media-start="22.0" data-track-index="0" muted playsinline></video>
+      <video id="s3" class="shot clip" src="assets/media/v6.mp4" data-start="3.934" data-duration="0.984" data-media-start="2.0" data-track-index="0" muted playsinline></video>
+      <video id="s4" class="shot clip" src="assets/media/v3.mp4" data-start="4.918" data-duration="0.984" data-media-start="3.0" data-track-index="0" muted playsinline></video>
+      <video id="s5" class="shot clip" src="assets/media/v1.mp4" data-start="5.902" data-duration="1.967" data-media-start="60.0" data-track-index="0" muted playsinline></video>
+      <video id="s6" class="shot clip" src="assets/media/v5.mp4" data-start="7.869" data-duration="0.984" data-media-start="6.0" data-track-index="0" muted playsinline></video>
+      <video id="s7" class="shot clip" src="assets/media/v2.mp4" data-start="8.852" data-duration="0.984" data-media-start="15.0" data-track-index="0" muted playsinline></video>
+      <video id="s8" class="shot clip" src="assets/media/v1.mp4" data-start="9.836" data-duration="1.475" data-media-start="85.0" data-track-index="0" muted playsinline></video>
+      <video id="s9" class="shot clip" src="assets/media/v6.mp4" data-start="11.311" data-duration="4.426" data-media-start="6.0" data-track-index="0" muted playsinline></video>
+      <div id="shade" class="full clip" data-start="0" data-duration="15.738" data-track-index="1"></div>
+      <div id="black" class="full clip" data-start="0" data-duration="15.738" data-track-index="2"></div>
+      <div id="endshade" class="full clip" data-start="11.311" data-duration="4.427" data-track-index="2"></div>
+      <div id="brand" class="t clip" data-start="0" data-duration="15.738" data-track-index="3">BOSPHORE SUR SEINE</div>
+      <div id="t1" class="t hook clip" style="font-size:88px" data-start="0.0" data-duration="3.934" data-track-index="4">Le son d&#x27;Istanbul</div>
+      <div id="t2" class="t line clip" data-start="3.934" data-duration="2.951" data-track-index="4">des Balkans à l&#x27;Anatolie,</div>
+      <div id="t3" class="t line clip" data-start="6.885" data-duration="2.951" data-track-index="4">il laisse une trace.</div>
+      <div id="t4" class="t line clip" data-start="9.836" data-duration="1.475" data-track-index="4">Minuit : Eliyo prend la barre.</div>
+      <div id="endline" class="t clip" data-start="11.311" data-duration="4.427" data-track-index="4">Le son d&#x27;Istanbul, sur la Seine</div>
+      <div id="info" class="t clip" data-start="12.295" data-duration="3.443" data-track-index="5">Vendredi 27.11 · 20h30 → 4h<br />Péniche Le Marcounet · Pont Marie</div>
+      <div id="cta" class="t clip" data-start="13.278" data-duration="2.46" data-track-index="6"><span>Billets : lien en bio</span></div>
+      <div id="credit" class="t clip" data-start="0" data-duration="15.738" data-track-index="7">Images : sets d&#x27;Eliyo · Son : Horde × Baajar, Cabaret Sauvage, 2025</div>
+      <audio id="music" src="assets/media/track.wav" data-start="0" data-duration="15.738" data-volume="1" data-fade-in="0.05" data-fade-out="1.2" data-track-index="8"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const B = 0.4918;
+      [["#s1",0.0,1.967,1.0,1.08],
+["#s2",1.967,1.967,1.06,1.05],
+["#s3",3.934,0.984,1.12,1.08],
+["#s4",4.918,0.984,1.0,1.05],
+["#s5",5.902,1.967,1.06,1.08],
+["#s6",7.869,0.984,1.12,1.05],
+["#s7",8.852,0.984,1.0,1.08],
+["#s8",9.836,1.475,1.06,1.05],
+["#s9",11.311,4.426,1.12,1.08]].forEach(([id,a,d,f,t]) => tl.fromTo(id, { scale: f }, { scale: t, duration: d, ease: "none" }, a));
+      tl.set("#black", { opacity: 0 }, 0);
+      [].forEach((t) => { tl.set("#black", { opacity: 1 }, t); tl.set("#black", { opacity: 0 }, t + B * 0.5); });
+      [1.967, 3.934, 4.918, 5.902, 7.869, 8.852, 9.836].forEach((t) => {
+        tl.set("#shade", { opacity: 0.35 }, t);
+        tl.to("#shade", { opacity: 1, duration: B * 0.8, ease: "power2.out" }, t + 0.01);
+      });
+      tl.fromTo("#t1", { scale: 1.14 }, { scale: 1, duration: 0.6, ease: "power3.out" }, 0.0);
+      tl.fromTo("#t2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 3.934);
+      tl.fromTo("#t3", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 6.885);
+      tl.fromTo("#t4", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 9.836);
+      tl.fromTo("#endshade", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 11.311);
+      tl.fromTo("#endline", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 11.351);
+      tl.fromTo("#info", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 12.295);
+      tl.fromTo("#cta", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 13.278);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
