@@ -53,19 +53,19 @@
         "Instagram Feed"
       ],
       "creatives": [
-        "H01 (Reel, 9:16)",
-        "H02 (Reel, 9:16)"
+        "E10 (Reel, Eliyo)",
+        "O01 (Reel, la brise d'Istanbul)"
       ],
       "copy": [
         {
           "lang": "fr",
-          "primary": "De 23h à minuit, les cordes rencontrent les machines. Une nuit Istanbul–Paris sur la Seine, jusqu'à 4h.",
+          "primary": "Minuit, Eliyo prend la barre : une nuit Istanbul–Paris sur la Seine, de l'orchestre à la house, jusqu'à 4h.",
           "headline": "Bosphore sur Seine · 27.11",
           "cta": "En savoir plus"
         },
         {
           "lang": "tr",
-          "primary": "23.00'ten gece yarısına teller makinelerle buluşuyor. Seine'in üzerinde bir İstanbul–Paris gecesi, 04.00'e kadar.",
+          "primary": "Gece yarısı dümen Eliyo'da: Seine'in üzerinde orkestradan house'a bir İstanbul–Paris gecesi, 04.00'e kadar.",
           "headline": "Bosphore sur Seine · 27.11",
           "cta": "Daha fazla bilgi"
         }
@@ -104,8 +104,8 @@
         "Instagram Feed"
       ],
       "creatives": [
-        "H01 (Reel, 9:16)",
-        "X01 (Reel, 9:16)",
+        "E10 (Reel, Eliyo)",
+        "SX01 (Reel, saxophone × DJ) once confirmed",
         "C01 (carousel, 4:5)",
         "tickets-open-story-fr (story, 9:16)"
       ],
@@ -113,13 +113,13 @@
       "copy": [
         {
           "lang": "fr",
-          "primary": "Istanbul accoste au pont Marie : live, hybrid set, Eliyo et un invité surprise jusqu'à 4h. Billets dès 15 €.",
+          "primary": "L'orchestre et la brise d'Istanbul, puis la house d'Eliyo jusqu'à 4h, sur la Seine. La fin reste une surprise. Billets dès 15 €.",
           "headline": "Vendredi 27 novembre, pont Marie",
           "cta": "Acheter des billets"
         },
         {
           "lang": "tr",
-          "primary": "İstanbul Pont Marie'ye yanaşıyor: canlı müzik, hybrid set, Eliyo ve sürpriz konuk, 04.00'e kadar. Biletler 15 €'dan.",
+          "primary": "Önce orkestra ve İstanbul esintisi, sonra Eliyo'yla sabah 4'e kadar house, Seine'in üzerinde. Finali sürpriz. Biletler 15 €'dan.",
           "headline": "27 Kasım Cuma, Pont Marie",
           "cta": "Bilet al"
         }
@@ -136,7 +136,7 @@
       "budget_eur": 50,
       "audience": {
         "custom": [
-          "Watched 50% of H01, H02 or X01 (last 14 days)",
+          "Watched 50% of E10, O01 or V07 (last 14 days)",
           "Engaged with the Birkleyn Sound Instagram (last 30 days)",
           "Viewed the Shotgun event page (pixel, last 14 days), excluding buyers"
         ]

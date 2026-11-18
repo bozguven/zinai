@@ -161,7 +161,7 @@
     "variant": "survey",
     "lang": "fr",
     "fields": {
-      "question": "À quelle heure monte l'invité surprise ?",
+      "question": "À quelle heure la nuit change-t-elle de cap ?",
       "stickerHint": "Sticker quiz : 23h / 00h / 2h"
     }
   },
@@ -235,9 +235,9 @@
       "art": "pylon",
       "count": "2/5",
       "kicker": "La traversée",
-      "title": "Live, hybrid set, puis la nuit",
+      "title": "L'orchestre, puis la house",
       "titleSize": 80,
-      "body": "Ruşan Filiztek & musiciens, Eliyo, et un invité surprise."
+      "body": "Ruşan Filiztek & l'orchestre, Eliyo, et une fin qu'on garde secrète."
     }
   },
   {
@@ -251,7 +251,7 @@
       "kicker": "Le son",
       "title": "D'Istanbul à la house",
       "titleSize": 96,
-      "body": "Live acoustique, hybrid set, organic house jusqu'à l'aube."
+      "body": "La brise d'Istanbul, un hybrid set, puis la house jusqu'à 4h."
     }
   },
   {
@@ -357,19 +357,19 @@
       "rows": [
         [
           "21h → 23h",
-          "Live acoustique · Ruşan Filiztek & musiciens"
+          "Live · l'orchestre, la brise d'Istanbul"
         ],
         [
           "23h → 00h",
-          "Hybrid set"
+          "Hybrid set · platines & saxophone"
         ],
         [
           "00h → 02h",
-          "Eliyo"
+          "Eliyo · house"
         ],
         [
           "02h → 04h",
-          "Invité surprise"
+          "Surprise"
         ]
       ]
     }
@@ -384,19 +384,19 @@
       "rows": [
         [
           "21h → 23h",
-          "Live acoustique · Ruşan Filiztek & musiciens"
+          "Live · l'orchestre, la brise d'Istanbul"
         ],
         [
           "23h → 00h",
-          "Hybrid set"
+          "Hybrid set · platines & saxophone"
         ],
         [
           "00h → 02h",
-          "Eliyo"
+          "Eliyo · house"
         ],
         [
           "02h → 04h",
-          "Invité surprise"
+          "Surprise"
         ]
       ]
     }
@@ -407,7 +407,7 @@
     "variant": "survey",
     "lang": "fr",
     "fields": {
-      "question": "À 2h, quelqu'un monte à bord. On ne dit pas qui.",
+      "question": "À 2h, la nuit change de cap. On ne vous dit rien.",
       "stickerHint": "Sticker question : Vos paris ?"
     }
   },

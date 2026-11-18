@@ -54,6 +54,15 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 ## Decisions from the dinner with Ali and Ruşan (17 Nov)
 
+- **Shape of the night, as Ali and Ruşan now want it sold (18 Nov, 2h):**
+  1. **21h–23h · Live orchestra: "Istanbul breeze"** (*la brise d'Istanbul*): Ruşan Filiztek and the orchestra. Sold as orchestra and Istanbul mood, never as saz.
+  2. **23h–00h · Hybrid set: DJ + live instruments, with a saxophone as the highlight** — saxophone **[À CONFIRMER]** ("we might add"): content may tease it only as a draft until confirmed.
+  3. **00h–02h · Eliyo, house.** The main focus of all content: hype, dance, our demographic.
+  4. **02h–04h · The finale is a surprise** (Turkish rock anthems). **Never reveal or hint at the genre.** Say only that the end of the night is a surprise / *on ne dit rien*.
+- **Saz:** not mentioned and **not shown** in any new content (no saz footage either). Exception: V07, kept only to get Ali and Ruşan's feedback.
+- **Highlight instead:** the orchestra and the saxophone.
+- **No footage yet of this line-up** (first edition): content comes from Eliyo's past DJ sets (Horde × Baajar, Cabaret Sauvage), his tracks, motion design, and what we film at the rehearsal.
+
 - **The promise to put first (Ali & Ruşan, 18 Nov):** *Saat 4'e kadar Seine nehri üzerinde müzikal yolculuk ve dans.*
   FR: **« Jusqu'à 4h, un voyage musical et dansé sur la Seine. »** Every piece of content serves this:
   the boat, the river at night, people dancing, the music carrying on until 4h.

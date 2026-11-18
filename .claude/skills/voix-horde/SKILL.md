@@ -28,13 +28,13 @@ This skill describes the style. Never copy Horde's sentences: write our own, abo
 
 ## 2. Vocabulary
 
-**Use:** Istanbul, le Bosphore, la Seine, la traversée, l'escale, la rive / l'autre rive, le vapur,
+**Use:** Istanbul, la brise d'Istanbul, l'orchestre, le saxophone (only once confirmed), les platines, la house, monter, Eliyo, le Bosphore, la Seine, la traversée, l'escale, la rive / l'autre rive, le vapur,
 le pont, la péniche, à bord, embarquer, la nuit, l'aube, les lumières, le reflet, le courant, la
 dérive, la transe douce, le groove, le set, le live, hybride, les machines, les cordes, la voix,
 invité·e surprise.
 Genre words stay in English, as on Shotgun: *organic house, downtempo, deep house, live, hybrid set*.
 
-**Never:** saz, halay, folklore, folklorique, soirée turque, ambiance orientale, exotique,
+**Never:** saz (and no saz on screen), halay, Turkish rock or any hint at the 2h surprise, folklore, folklorique, soirée turque, ambiance orientale, exotique,
 communauté, diaspora, "oriental" as an adjective for people or music, any claim we can't prove.
 (Instruments can be *les cordes*, *un instrument d'Anatolie* only if unavoidable; better: say nothing
 and let the video show it.)
@@ -66,10 +66,10 @@ Horde's layout: one tale paragraph, an invitation paragraph, then info blocks wi
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 🖤 LA TRAVERSÉE
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-● 21h → 23h · Live acoustique : Ruşan Filiztek & musiciens
-● 23h → 00h · Hybrid set : machines et instruments
-● 00h → 02h · Eliyo
-● 02h → 04h · Invité surprise
+● 21h → 23h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul
+● 23h → 00h · Hybrid set : platines, orchestre et saxophone [saxophone À CONFIRMER]
+● 00h → 02h · Eliyo, house
+● 02h → 04h · Surprise
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 🖤 L'ESCALE
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
@@ -96,8 +96,7 @@ No numbers we don't have. Ali & Ruşan don't publish tier quantities, so:
   amarres.* (only once Shotgun shows the tier sold out) · *Dernières traversées en ligne.*
 - Tickets may remain at the door: say **"S'il reste de la place, au tarif Late, à l'embarquement."**
   Never promise door sales; always push online first: *En ligne, c'est plus sûr.*
-- The surprise guest is a hook in itself: *À 2h, quelqu'un monte à bord. On ne dit pas qui.*
-  Never hint at a name.
+- The 2h finale is a surprise: *À 2h, la nuit change de cap. On ne vous dit rien.* Never hint at the genre or a name.
 
 ## 5. Examples (ours, written for this night)
 
@@ -109,8 +108,12 @@ No numbers we don't have. Ali & Ruşan don't publish tier quantities, so:
 > De 23h à minuit, les cordes rencontrent les machines.
 > Une heure où Istanbul et Paris jouent sur la même ligne.
 
-**Surprise guest**
-> À 2h, un invité monte à bord. Son nom reste sur l'autre rive jusqu'au dernier moment.
+**Eliyo, house (the hype — more energy allowed here, still no shouting)**
+> Minuit. Eliyo prend la barre et la péniche se met à tanguer.
+> Jusqu'à 2h, la house d'Istanbul, celle qui ne laisse personne assis.
+
+**The surprise (never say what it is)**
+> À 2h, la nuit change de cap. On ne vous dit rien : restez jusqu'au bout.
 
 **Last tickets**
 > La péniche se remplit, la Seine aussi.
