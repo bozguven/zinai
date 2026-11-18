@@ -109,13 +109,16 @@ function buildBoard() {
         if (!fs.existsSync(src)) return `<div class="ph">🎬 vidéo à monter<br>(${esc(id)})</div>`;
         fs.mkdirSync(path.join(dir, 'video'), { recursive: true });
         const dst = path.join(dir, 'video', id + '.mp4');
-        if (fs.statSync(src).size > 6e6) {            // preview copy for the board: 720p, light enough to stream on a phone
-          if (!fs.existsSync(dst) || fs.statSync(dst).mtimeMs < fs.statSync(src).mtimeMs)
+        const stale = (f) => !fs.existsSync(f) || fs.statSync(f).mtimeMs < fs.statSync(src).mtimeMs;
+        if (stale(dst)) {                               // board copy: 720p H.264, moov atom first (plays on phones)
+          if (fs.statSync(src).size > 6e6)
             execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, '-vf', 'scale=720:-2', '-c:v', 'libx264', '-preset', 'veryfast',
-              '-crf', '27', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', dst]);
-        } else fs.copyFileSync(src, dst);
-        const small = fs.statSync(src).size < 1.5e6;   // short loops play inline; Reels wait for a tap
-        return `<button class="media vid" data-src="video/${esc(id)}.mp4" data-kind="video" aria-label="Lire la vidéo ${esc(id)}"><video src="video/${esc(id)}.mp4#t=0.5" muted loop playsinline preload="metadata"${small ? ' autoplay' : ''}></video><span class="play" aria-hidden="true">▶</span></button>`;
+              '-crf', '27', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '128k', '-movflags', '+faststart', dst]);
+          else execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src, '-c', 'copy', '-movflags', '+faststart', dst]);
+        }
+        const poster = path.join(dir, 'img', 'poster-' + id + '.jpg');   // still image for the grid
+        if (stale(poster)) execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-ss', '1', '-i', src, '-frames:v', '1', '-vf', 'scale=360:-2', '-q:v', '4', poster]);
+        return `<button class="media vid" data-src="video/${esc(id)}.mp4" data-kind="video" aria-label="Lire la vidéo ${esc(id)}"><img src="img/poster-${esc(id)}.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>`;
       }
       const src = path.join(OUT, v + '.png');
       if (!fs.existsSync(src)) return `<div class="ph">${esc(v)}</div>`;
@@ -185,7 +188,7 @@ ul{margin:0;padding-left:18px;font-size:13.5px}.needs li{color:#a33a26}mark{back
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--grey);margin-top:8px}
 .hide{display:none!important}
 .lb{position:fixed;inset:0;z-index:50;background:rgba(20,22,30,.97);display:none;align-items:center;justify-content:center;padding:56px 56px 20px}
-.lb.open{display:flex}.lb img,.lb video{max-width:100%;max-height:100%;border-radius:8px;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.lb.open{display:flex}.vbox{position:relative;display:flex;align-items:center;justify-content:center;max-width:100%;max-height:100%}.vmsg{position:absolute;color:#fff;font-size:15px;text-shadow:0 1px 4px #000;pointer-events:none;margin:0}.imgs .vid img{height:190px}.lb img,.lb video{max-width:100%;max-height:100%;border-radius:8px;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.4)}
 .lb button{position:absolute;border:0;background:rgba(255,255,255,.14);color:#fff;font:600 22px system-ui;width:46px;height:46px;border-radius:50%;cursor:pointer}
 .lb button:hover{background:rgba(255,255,255,.28)}.lb .x{top:10px;right:12px}.lb .prev{left:10px;top:50%;transform:translateY(-50%)}.lb .next{right:10px;top:50%;transform:translateY(-50%)}
 .lb .cap{position:absolute;top:18px;left:18px;color:#fff;font:600 15px system-ui;opacity:.85}
@@ -208,12 +211,23 @@ ${order.map((d) => `<section class="day"><h2>${fmtDay(d)}</h2><div class="grid">
 <div class="lb" role="dialog" aria-modal="true" aria-label="Aperçu"><span class="cap"></span><button class="x" aria-label="Fermer">✕</button><button class="prev" aria-label="Précédent">‹</button><button class="next" aria-label="Suivant">›</button><div class="stage" style="display:contents"></div></div>
 <script>
 const lb=document.querySelector('.lb'),stage=lb.querySelector('.stage'),cap=lb.querySelector('.cap');let list=[],at=0,opener=null;
-function show(){const m=list[at];stage.innerHTML='';const el=document.createElement(m.dataset.kind==='video'?'video':'img');el.src=m.dataset.src;
- if(m.dataset.kind==='video'){el.controls=true;el.playsInline=true;el.autoplay=true;el.loop=true;}else{el.alt=m.getAttribute('aria-label')||'';}
- stage.appendChild(el);cap.textContent=m.closest('.card').querySelector('.id').textContent+(list.length>1?'  ·  '+(at+1)+'/'+list.length:'');
+let blobUrl=null;
+function show(){const m=list[at];stage.innerHTML='';if(blobUrl){URL.revokeObjectURL(blobUrl);blobUrl=null;}
+ if(m.dataset.kind==='video'){
+  const box=document.createElement('div');box.className='vbox';
+  const msg=document.createElement('p');msg.className='vmsg';msg.textContent='Chargement de la vidéo…';
+  const el=document.createElement('video');el.controls=true;el.playsInline=true;el.setAttribute('playsinline','');el.loop=true;el.preload='auto';
+  box.append(el,msg);stage.appendChild(box);const want=at;
+  // load the whole file, then play it from memory: works on phones and in-app browsers that refuse streamed video
+  fetch(m.dataset.src).then(r=>{if(!r.ok)throw new Error(r.status);return r.blob();}).then(b=>{
+   if(want!==at)return;blobUrl=URL.createObjectURL(new Blob([b],{type:'video/mp4'}));el.src=blobUrl;msg.textContent='';
+   const p=el.play();if(p&&p.catch)p.catch(()=>{msg.textContent='Touchez ▶ pour lancer la vidéo';});
+  }).catch(()=>{el.src=m.dataset.src;msg.textContent='';});
+ }else{const el=document.createElement('img');el.src=m.dataset.src;el.alt=m.getAttribute('aria-label')||'';stage.appendChild(el);}
+ cap.textContent=m.closest('.card').querySelector('.id').textContent+(list.length>1?'  ·  '+(at+1)+'/'+list.length:'');
  lb.querySelector('.prev').style.display=lb.querySelector('.next').style.display=list.length>1?'':'none';}
 function openLb(m){opener=m;list=[...m.closest('.imgs').querySelectorAll('.media')];at=list.indexOf(m);show();lb.classList.add('open');document.body.style.overflow='hidden';lb.querySelector('.x').focus();}
-function closeLb(){lb.classList.remove('open');stage.innerHTML='';document.body.style.overflow='';opener&&opener.focus();}
+function closeLb(){lb.classList.remove('open');stage.innerHTML='';if(blobUrl){URL.revokeObjectURL(blobUrl);blobUrl=null;}document.body.style.overflow='';opener&&opener.focus();}
 document.addEventListener('click',e=>{const m=e.target.closest('.media');if(m){e.preventDefault();openLb(m);}});
 lb.querySelector('.x').onclick=closeLb;lb.onclick=e=>{if(e.target===lb)closeLb();};
 lb.querySelector('.prev').onclick=()=>{at=(at-1+list.length)%list.length;show();};lb.querySelector('.next').onclick=()=>{at=(at+1)%list.length;show();};

@@ -48,6 +48,7 @@ clients/<client>/
                     visuals, sticker, checklist, needs, status, approval
   ads/meta.json     Meta ad campaigns (created paused), audiences, copy, tracking
   links.json        board artifact slug, website repo, Shotgun link
+  setup.md          what still has to be connected or confirmed (accounts, approvals, handles)
   posts/            older drafts (archive; campaign.json replaces them)
   visuals.json      which template renders which visual, with its text
 .claude/agents/     strategist, copywriter, designer, clipper, publisher, analyst, ads-manager, web-updater
