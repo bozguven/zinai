@@ -1083,12 +1083,12 @@
         "Plan 3 from Ali's Drive (Eliyo) downloaded to the Mac",
         "OK from Horde / Baajar to reuse the footage, and credit them [À CONFIRMER]"
       ],
-      "status": "draft",
+      "status": "retired",
       "approval": {
         "ali": null,
         "rusan": null
       },
-      "notes": "Source: 'CABARET SAUVAGE HORDE & BAAJAR 04-04-25 Plan 3.mp4' (Eliyo)."
+      "notes": "Source: 'CABARET SAUVAGE HORDE & BAAJAR 04-04-25 Plan 3.mp4' (Eliyo). Replaced by E10/E13 (same footage, house style)."
     },
     {
       "id": "G01",
@@ -1258,11 +1258,83 @@
         "ali": null,
         "rusan": null
       }
+    },
+    {
+      "id": "E13",
+      "date": "2026-11-21",
+      "time": "18:30",
+      "title": "Reel: \"Jusqu'à 4h. Un voyage musical et dansé sur la Seine.\" — the main promise, cut on the beat",
+      "visuals": [
+        "video:reel-e13"
+      ],
+      "caption_fr": "Jusqu'à 4h, un voyage musical et dansé sur la Seine. 🖤\nL'orchestre pour embarquer, Eliyo pour ne plus redescendre.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Sabah 4'e kadar Seine üzerinde müzikli bir yolculuk ve dans. 🖤\nOrkestrayla biniyoruz, Eliyo'yla bir daha inmiyoruz.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage (credited on screen)"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025."
+    },
+    {
+      "id": "E15",
+      "date": "2026-11-22",
+      "time": "13:00",
+      "title": "Reel: \"Istanbul. Paris. Et toute votre bande.\" — made to be sent to friends",
+      "visuals": [
+        "video:reel-e15"
+      ],
+      "caption_fr": "Istanbul, Paris, et toute votre bande.\nEnvoyez-le à ceux qui dansent jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "İstanbul, Paris ve bütün ekibin.\nSabah 4'e kadar dans edenlere gönder. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage (credited on screen)"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025."
+    },
+    {
+      "id": "E14",
+      "date": "2026-11-25",
+      "time": "20:30",
+      "title": "Reel: \"À 2h, la nuit change de cap. On ne vous dit rien.\" — the secret finale, revealed by nothing",
+      "visuals": [
+        "video:reel-e14"
+      ],
+      "caption_fr": "À 2h, la nuit change de cap.\nOn ne vous dit rien. Restez jusqu'au bout. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Saat 2'de gece rota değiştiriyor.\nHiçbir şey söylemiyoruz. Sonuna kadar kal. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "channel": "instagram + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage (credited on screen)"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      },
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025."
     }
   ],
   "video_plan": {
     "why": "Instagram pushes Reels to people who don't follow the account; the first 3 seconds decide the view. Short looping clips (7–15 s) and live moments (15–30 s) sell nights better than posters.",
-    "rhythm": "A Reel almost every day from 19 to 26 Nov: hybrid set (H01, H02, D01), the opening live (R01), Eliyo at Cabaret Sauvage (X01), the rive loop on an Eliyo track (V01), rehearsal (V03), J-1 montage (R03). Every story moves.",
+    "rhythm": "House style (E10) every other day: E10 Eliyo (19), E13 promise (21), E15 bande (22), E14 secret finale (25); plus O01 orchestra and SX01 saxophone once filmed.",
     "rules": [
       "Start on the strongest sound or image, never on a title card",
       "Subtitles on every spoken clip",

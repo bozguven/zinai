@@ -3,3 +3,6 @@ out
 .DS_Store
 .env
 .agents/
+videos/*/assets/media/*.mp4
+videos/*/assets/media/*.wav
+videos/*/.hyperframes/
