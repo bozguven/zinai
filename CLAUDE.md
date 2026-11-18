@@ -54,7 +54,7 @@ clients/<client>/
 .claude/agents/     strategist, copywriter, designer, clipper, publisher, analyst, ads-manager, web-updater
 .claude/commands/   /today, /campaign, /week-plan, /post, /clips, /approval, /publish, /site, /ads, /report
 tools/campaign.mjs  today | list | pending | approve | status | board | pack
-tools/publish/      meta.mjs (Instagram + Facebook via Meta's API), upload-media.sh (approved videos → GitHub release "media")
+tools/publish/      meta.mjs (Instagram + Facebook via Meta's API), upload-media.sh (approved videos → branch "publish-media")
 .github/workflows/  publish.yml: every 10 min, publishes approved items that are due
 tools/video/        highlights.py, clip.py (Reels with hook + subtitles + end card), beatcut.py, alive.py (animated rive)
 .mcp.json           MCP connectors (none needed for publishing: we use free tools)
@@ -95,7 +95,7 @@ and `tools/video/` do the editing; the team films (shot lists are on each campai
 - **ZinAI publisher** (Meta Graph API, official and free): `tools/publish/meta.mjs` runs in GitHub Actions every 10 minutes
   and publishes approved `auto` items to Instagram (Reels, video stories) and the Facebook Page at their Paris time.
   The Page token is a GitHub secret (`META_PAGE_TOKEN`); `PUBLISH_ENABLED=true` (repo variable) turns it on.
-  Videos of approved items are uploaded to the GitHub release `media` (the repo is public: never upload unapproved media).
+  Videos of approved items are uploaded to the branch `publish-media` (the repo is public: never upload unapproved media).
 
 - **Meta Business Suite** (business.facebook.com): schedules Instagram Reels, posts and stories, and the Facebook Page,
   up to 75 days ahead, free. Bertuğ needs Facebook access to the Birkleyn Sound Page (Ruşan gives it from the Page's

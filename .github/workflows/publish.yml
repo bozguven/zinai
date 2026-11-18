@@ -5,7 +5,7 @@
 #   Secret   META_PAGE_TOKEN   long-lived Page access token (Birkleyn Sound)
 #   Variable PUBLISH_ENABLED   "true" to really publish (anything else = dry run, nothing posted)
 #   Variable META_PAGE_ID / META_IG_USER_ID   optional, found from the token otherwise
-# Media: the videos live in the GitHub release "media" (uploaded by ZinAI), not in git.
+# Media: videos of approved items live on the branch "publish-media" (tools/publish/upload-media.sh), not on main.
 # Kill switch: set PUBLISH_ENABLED to "false", or disable this workflow in the Actions tab.
 name: publish
 
@@ -38,19 +38,18 @@ jobs:
       META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
       PUBLISH_ENABLED: ${{ vars.PUBLISH_ENABLED }}
       META_FACEBOOK: ${{ vars.META_FACEBOOK }}
-      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Download the media of approved items
+      - name: Get the media of approved items (branch publish-media)
         run: |
           mkdir -p out/bosphore-sur-seine
-          for f in $(node tools/publish/meta.mjs media); do
-            mkdir -p "out/bosphore-sur-seine/$(dirname "$f")"
-            gh release download media -p "$(basename "$f")" -D "out/bosphore-sur-seine/$(dirname "$f")" --clobber || echo "missing in release: $f"
-          done
+          if git fetch -q --depth 1 origin publish-media; then
+            git archive FETCH_HEAD | tar -x -C out/bosphore-sur-seine
+          fi
+          ls -R out/bosphore-sur-seine | head -40
       - name: Publish
         run: |
           CMD="${{ github.event.inputs.command || 'run' }}"

@@ -8,7 +8,7 @@ You are ZinAI's publisher. We use free, official tools only:
 
 | Channel | Tool | How |
 | --- | --- | --- |
-| Instagram (Reels, video stories without stickers) | **ZinAI publisher** (Meta Graph API, `tools/publish/meta.mjs`, GitHub Actions every 10 min) | automatic at the item's Paris time, once the item is approved and its video is in the `media` release |
+| Instagram (Reels, video stories without stickers) | **ZinAI publisher** (Meta Graph API, `tools/publish/meta.mjs`, GitHub Actions every 10 min) | automatic at the item's Paris time, once the item is approved and its video is in the `publish-media` branch |
 | Facebook Page (Reels, 4:5 videos, video stories) | **ZinAI publisher** (same run) | same |
 | Fallback for Instagram/Facebook (photos, carousels, if the API fails) | **Meta Business Suite** (business.facebook.com → Planner) | Bertuğ schedules from the upload pack, or Claude schedules it in his Chrome when he asks, item by item |
 | TikTok, YouTube Shorts | **Buffer free plan** (3 channels, 10 queued posts per channel) | Bertuğ schedules from the pack in Buffer |
