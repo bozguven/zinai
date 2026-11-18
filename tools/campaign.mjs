@@ -96,7 +96,7 @@ function buildBoard() {
   const label = { auto: 'Auto', manual: 'Manuel · téléphone', shotgun: 'Shotgun', website: 'Site web', 'meta-ads': 'Pub Meta' };
 
   const days = {};
-  for (const i of [...c.items].sort(byTime)) (days[i.date] ||= []).push(i);
+  for (const i of [...c.items].filter((x) => x.status !== 'retired').sort(byTime)) (days[i.date] ||= []).push(i);
   const order = Object.keys(days).sort((a, b) => (a === 'trigger') - (b === 'trigger') || a.localeCompare(b));
 
   const card = (i) => {
