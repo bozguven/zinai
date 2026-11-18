@@ -37,6 +37,7 @@ jobs:
       META_PAGE_ID: ${{ vars.META_PAGE_ID }}
       META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
       PUBLISH_ENABLED: ${{ vars.PUBLISH_ENABLED }}
+      META_FACEBOOK: ${{ vars.META_FACEBOOK }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4

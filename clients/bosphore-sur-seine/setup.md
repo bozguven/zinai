@@ -11,6 +11,7 @@ What has to be connected or confirmed before ZinAI can publish. Update the boxes
 - [ ] **Ads:** Ads Manager is reachable from Business Suite. Create A01–A03 **paused** from `ads/meta.json` (budget 150 € confirmed); a person launches them.
 - [x] **ZinAI publisher built** (18 Nov): `tools/publish/meta.mjs` + `.github/workflows/publish.yml`, runs on GitHub every 10 min (dry run tested).
 - [ ] **Meta developer app + Page token** (Bertuğ): developers.facebook.com → app with Instagram + Pages permissions → long-lived Page token → GitHub repo → Settings → Secrets and variables → Actions → secret `META_PAGE_TOKEN`.
+- [x] **Meta app** `ZinAI Publisher` (18 Nov): Instagram use case with Facebook login. `pages_manage_posts` isn't offered, so the publisher posts to **Instagram only** (`META_FACEBOOK` off). Facebook: Instagram's auto-share to Facebook (Accounts Center) or Business Suite.
 - [ ] **Test:** Actions → publish → Run workflow → command `check` (shows the Page and @account).
 - [ ] **Switch on:** repo variable `PUBLISH_ENABLED` = `true`.
 - [ ] **Approval by id** from Ali and Ruşan (E10, E13, E15, E14, CD19–CD27), then `/publish <ids>` uploads their videos and the publisher posts them on time.

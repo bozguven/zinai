@@ -14,6 +14,7 @@
 //   META_PAGE_ID      variable (optional: found from the token if missing)
 //   META_IG_USER_ID   variable (optional: found from the Page if missing)
 //   PUBLISH_ENABLED   variable: "true" to really publish; anything else = dry run
+//   META_FACEBOOK     variable: "true" to also post to the Facebook Page (needs pages_manage_posts)
 //
 // What it will never publish: an item that is not status "approved", one with [À CONFIRMER]
 // in its text, one with anything left in "blocked_by", a "manual" sticker story, or anything
@@ -33,6 +34,8 @@ const MAX_TRIES = 3;
 
 const TOKEN = process.env.META_PAGE_TOKEN || '';
 const LIVE = process.env.PUBLISH_ENABLED === 'true';
+// Facebook Page posting needs pages_manage_posts, which our Meta app doesn't offer: off unless META_FACEBOOK=true
+const FB = process.env.META_FACEBOOK === 'true';
 const load = () => JSON.parse(fs.readFileSync(FILE, 'utf8'));
 const save = (c) => fs.writeFileSync(FILE, JSON.stringify(c, null, 2) + '\n');
 const log = (...a) => console.log(...a);
@@ -58,7 +61,7 @@ function targets(i) {
   if (i.format === 'reel') {
     const reel = vid(i.variants?.instagram_reel || (i.visuals || []).find((v) => v.startsWith('video:reel')));
     if (reel && ch.includes('instagram')) t.push({ net: 'instagram', kind: 'reel', file: `video/${reel}.mp4` });
-    if (ch.includes('facebook')) {
+    if (FB && ch.includes('facebook')) {
       const fb = vid(i.variants?.facebook_feed) || reel;
       if (fb) t.push({ net: 'facebook', kind: fb.startsWith('feed') ? 'video' : 'reel', file: `video/${fb}.mp4` });
     }
@@ -67,7 +70,7 @@ function targets(i) {
     const img = (i.visuals || []).find((x) => !x.startsWith('video:'));
     const file = v ? `video/${vid(v)}.mp4` : img ? `${img}.png` : null;
     if (file && ch.includes('instagram')) t.push({ net: 'instagram', kind: 'story', file });
-    if (file && ch.includes('facebook')) t.push({ net: 'facebook', kind: 'story', file });
+    if (FB && file && ch.includes('facebook')) t.push({ net: 'facebook', kind: 'story', file });
   }
   return t;
 }
