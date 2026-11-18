@@ -153,6 +153,7 @@ def build(recipe_path, render=False):
       #info {{ top: {L['info']}px; font: 700 44px/1.35 "Fira Sans Condensed"; }}
       #cta {{ top: {L['cta']}px; }}
       #cta span {{ display: inline-block; padding: 18px 40px; border-radius: 999px; background: var(--window); color: #141a3a; font: 700 44px/1 "Fira Sans Condensed"; text-shadow: none; }}
+      #presented {{ top: {(L['credit'] - 46) if fmt != 'feed' else H - 104}px; font: 500 25px/1 "Fira Sans Condensed"; letter-spacing: 0.06em; opacity: 0.8; }}
       #credit {{ top: {L['credit'] if fmt != 'feed' else H - 60}px; font: 500 26px/1 "Fira Sans Condensed"; opacity: 0.75; }}
     </style>
   </head>
@@ -167,6 +168,7 @@ def build(recipe_path, render=False):
       <div id="endline" class="t clip" data-start="{es}" data-duration="{ed}" data-track-index="4">{E(r["end_line"])}</div>
       <div id="info" class="t clip" data-start="{info_s}" data-duration="{round(dur-info_s,3)}" data-track-index="5">Vendredi 27.11 · 20h30 → 4h<br />Péniche Le Marcounet · Pont Marie</div>
       <div id="cta" class="t clip" data-start="{cta_s}" data-duration="{round(dur-cta_s,3)}" data-track-index="6"><span>{E(cta_text)}</span></div>
+      <div id="presented" class="t clip" data-start="{es}" data-duration="{ed}" data-track-index="8">{E(r.get("presented_by", "Présenté par L'Heur du Spectacle"))}</div>
       <div id="credit" class="t clip" data-start="0" data-duration="{dur}" data-track-index="7">{E(r.get("credit",""))}</div>
       <audio id="music" src="assets/media/track.wav" data-start="0" data-duration="{dur}" data-volume="1" data-fade-in="0.05" data-fade-out="1.2" data-track-index="8"></audio>
     </div>

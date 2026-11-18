@@ -97,6 +97,13 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 Past nights by the team drew a halay crowd. This series aims at a curated Istanbul–Paris soirée.
 A halay can close the night, but it is never the promise.
 
+## Legal organiser
+
+- **L'Heur du Spectacle** (Paris · production, diffusion, festivals) represents the event: it is the legal company
+  (also listed as organiser on Shotgun). Spelled **L'Heur** (no "e"), as on its logo. Logo: `assets/partners/lheur-du-spectacle.jpg`.
+- Show it small, never as the headline: "Présenté par L'Heur du Spectacle" on video end cards, covers and image posts,
+  and at the end of the Shotgun / Facebook event text ("Presented by…" in English). Not needed in captions.
+
 ## Keywords (Ali and Ruşan, 18 Nov): put weight on these in every piece
 
 - **Sound of Istanbul** / **le son d'Istanbul** · **Sound of Bosphore** / **le son du Bosphore**
