@@ -1,0 +1,25 @@
+{
+ "id": "e16",
+ "credit": "Images : sets d'Eliyo · Son : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media/new18v",
+ "audio": {"src": "p5.mp4", "start": 130.0, "seconds": 16},
+ "shots": [
+  ["v2.mp4", 6.0, 4],
+  ["v1.mp4", 22.0, 4],
+  ["v6.mp4", 2.0, 2],
+  ["v3.mp4", 3.0, 2],
+  ["v1.mp4", 60.0, 4],
+  ["v5.mp4", 6.0, 2],
+  ["v2.mp4", 15.0, 2],
+  ["v1.mp4", 85.0, 3],
+  ["v6.mp4", 6.0, 20]
+ ],
+ "end_beats": 9,
+ "texts": [
+  {"text": "Le son d'Istanbul", "from": 0, "to": 8, "style": "hook"},
+  {"text": "des Balkans à l'Anatolie,", "from": 8, "to": 14, "style": "line"},
+  {"text": "il laisse une trace.", "from": 14, "to": 20, "style": "line"},
+  {"text": "Minuit : Eliyo prend la barre.", "from": 20, "to": 26, "style": "line"}
+ ],
+ "end_line": "Le son d'Istanbul, sur la Seine"
+}
