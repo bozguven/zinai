@@ -56,7 +56,7 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 - **Shape of the night, as Ali and Ruşan now want it sold (18 Nov, 2h):**
   1. **21h–23h · Live orchestra: "Istanbul breeze"** (*la brise d'Istanbul*): Ruşan Filiztek and the orchestra. Sold as orchestra and Istanbul mood, never as saz.
-  2. **23h–00h · Hybrid set: DJ + live instruments, with a saxophone as the highlight.** Saxophone **confirmed (18 Nov): Michaël Wakko Havard.** Photos: his WhatsApp profile pictures (B&W baritone shot on stage; colour portrait with tenor sax, sunglasses), in `assets/people/` [Instagram handle À CONFIRMER].
+  2. **23h–00h · Hybrid set: DJ + live instruments, with a saxophone as the highlight.** Saxophone **confirmed (18 Nov): Michaël Wakko Havard.** Photos: his WhatsApp profile pictures (B&W baritone shot on stage; colour portrait with tenor sax, sunglasses), in `assets/people/`. Instagram **@michael_wakko_havard** (seen on his own post, 18 Nov). Saxophone = a highlight: push it.
   3. **00h–02h · Eliyo, house.** The main focus of all content: hype, dance, our demographic.
   4. **02h–04h · The finale is a surprise** (Turkish rock anthems). **Never reveal or hint at the genre.** Say only that the end of the night is a surprise / *on ne dit rien*.
 - **Saz:** not mentioned and **not shown** in any new content (no saz footage either). Exception: V07, kept only to get Ali and Ruşan's feedback.

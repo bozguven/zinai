@@ -1,0 +1,70 @@
+{
+ "id": "sx04",
+ "credit": "Images : @michael_wakko_havard",
+ "media_dir": "/home/claude/media/sax",
+ "audio": {
+  "src": "sax.mp4",
+  "start": 0.0,
+  "seconds": 16
+ },
+ "shots": [
+  [
+   "s1.mp4",
+   0.2,
+   4
+  ],
+  [
+   "sax.mp4",
+   9.0,
+   2
+  ],
+  [
+   "sax.mp4",
+   21.0,
+   2
+  ],
+  [
+   "s1.mp4",
+   1.8,
+   4
+  ],
+  [
+   "sax.mp4",
+   30.0,
+   2
+  ],
+  [
+   "sax.mp4",
+   38.0,
+   20
+  ]
+ ],
+ "end_beats": 8,
+ "texts": [
+  {
+   "text": "23h.",
+   "from": 0,
+   "to": 4,
+   "style": "mega"
+  },
+  {
+   "text": "le saxophone passe le seuil.",
+   "from": 4,
+   "to": 8,
+   "style": "line"
+  },
+  {
+   "text": "Michaël Wakko Havard",
+   "from": 8,
+   "to": 12,
+   "style": "hook"
+  },
+  {
+   "text": "rejoint les platines et l'orchestre.",
+   "from": 12,
+   "to": 16,
+   "style": "line"
+  }
+ ],
+ "end_line": "Le son d'Istanbul, sur la Seine"
+}

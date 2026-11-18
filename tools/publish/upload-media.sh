@@ -10,6 +10,9 @@ BR=publish-media
 STAGE=$(mktemp -d)
 mapfile -t files < <(node tools/publish/meta.mjs media)
 [ ${#files[@]} -eq 0 ] && { echo "Nothing approved to upload."; exit 0; }
+for f in "${files[@]}"; do  # Instagram takes JPEG only: make it from the PNG render
+  case "$f" in *.jpg) [ -f "$OUT/$f" ] || [ ! -f "$OUT/${f%.jpg}.png" ] || ffmpeg -loglevel error -y -i "$OUT/${f%.jpg}.png" -q:v 2 "$OUT/$f";; esac
+done
 # Build the branch content in a separate index: only README + the approved media, nothing from main.
 export GIT_INDEX_FILE=$STAGE/index
 PARENT=""

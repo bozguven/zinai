@@ -1664,17 +1664,14 @@
       "caption_tr": "23.00. Michaël Wakko Havard saksafonuyla gemide. DJ, orkestra, Boğaz'ın sesi: gece eşiği geçiyor. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saxophone #Paris #péniche",
       "collaborators": [
-        "Michaël Wakko Havard [handle À CONFIRMER]"
+        "michael_wakko_havard"
       ],
-      "needs": [
-        "Michaël's OK to use his photo (WhatsApp profile picture) and his Instagram handle for the collab"
-      ],
-      "status": "draft",
+      "status": "approved",
       "approval": {
-        "ali": null,
-        "rusan": null
+        "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
+        "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
       },
-      "notes": "Image post: the API publisher only does video for now, so this one goes through Business Suite or becomes a 6 s video. Photo: assets/people/michael-wakko-havard-stage.jpg"
+      "notes": "Published by the API as an image post (JPEG from the publish-media branch). Photo: Michaël's profile picture, sent by the team."
     },
     {
       "id": "SX03",
@@ -1682,20 +1679,45 @@
       "time": "20:00",
       "channel": "instagram story",
       "format": "story",
-      "mode": "manual",
-      "title": "Story: Michaël Wakko Havard (same visual, 9:16) + mention sticker @Michaël",
+      "mode": "auto",
+      "title": "Story: Michaël Wakko Havard (same visual, 9:16)",
       "visuals": [
         "sax-mwh-story"
       ],
-      "sticker": "mention",
-      "status": "draft",
+      "status": "approved",
       "approval": {
-        "ali": null,
-        "rusan": null
+        "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
+        "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
+      }
+    },
+    {
+      "id": "SX04",
+      "date": "2026-11-19",
+      "time": "13:00",
+      "channel": "instagram reel + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: \"23h. Le saxophone passe le seuil\": Michaël Wakko Havard (his own street-brass footage)",
+      "visuals": [
+        "video:reel-sx04"
+      ],
+      "variants": {
+        "instagram_reel": "video:reel-sx04",
+        "tiktok": "video:reel-sx04",
+        "youtube_shorts": "video:reel-sx04"
       },
-      "needs": [
-        "Michaël's Instagram handle"
-      ]
+      "caption_fr": "23h. Le saxophone de Michaël Wakko Havard passe le seuil : il rejoint les platines et l'orchestre, et le son d'Istanbul change de couleur. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "23.00. Michaël Wakko Havard'ın saksafonu eşiği geçiyor: DJ'e ve orkestraya katılıyor, İstanbul'un sesi renk değiştiriyor. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saxophone #Paris #péniche",
+      "collaborators": [
+        "michael_wakko_havard"
+      ],
+      "notes": "Footage + sound: Michaël's own post (screen recording sent by Bertuğ 18 Nov), cropped; Rugby World Cup banner kept out of frame. Credit on screen: @michael_wakko_havard.",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
+        "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
+      }
     }
   ],
   "video_plan": {

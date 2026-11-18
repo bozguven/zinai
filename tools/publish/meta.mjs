@@ -31,6 +31,7 @@ const V = 'v25.0';
 const G = `https://graph.facebook.com/${V}`;
 const LATE_MS = 12 * 3600e3;
 const MAX_TRIES = 3;
+const RAW = process.env.MEDIA_RAW_BASE || 'https://raw.githubusercontent.com/bozguven/zinai/publish-media';
 
 const TOKEN = process.env.META_PAGE_TOKEN || '';
 const LIVE = process.env.PUBLISH_ENABLED === 'true';
@@ -65,10 +66,13 @@ function targets(i) {
       const fb = vid(i.variants?.facebook_feed) || reel;
       if (fb) t.push({ net: 'facebook', kind: fb.startsWith('feed') ? 'video' : 'reel', file: `video/${fb}.mp4` });
     }
+  } else if (i.format === 'post') {
+    const img = (i.visuals || []).find((x) => !x.startsWith('video:'));
+    if (img && ch.includes('instagram')) t.push({ net: 'instagram', kind: 'post', file: `${img}.jpg` });
   } else if (i.format === 'story') {
     const v = (i.visuals || []).find((x) => x.startsWith('video:'));
     const img = (i.visuals || []).find((x) => !x.startsWith('video:'));
-    const file = v ? `video/${vid(v)}.mp4` : img ? `${img}.png` : null;
+    const file = v ? `video/${vid(v)}.mp4` : img ? `${img}.jpg` : null;
     if (file && ch.includes('instagram')) t.push({ net: 'instagram', kind: 'story', file });
     if (FB && file && ch.includes('facebook')) t.push({ net: 'facebook', kind: 'story', file });
   }
@@ -140,7 +144,11 @@ async function publishInstagram(i, t) {
     await api('POST', `https://rupload.facebook.com/ig-api-upload/${V}/${container}`, {},
       { offset: '0', file_size: String(data.length), 'Content-Type': 'application/octet-stream' }, data);
   } else {
-    throw new Error('Image stories need a public image URL; only video is wired for now.');
+    // images: Instagram fetches them itself (JPEG only), from the public publish-media branch
+    const params = { image_url: `${RAW}/${t.file}` };
+    if (t.kind === 'story') params.media_type = 'STORIES';
+    else params.caption = caption(i);
+    container = (await api('POST', `${ig}/media`, params)).id;
   }
   await igWait(container);
   const pub = await api('POST', `${ig}/media_publish`, { creation_id: container });
