@@ -32,7 +32,7 @@ claude                 # open ZinAI in Claude Code
 | `/post <topic>` | Drafts one post (FR + TR captions and visual) |
 | `/clips <video> [01:12-01:52]` | Cuts a vertical clip with subtitles and drafts its captions |
 | `/approval` | Prepares the WhatsApp pack (Turkish message + images) for Ali and Ruşan |
-| `/publish P01 S03` | Marks P01 and S03 approved by Ali and Ruşan; schedules auto posts in Postiz, the rest goes to `/today`, `/site` or `/ads` |
+| `/publish P01 S03` | Marks P01 and S03 approved by Ali and Ruşan; builds their upload packs (Business Suite, Buffer, phone), the rest goes to `/site` or `/ads` |
 | `/site W02` | Updates the website banner and ticket stage, checks SEO, proposes the commit |
 | `/ads A01` | Ad setup sheet; `/ads create A01` makes it paused (budget confirmed only) |
 | `/clips <video>` | Shortlists moments, cuts a 9:16 Reel with hook, subtitles and end card (tools/video) |
@@ -40,10 +40,11 @@ claude                 # open ZinAI in Claude Code
 
 Nothing is published without Ali and Ruşan's approval.
 
-## Connect Instagram (once)
+## Connect Instagram and Facebook (once, free)
 
-1. Create a Postiz account at postiz.com and connect the event's Instagram account (and TikTok when it exists) under Add channel.
-2. In this folder, start `claude`, run `/mcp`, choose **postiz** and sign in in the browser. The connector is declared in `.mcp.json`; no API key is stored here.
-3. Ask: "list my Postiz channels". You should see Instagram.
+1. Ruşan gives you Facebook access to the Birkleyn Sound Page (Page → Settings → Page access → Add new → your name, full control). Accept it from your Facebook notifications.
+2. Open business.facebook.com: Birkleyn Sound's Instagram and Facebook appear in Meta Business Suite. That's where Reels, posts and stories are scheduled, for free.
+3. Create a free Buffer account (buffer.com) and connect TikTok and YouTube for the Shorts.
+4. After `/publish <ids>`, open `out/bosphore-sur-seine/packs/<date>/index.md`: each item has its files, caption and time.
 
 To change a visual's text, edit `visuals.json` and run `node render.mjs bosphore-sur-seine <visual-id>`.

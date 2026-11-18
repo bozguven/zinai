@@ -7,6 +7,7 @@
 //   node tools/campaign.mjs approve <ids...>          ONLY from /publish, after the user relays Ali + Ruşan's yes
 //   node tools/campaign.mjs status <status> <ids...>  scheduled | done | created-paused | retired ...
 //   node tools/campaign.mjs board                     builds out/<client>/board/index.html (+ img/)
+//   node tools/campaign.mjs pack <ids...>             upload packs for Meta Business Suite / Buffer / phone (approved items)
 //
 // Client: env ZINAI_CLIENT, default bosphore-sur-seine.
 import fs from 'node:fs';
@@ -26,7 +27,7 @@ function today() {
 }
 
 const MODE = {
-  auto: 'Auto (Postiz schedules it)',
+  auto: 'Auto (Meta Business Suite + Buffer)',
   manual: 'Manual (post from the phone: sticker)',
   shotgun: 'Shotgun Smartboard (by hand)',
   website: 'Website (web-updater, then Vercel)',
@@ -81,6 +82,8 @@ if (cmd === 'today') {
   save(c);
 } else if (cmd === 'board') {
   buildBoard();
+} else if (cmd === 'pack') {
+  buildPacks(args.map((x) => x.toUpperCase()));
 } else {
   console.error('commands: today | list | pending | approve | status | board');
   process.exit(1);
@@ -200,7 +203,7 @@ ${Object.entries(label).map(([m, l]) => `<button aria-pressed="false" data-f="${
 ${c.decisions ? `<section class="decide">${c.decisions.done ? `<h2>${esc(c.decisions.title)}</h2><ul class="done">${c.decisions.done.map((x) => `<li>${mark(x)}</li>`).join('')}</ul><h2>${esc(c.decisions.title_open || 'Encore ouvert')}</h2>` : `<h2>${esc(c.decisions.title)}</h2>`}<ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
 ${c.channel_plan_fr ? `<section class="decide" style="background:#eef0fa"><h2>Les canaux</h2><ul style="margin:0;padding-left:20px">${c.channel_plan_fr.map(([k, v]) => `<li><b>${esc(k)}</b> : ${mark(v)}</li>`).join('')}</ul></section>` : ''}
 ${order.map((d) => `<section class="day"><h2>${fmtDay(d)}</h2><div class="grid">${days[d].map(card).join('\n')}</div></section>`).join('\n')}
-<div class="legend"><span><b>Auto</b> : programmé par Postiz après accord.</span><span><b>Manuel</b> : story avec sticker (sondage, quiz, question, lien, compte à rebours), à poster depuis le téléphone.</span><span><b>Shotgun</b> : à faire dans le Smartboard.</span><span><b>Pub Meta</b> : créée en pause, lancée par une personne.</span></div>
+<div class="legend"><span><b>Auto</b> : programmé dans Meta Business Suite (Instagram, Facebook) et Buffer (TikTok, YouTube) après accord.</span><span><b>Manuel</b> : story avec sticker (sondage, quiz, question, lien, compte à rebours), à poster depuis le téléphone.</span><span><b>Shotgun</b> : à faire dans le Smartboard.</span><span><b>Pub Meta</b> : créée en pause, lancée par une personne.</span></div>
 </main>
 <div class="lb" role="dialog" aria-modal="true" aria-label="Aperçu"><span class="cap"></span><button class="x" aria-label="Fermer">✕</button><button class="prev" aria-label="Précédent">‹</button><button class="next" aria-label="Suivant">›</button><div class="stage" style="display:contents"></div></div>
 <script>
@@ -223,4 +226,44 @@ document.querySelectorAll('.day').forEach(s=>s.classList.toggle('hide',!s.queryS
 </script></body></html>`;
   fs.writeFileSync(path.join(dir, 'index.html'), html);
   console.log(`board: ${path.relative(ROOT, dir)}/index.html (${c.items.length} items)`);
+}
+
+function buildPacks(ids) {
+  const items = (ids.length ? c.items.filter((i) => ids.includes(i.id)) : c.items.filter((i) => i.status === 'approved'))
+    .filter((i) => i.status !== 'retired').sort(byTime);
+  if (!items.length) { console.error('nothing to pack (give ids, or approve items first)'); process.exit(1); }
+  const where = (i) => i.mode === 'manual' ? 'Instagram app on the phone (sticker by hand)'
+    : i.mode === 'auto' ? (i.format === 'reel' ? 'Meta Business Suite (Instagram Reel + Facebook) · Buffer (TikTok + YouTube Shorts, 30 min later)'
+      : 'Meta Business Suite (Instagram + Facebook)')
+    : i.mode === 'shotgun' ? 'Shotgun Smartboard (by hand)' : i.mode === 'website' ? '/site ' + i.id : i.mode === 'meta-ads' ? '/ads ' + i.id : i.mode;
+  const days = {};
+  for (const i of items) {
+    const dir = path.join(OUT, 'packs', i.date, i.id);
+    fs.mkdirSync(dir, { recursive: true });
+    const files = [];
+    (i.visuals || []).forEach((v, k) => {
+      let src, name;
+      if (v.startsWith('video:')) {
+        const id = v.slice(6); src = path.join(OUT, 'video', id + '.mp4');
+        name = id.startsWith('feed-') ? 'facebook-4x5.mp4' : id.startsWith('story-') || i.format === 'story' ? 'story.mp4' : 'instagram-reel.mp4';
+      } else { src = path.join(OUT, v + '.png'); name = (i.format === 'story' ? 'story' : 'post') + (k ? '-' + (k + 1) : '') + '.png'; }
+      if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(dir, name)); files.push(name); } else files.push(name + ' (MISSING: ' + v + ')');
+    });
+    const cap = [i.caption_fr || i.text_fr || '', i.caption_tr ? '—\n' + i.caption_tr : '', i.hashtags ? '\n' + i.hashtags : ''].filter(Boolean).join('\n').trim();
+    if (cap) fs.writeFileSync(path.join(dir, 'caption.txt'), cap + '\n');
+    const s = i.sticker_spec;
+    const readme = [`# ${i.id} · ${i.date} ${i.time} (Paris)`, '', i.title, '', `**Where:** ${where(i)}`, `**Status:** ${i.status}`, '',
+      '**Files:** ' + (files.join(', ') || 'none'), cap ? '**Caption:** caption.txt' : '',
+      i.collaborators ? '**Collaborators:** ' + i.collaborators.join(', ') : '',
+      s ? '**Sticker:** ' + Object.entries(s).map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(' / ') : v}`).join(' · ') : '',
+      i.checklist ? '**Steps:**\n' + i.checklist.map((x) => '- [ ] ' + x).join('\n') : '',
+      i.needs?.length ? '**Still needed:**\n' + i.needs.map((x) => '- ' + x).join('\n') : ''].filter((x) => x !== '').join('\n\n');
+    fs.writeFileSync(path.join(dir, 'README.md'), readme + '\n');
+    (days[i.date] ||= []).push(`- [ ] ${i.time} · **${i.id}** · ${where(i)} · \`${i.id}/\``);
+  }
+  for (const [d, lines] of Object.entries(days)) {
+    const f = path.join(OUT, 'packs', d, 'index.md');
+    fs.writeFileSync(f, `# ${d} · what to post\n\n${lines.join('\n')}\n`);
+    console.log(path.relative(ROOT, f));
+  }
 }
