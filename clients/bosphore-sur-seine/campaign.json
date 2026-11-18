@@ -1143,7 +1143,7 @@
       "channel": "instagram + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: Eliyo — \"Minuit, la péniche se met à tanguer\" (his Cabaret Sauvage set, cut on his own track)",
+      "title": "Reel: \"Minuit. Eliyo prend la barre et la péniche se met à tanguer\" — Eliyo's Cabaret Sauvage set, cut on the beat",
       "visuals": [
         "video:reel-e10"
       ],
@@ -1154,15 +1154,15 @@
         "Eliyo [handle À CONFIRMER]"
       ],
       "needs": [
-        "Eliyo's Cabaret Sauvage 'Plan' clips in Downloads",
-        "An Eliyo track (WAV/MP3)",
-        "OK from Horde / Baajar to reuse the footage"
+        "OK from Horde / Baajar to reuse the footage (credited on screen)",
+        "Eliyo's Instagram handle for the collab [À CONFIRMER]"
       ],
       "status": "draft",
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Made with HyperFrames (videos/e10). Footage: Plan 2, 8, 9; sound: Plan 5 (the night's own set). Shot with cups on the DJ table removed (Loi Évin)."
     },
     {
       "id": "E11",
