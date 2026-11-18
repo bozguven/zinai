@@ -1,0 +1,71 @@
+# ZinAI publisher: every 10 minutes, publishes APPROVED campaign items that are due
+# to Instagram and the Facebook Page through Meta's Graph API. Runs on GitHub, so the Mac can be off.
+#
+# Setup (once, in GitHub → this repo → Settings → Secrets and variables → Actions):
+#   Secret   META_PAGE_TOKEN   long-lived Page access token (Birkleyn Sound)
+#   Variable PUBLISH_ENABLED   "true" to really publish (anything else = dry run, nothing posted)
+#   Variable META_PAGE_ID / META_IG_USER_ID   optional, found from the token otherwise
+# Media: the videos live in the GitHub release "media" (uploaded by ZinAI), not in git.
+# Kill switch: set PUBLISH_ENABLED to "false", or disable this workflow in the Actions tab.
+name: publish
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'plan | check | run'
+        default: 'plan'
+      item:
+        description: 'optional: publish this approved item now (run only)'
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      META_PAGE_ID: ${{ vars.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
+      PUBLISH_ENABLED: ${{ vars.PUBLISH_ENABLED }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Download the media of approved items
+        run: |
+          mkdir -p out/bosphore-sur-seine
+          for f in $(node tools/publish/meta.mjs media); do
+            mkdir -p "out/bosphore-sur-seine/$(dirname "$f")"
+            gh release download media -p "$(basename "$f")" -D "out/bosphore-sur-seine/$(dirname "$f")" --clobber || echo "missing in release: $f"
+          done
+      - name: Publish
+        run: |
+          CMD="${{ github.event.inputs.command || 'run' }}"
+          ITEM="${{ github.event.inputs.item }}"
+          node tools/publish/meta.mjs plan
+          if [ "$CMD" = "check" ]; then node tools/publish/meta.mjs check; fi
+          if [ "$CMD" = "run" ]; then
+            if [ -n "$ITEM" ]; then node tools/publish/meta.mjs run --now "$ITEM"; else node tools/publish/meta.mjs run; fi
+          fi
+      - name: Save what was published
+        if: always()
+        run: |
+          if ! git diff --quiet clients/; then
+            git config user.name "zinai-publisher"
+            git config user.email "zinai-publisher@users.noreply.github.com"
+            git add clients/
+            git commit -m "publisher: record published items [skip ci]"
+            for n in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          fi

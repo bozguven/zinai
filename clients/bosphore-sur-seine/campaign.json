@@ -1396,18 +1396,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-8: \"Minuit, Eliyo prend la barre.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-8: \"Minuit, Eliyo prend la barre.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd19"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd19",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1415,7 +1408,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd19",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD20",
@@ -1423,18 +1423,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-7: \"21h, la brise d’Istanbul.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-7: \"21h, la brise d’Istanbul.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd20"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd20",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1442,7 +1435,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd20",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD21",
@@ -1450,18 +1450,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-6: \"Jusqu’à 4h sur la Seine.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-6: \"Jusqu’à 4h sur la Seine.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd21"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd21",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1469,7 +1462,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd21",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD22",
@@ -1477,18 +1477,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-5: \"Venez en bande.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-5: \"Venez en bande.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd22"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd22",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1496,7 +1489,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd22",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD23",
@@ -1504,18 +1504,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-4: \"La péniche se remplit.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-4: \"La péniche se remplit.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd23"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd23",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1523,7 +1516,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd23",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD24",
@@ -1531,18 +1531,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-3: \"Minuit, la house d’Istanbul.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-3: \"Minuit, la house d’Istanbul.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd24"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd24",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1550,7 +1543,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd24",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD25",
@@ -1558,18 +1558,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-2: \"À 2h, on ne vous dit rien.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-2: \"À 2h, on ne vous dit rien.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd25"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd25",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1577,7 +1570,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd25",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD26",
@@ -1585,18 +1585,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-1: \"Demain, on embarque.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-1: \"Demain, on embarque.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd26"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd26",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1604,7 +1597,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd26",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     },
     {
       "id": "CD27",
@@ -1612,18 +1612,11 @@
       "time": "10:00",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story Ce soir: \"Embarquement 20h30, pont Marie.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story Ce soir: \"Embarquement 20h30, pont Marie.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd27"
       ],
-      "sticker": "link",
-      "sticker_spec": {
-        "type": "link",
-        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd27",
-        "label": "Billets",
-        "where": "under the yellow pill"
-      },
       "needs": [
         "OK from Horde / Baajar to reuse the footage"
       ],
@@ -1631,7 +1624,14 @@
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "sticker_optional": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd27",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
     }
   ],
   "video_plan": {

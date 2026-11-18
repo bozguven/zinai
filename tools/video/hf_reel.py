@@ -100,7 +100,7 @@ def build(recipe_path, render=False):
         return ' style="font-size:200px"' if tx.get('style') == 'mega' and len(tx['text']) > 4 else ''
     tdivs = '\n'.join(f'      <div id="{i}" class="t {tx.get("style","line")} clip"{tstyle(tx)} data-start="{s}" data-duration="{d}" data-track-index="4">{E(tx["text"])}</div>' for i, tx, s, d in texts)
     es = round(end_from*B, 3); ed = round(dur - es, 3)
-    info_s = round(es + 2*B, 3); cta_s = round(es + 4*B, 3)
+    info_s = round(es + 2*B, 3); cta_s = info_s if fmt == 'story' else round(es + 4*B, 3)  # stories don't loop: show the CTA early
 
     js_push = ',\n'.join(f'["#{i}",{round(b*B,3)},{round(n*B,3)},{1.0 + 0.06*(k%3)},{1.08 - 0.03*(k%2)}]' for k, (i, c, ms, b, n) in enumerate(shots))
     cuts = [round(b*B, 3) for (_, _, _, b, _) in shots[1:] if b < end_from]
