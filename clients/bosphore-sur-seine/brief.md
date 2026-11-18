@@ -54,6 +54,12 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 
 ## Decisions from the dinner with Ali and Ruşan (17 Nov)
 
+- **The promise to put first (Ali & Ruşan, 18 Nov):** *Saat 4'e kadar Seine nehri üzerinde müzikal yolculuk ve dans.*
+  FR: **« Jusqu'à 4h, un voyage musical et dansé sur la Seine. »** Every piece of content serves this:
+  the boat, the river at night, people dancing, the music carrying on until 4h.
+- **Feedback on the first content (18 Nov):** too many similar static visuals and too few content types;
+  the videos don't feel like what they want. Less flyer art, more real night footage (river, boat, crowd, dance).
+
 - **Istanbul is the key word.** Every piece of content says Istanbul.
 - **French voice = Horde** (horde.paris): see `.claude/skills/voix-horde/SKILL.md`. Use *vous*.
 - **Never mention saz or halay**, in any language. Not for this audience. Show instruments on video, don't name them.
