@@ -3,7 +3,7 @@ description: Show the campaign (campaign.json), render missing visuals and rebui
 argument-hint: "[from YYYY-MM-DD] [to YYYY-MM-DD] or 'board'"
 ---
 
-campaign.json (`clients/bosphore-sur-seine/campaign.json`) is the source of truth for everything scheduled: posts, Reels, stories, stickers, Shotgun actions, website updates and ads. Modes: `auto` (Postiz), `manual` (phone, stickers), `shotgun` (Smartboard by hand), `website` (web-updater), `meta-ads` (ads-manager, paused).
+campaign.json (`clients/bosphore-sur-seine/campaign.json`) is the source of truth for everything scheduled: posts, Reels, stories, stickers, Shotgun actions, website updates and ads. Modes: `auto` (Meta Business Suite + Buffer), `manual` (phone, stickers), `shotgun` (Smartboard by hand), `website` (web-updater), `meta-ads` (ads-manager, paused).
 
 1. `node tools/campaign.mjs list $ARGUMENTS` and summarise by day.
 2. Find visuals referenced by items that are missing from `out/bosphore-sur-seine/` and render them: `node render.mjs bosphore-sur-seine <ids>`. Items that need a video (clips) or something from the team: list them under "Waiting for".
