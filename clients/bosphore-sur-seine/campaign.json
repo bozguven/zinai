@@ -1,7 +1,7 @@
 {
   "client": "bosphore-sur-seine",
   "timezone": "Europe/Paris",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "items": [
     {
       "id": "W01",
@@ -1369,26 +1369,23 @@
       "time": "20:30",
       "channel": "instagram story + facebook story",
       "format": "story",
-      "mode": "manual",
-      "title": "Countdown story J-9: \"Istanbul accoste dans 9 jours.\" (house style, 7 s) + link sticker",
+      "mode": "auto",
+      "title": "Countdown story J-9: \"Istanbul accoste dans 9 jours.\" (house style, 7 s)",
       "visuals": [
         "video:story-cd18"
       ],
-      "sticker": "link",
-      "sticker_spec": {
+      "status": "approved",
+      "approval": {
+        "ali": "yes (relayed by Bertuğ in chat, 18 Nov 20:2x)",
+        "rusan": "yes (relayed by Bertuğ in chat, 18 Nov 20:2x)"
+      },
+      "sticker_optional": {
         "type": "link",
         "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd18",
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "needs": [
-        "OK from Horde / Baajar to reuse the footage"
-      ],
-      "status": "draft",
-      "approval": {
-        "ali": null,
-        "rusan": null
-      }
+      "notes": "First API test post. Horde × Baajar OK confirmed by Bertuğ 18 Nov."
     },
     {
       "id": "CD19",
