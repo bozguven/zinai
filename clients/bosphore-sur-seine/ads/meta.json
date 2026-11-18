@@ -50,11 +50,13 @@
       "placements": [
         "Instagram Reels",
         "Instagram Stories",
-        "Instagram Feed"
+        "Instagram Feed",
+        "Facebook Feed",
+        "Facebook Stories"
       ],
       "creatives": [
-        "E10 (Reel, Eliyo)",
-        "E13 (Reel, jusqu'à 4h)"
+        "E10 Reel 9:16 + feed-e10 4:5",
+        "E13 Reel 9:16 + feed-e13 4:5"
       ],
       "copy": [
         {
@@ -101,13 +103,15 @@
       "placements": [
         "Instagram Reels",
         "Instagram Stories",
-        "Instagram Feed"
+        "Instagram Feed",
+        "Facebook Feed",
+        "Facebook Stories"
       ],
       "creatives": [
-        "E13 (Reel, jusqu'à 4h)",
-        "E15 (Reel, en bande)",
-        "E10 (Reel, Eliyo)",
-        "C01 (carousel, 4:5)"
+        "E13 9:16 + 4:5",
+        "E15 9:16 + 4:5",
+        "E10 9:16 + 4:5",
+        "C01 carousel 4:5"
       ],
       "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=paid&utm_campaign=bss1-a02",
       "copy": [
@@ -142,13 +146,15 @@
         ]
       },
       "placements": [
+        "Instagram Reels",
         "Instagram Stories",
-        "Instagram Reels"
+        "Instagram Feed",
+        "Facebook Feed",
+        "Facebook Stories"
       ],
       "creatives": [
-        "E14 (Reel, la surprise de 2h)",
-        "tickets-open-story-fr",
-        "countdown-story-fr"
+        "E14 9:16 + 4:5",
+        "CD stories (J-2, J-1) 9:16"
       ],
       "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=paid&utm_campaign=bss1-a03",
       "copy": [

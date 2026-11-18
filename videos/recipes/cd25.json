@@ -1,0 +1,45 @@
+{
+ "id": "cd25",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p8.mp4",
+  "start": 34.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "p3.mp4",
+   36.5,
+   4
+  ],
+  [
+   "p9.mp4",
+   30.5,
+   4
+  ],
+  [
+   "p8.mp4",
+   24.5,
+   20
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "J-2",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "À 2h, on ne vous dit rien.",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Vendredi 27.11, sur la Seine"
+}

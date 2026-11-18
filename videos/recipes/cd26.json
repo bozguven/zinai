@@ -1,0 +1,45 @@
+{
+ "id": "cd26",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p9.mp4",
+  "start": 44.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "p8.mp4",
+   14.0,
+   4
+  ],
+  [
+   "p9.mp4",
+   17.0,
+   4
+  ],
+  [
+   "p2.mp4",
+   38.5,
+   20
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "J-1",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "Demain, on embarque.",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Vendredi 27.11, sur la Seine"
+}

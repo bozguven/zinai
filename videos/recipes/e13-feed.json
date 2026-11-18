@@ -1,0 +1,87 @@
+{
+ "id": "e13-feed",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p8.mp4",
+  "start": 21.1,
+  "seconds": 16
+ },
+ "shots": [
+  [
+   "p8.mp4",
+   6.0,
+   4
+  ],
+  [
+   "p9.mp4",
+   13.0,
+   4
+  ],
+  [
+   "p9.mp4",
+   6.5,
+   2
+  ],
+  [
+   "p9.mp4",
+   15.5,
+   2
+  ],
+  [
+   "p2.mp4",
+   35.0,
+   4
+  ],
+  [
+   "p8.mp4",
+   38.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   42.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   10.0,
+   3
+  ],
+  [
+   "p8.mp4",
+   41.0,
+   20
+  ]
+ ],
+ "end_beats": 9,
+ "texts": [
+  {
+   "text": "Jusqu’à 4h.",
+   "from": 0,
+   "to": 8,
+   "style": "hook"
+  },
+  {
+   "text": "un voyage musical",
+   "from": 8,
+   "to": 14,
+   "style": "line"
+  },
+  {
+   "text": "et dansé",
+   "from": 14,
+   "to": 20,
+   "style": "hook"
+  },
+  {
+   "text": "sur la Seine.",
+   "from": 20,
+   "to": 26,
+   "style": "line"
+  }
+ ],
+ "end_line": "Jusqu’à 4h, sur la Seine",
+ "format": "feed",
+ "out_prefix": "feed"
+}

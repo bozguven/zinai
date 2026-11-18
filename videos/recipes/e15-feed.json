@@ -1,0 +1,87 @@
+{
+ "id": "e15-feed",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p2.mp4",
+  "start": 25.2,
+  "seconds": 16
+ },
+ "shots": [
+  [
+   "p2.mp4",
+   34.5,
+   4
+  ],
+  [
+   "p9.mp4",
+   20.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   16.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   20.0,
+   2
+  ],
+  [
+   "p5.mp4",
+   8.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   14.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   13.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   26.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   38.0,
+   20
+  ]
+ ],
+ "end_beats": 9,
+ "texts": [
+  {
+   "text": "Istanbul.",
+   "from": 0,
+   "to": 4,
+   "style": "hook"
+  },
+  {
+   "text": "Paris.",
+   "from": 4,
+   "to": 8,
+   "style": "hook"
+  },
+  {
+   "text": "et toute votre bande",
+   "from": 8,
+   "to": 16,
+   "style": "line"
+  },
+  {
+   "text": "Envoyez-le à ceux qui dansent jusqu’à 4h",
+   "from": 16,
+   "to": 25,
+   "style": "line"
+  }
+ ],
+ "end_line": "Venez en bande.",
+ "format": "feed",
+ "out_prefix": "feed"
+}

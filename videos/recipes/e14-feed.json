@@ -1,0 +1,92 @@
+{
+ "id": "e14-feed",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p9.mp4",
+  "start": 33.8,
+  "seconds": 16
+ },
+ "shots": [
+  [
+   "p3.mp4",
+   24.0,
+   4
+  ],
+  [
+   "p9.mp4",
+   42.0,
+   2
+  ],
+  [
+   "p3.mp4",
+   36.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   24.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   30.0,
+   2
+  ],
+  [
+   "p9.mp4",
+   24.0,
+   4
+  ],
+  [
+   "p9.mp4",
+   46.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   39.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   26.0,
+   20
+  ]
+ ],
+ "end_beats": 10,
+ "blackout_beats": [
+  13,
+  21,
+  23
+ ],
+ "texts": [
+  {
+   "text": "02h → 04h",
+   "from": 0,
+   "to": 6,
+   "style": "tag"
+  },
+  {
+   "text": "À 2h,",
+   "from": 0,
+   "to": 6,
+   "style": "hook"
+  },
+  {
+   "text": "la nuit change de cap.",
+   "from": 6,
+   "to": 14,
+   "style": "line"
+  },
+  {
+   "text": "On ne vous dit rien.",
+   "from": 14,
+   "to": 24,
+   "style": "line"
+  }
+ ],
+ "end_line": "Restez jusqu’au bout.",
+ "format": "feed",
+ "out_prefix": "feed"
+}

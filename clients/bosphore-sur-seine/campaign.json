@@ -121,13 +121,13 @@
         "name": "Bosphore sur Seine",
         "ends": "2026-11-27T20:30"
       },
-      "status": "draft",
+      "status": "retired",
       "needs": [],
       "approval": {
         "ali": null,
         "rusan": null
       },
-      "notes": "Post the MP4 as a story, add the countdown sticker and a music sticker. Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute."
+      "notes": "Post the MP4 as a story, add the countdown sticker and a music sticker. Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute. Replaced by the countdown stories (CD)."
     },
     {
       "id": "S03",
@@ -619,13 +619,13 @@
         "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-s11",
         "label": "Billets"
       },
-      "status": "draft",
+      "status": "retired",
       "needs": [],
       "approval": {
         "ali": null,
         "rusan": null
       },
-      "notes": "Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute."
+      "notes": "Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute. Replaced by the countdown stories (CD)."
     },
     {
       "id": "R03",
@@ -694,13 +694,13 @@
         "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-s12",
         "label": "Billets"
       },
-      "status": "draft",
+      "status": "retired",
       "needs": [],
       "approval": {
         "ali": null,
         "rusan": null
       },
-      "notes": "Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute."
+      "notes": "Son : Ruşan's track if it is on Instagram's music library; otherwise a track from Instagram's commercial library (business accounts) to avoid a copyright mute. Replaced by the countdown stories (CD)."
     },
     {
       "id": "SG04",
@@ -923,7 +923,7 @@
       "mode": "manual",
       "title": "Facebook event (Horde-style description) co-hosted by Birkleyn Sound and Péniche Le Marcounet",
       "visuals": [
-        "announce-post-fr"
+        "fb-event-cover"
       ],
       "text_fr": "Le 27 novembre, un vapur quitte Karaköy à la tombée du jour. Il remonte le Bosphore, traverse la nuit et vient s'amarrer au pied du pont Marie. À bord : la brise d'Istanbul, un orchestre, des platines, et une foule qui ne sait plus très bien de quelle rive elle vient.\n\nEmbarquez à 20h30. La traversée commence avec l'orchestre, puis Eliyo fait monter la house jusqu'à 2h. Ensuite, la nuit change de cap. On ne vous dit rien : restez jusqu'au bout.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul\n● 23h → 00h · Hybrid set : platines, orchestre et saxophone [saxophone À CONFIRMER]\n● 00h → 02h · Eliyo, house\n● 02h → 04h · Surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#BosphoreSurSeine · Instagram : Birkleyn Sound [handle À CONFIRMER]\n\nBillets : https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=facebook&utm_medium=event&utm_campaign=bss1",
       "checklist": [
@@ -1140,12 +1140,13 @@
       "id": "E10",
       "date": "2026-11-19",
       "time": "18:30",
-      "channel": "instagram + tiktok + youtube shorts",
+      "channel": "instagram reel + tiktok + youtube shorts + facebook (4:5)",
       "format": "reel",
       "mode": "auto",
       "title": "Reel: \"Minuit. Eliyo prend la barre et la péniche se met à tanguer\" — Eliyo's Cabaret Sauvage set, cut on the beat",
       "visuals": [
-        "video:reel-e10"
+        "video:reel-e10",
+        "video:feed-e10"
       ],
       "caption_fr": "Minuit. Eliyo prend la barre et la péniche se met à tanguer. 🖤\nJusqu'à 2h, la house d'Istanbul, celle qui ne laisse personne assis.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "Gece yarısı. Dümen Eliyo'da, tekne sallanmaya başlıyor. 🖤\n02.00'ye kadar İstanbul house'u; kimse oturmuyor.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
@@ -1162,7 +1163,14 @@
         "ali": null,
         "rusan": null
       },
-      "notes": "Made with HyperFrames (videos/e10). Footage: Plan 2, 8, 9; sound: Plan 5 (the night's own set). Shot with cups on the DJ table removed (Loi Évin)."
+      "notes": "Made with HyperFrames (videos/e10). Footage: Plan 2, 8, 9; sound: Plan 5 (the night's own set). Shot with cups on the DJ table removed (Loi Évin).",
+      "variants": {
+        "instagram_reel": "video:reel-e10",
+        "tiktok": "video:reel-e10",
+        "youtube_shorts": "video:reel-e10",
+        "facebook_feed": "video:feed-e10",
+        "ads_4x5": "video:feed-e10"
+      }
     },
     {
       "id": "E11",
@@ -1265,11 +1273,12 @@
       "time": "18:30",
       "title": "Reel: \"Jusqu'à 4h. Un voyage musical et dansé sur la Seine.\" — the main promise, cut on the beat",
       "visuals": [
-        "video:reel-e13"
+        "video:reel-e13",
+        "video:feed-e13"
       ],
       "caption_fr": "Jusqu'à 4h, un voyage musical et dansé sur la Seine. 🖤\nL'orchestre pour embarquer, Eliyo pour ne plus redescendre.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "Sabah 4'e kadar Seine üzerinde müzikli bir yolculuk ve dans. 🖤\nOrkestrayla biniyoruz, Eliyo'yla bir daha inmiyoruz.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
-      "channel": "instagram + tiktok + youtube shorts",
+      "channel": "instagram reel + tiktok + youtube shorts + facebook (4:5)",
       "format": "reel",
       "mode": "auto",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
@@ -1281,7 +1290,14 @@
         "ali": null,
         "rusan": null
       },
-      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025."
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025.",
+      "variants": {
+        "instagram_reel": "video:reel-e13",
+        "tiktok": "video:reel-e13",
+        "youtube_shorts": "video:reel-e13",
+        "facebook_feed": "video:feed-e13",
+        "ads_4x5": "video:feed-e13"
+      }
     },
     {
       "id": "E15",
@@ -1289,11 +1305,12 @@
       "time": "13:00",
       "title": "Reel: \"Istanbul. Paris. Et toute votre bande.\" — made to be sent to friends",
       "visuals": [
-        "video:reel-e15"
+        "video:reel-e15",
+        "video:feed-e15"
       ],
       "caption_fr": "Istanbul, Paris, et toute votre bande.\nEnvoyez-le à ceux qui dansent jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "İstanbul, Paris ve bütün ekibin.\nSabah 4'e kadar dans edenlere gönder. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
-      "channel": "instagram + tiktok + youtube shorts",
+      "channel": "instagram reel + tiktok + youtube shorts + facebook (4:5)",
       "format": "reel",
       "mode": "auto",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
@@ -1305,7 +1322,14 @@
         "ali": null,
         "rusan": null
       },
-      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025."
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025.",
+      "variants": {
+        "instagram_reel": "video:reel-e15",
+        "tiktok": "video:reel-e15",
+        "youtube_shorts": "video:reel-e15",
+        "facebook_feed": "video:feed-e15",
+        "ads_4x5": "video:feed-e15"
+      }
     },
     {
       "id": "E14",
@@ -1313,11 +1337,12 @@
       "time": "20:30",
       "title": "Reel: \"À 2h, la nuit change de cap. On ne vous dit rien.\" — the secret finale, revealed by nothing",
       "visuals": [
-        "video:reel-e14"
+        "video:reel-e14",
+        "video:feed-e14"
       ],
       "caption_fr": "À 2h, la nuit change de cap.\nOn ne vous dit rien. Restez jusqu'au bout. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "Saat 2'de gece rota değiştiriyor.\nHiçbir şey söylemiyoruz. Sonuna kadar kal. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
-      "channel": "instagram + tiktok + youtube shorts",
+      "channel": "instagram reel + tiktok + youtube shorts + facebook (4:5)",
       "format": "reel",
       "mode": "auto",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
@@ -1329,7 +1354,284 @@
         "ali": null,
         "rusan": null
       },
-      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025."
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025.",
+      "variants": {
+        "instagram_reel": "video:reel-e14",
+        "tiktok": "video:reel-e14",
+        "youtube_shorts": "video:reel-e14",
+        "facebook_feed": "video:feed-e14",
+        "ads_4x5": "video:feed-e14"
+      }
+    },
+    {
+      "id": "CD18",
+      "date": "2026-11-18",
+      "time": "20:30",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-9: \"Istanbul accoste dans 9 jours.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd18"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd18",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD19",
+      "date": "2026-11-19",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-8: \"Minuit, Eliyo prend la barre.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd19"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd19",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD20",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-7: \"21h, la brise d’Istanbul.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd20"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd20",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD21",
+      "date": "2026-11-21",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-6: \"Jusqu’à 4h sur la Seine.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd21"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd21",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD22",
+      "date": "2026-11-22",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-5: \"Venez en bande.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd22"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd22",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD23",
+      "date": "2026-11-23",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-4: \"La péniche se remplit.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd23"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd23",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD24",
+      "date": "2026-11-24",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-3: \"Minuit, la house d’Istanbul.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd24"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd24",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD25",
+      "date": "2026-11-25",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-2: \"À 2h, on ne vous dit rien.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd25"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd25",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD26",
+      "date": "2026-11-26",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story J-1: \"Demain, on embarque.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd26"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd26",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
+    },
+    {
+      "id": "CD27",
+      "date": "2026-11-27",
+      "time": "10:00",
+      "channel": "instagram story + facebook story",
+      "format": "story",
+      "mode": "manual",
+      "title": "Countdown story Ce soir: \"Embarquement 20h30, pont Marie.\" (house style, 7 s) + link sticker",
+      "visuals": [
+        "video:story-cd27"
+      ],
+      "sticker": "link",
+      "sticker_spec": {
+        "type": "link",
+        "url": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=story&utm_campaign=bss1-cd27",
+        "label": "Billets",
+        "where": "under the yellow pill"
+      },
+      "needs": [
+        "OK from Horde / Baajar to reuse the footage"
+      ],
+      "status": "draft",
+      "approval": {
+        "ali": null,
+        "rusan": null
+      }
     }
   ],
   "video_plan": {
@@ -1365,5 +1667,16 @@
       "Comptes Instagram : Birkleyn Sound, Eliyo, Ruşan, Péniche Le Marcounet.",
       "Avis sur V07 (« Jusqu'à 4h »)."
     ]
+  },
+  "channel_plan": {
+    "instagram_reels": "The house-style Reels (E10, E13, E14, E15, then O01/SX01 when filmed). One every 1–2 days, 13:00 or 18:30.",
+    "instagram_stories": "Every day: the countdown story (CD18 → CD27, link sticker), plus the interactive stickers (poll, quiz, questions) and reposts of the Reels.",
+    "instagram_feed": "Reels show in the feed; static posts only for the programme (P08), how to get there (P11), last tickets (P12) and the sold-out moment (P09).",
+    "facebook": "Event page (FB01, cover fb-event-cover.png) co-hosted with the péniche: the folk/culture crowd. Each Reel is also posted to the Facebook Page in 4:5 (feed-*.mp4) and shared in the event's discussion. Stories cross-posted.",
+    "tiktok": "Same Reels as Instagram (9:16), same day, 30 min later. Captions FR first, then TR.",
+    "youtube_shorts": "Same Reels, for search and reach outside Instagram.",
+    "ads": "Meta (Instagram + Facebook): 9:16 for Reels/Stories placements, 4:5 feed versions for Feed placements. Created paused.",
+    "shotgun": "Pixel, description (SG00), push notifications and newsletter on the key days.",
+    "website": "Banner and ticket stage follow the campaign (W items)."
   }
 }

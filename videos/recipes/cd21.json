@@ -1,0 +1,45 @@
+{
+ "id": "cd21",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p8.mp4",
+  "start": 30.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "p9.mp4",
+   13.5,
+   4
+  ],
+  [
+   "p8.mp4",
+   12.0,
+   4
+  ],
+  [
+   "p2.mp4",
+   35.5,
+   20
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "J-6",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "Jusqu’à 4h sur la Seine.",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Vendredi 27.11, sur la Seine"
+}

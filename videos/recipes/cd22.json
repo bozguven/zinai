@@ -1,0 +1,45 @@
+{
+ "id": "cd22",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p5.mp4",
+  "start": 14.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "p2.mp4",
+   34.0,
+   4
+  ],
+  [
+   "p9.mp4",
+   21.0,
+   4
+  ],
+  [
+   "p8.mp4",
+   41.0,
+   20
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "J-5",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "Venez en bande.",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Vendredi 27.11, sur la Seine"
+}

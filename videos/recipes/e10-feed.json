@@ -1,0 +1,97 @@
+{
+ "id": "e10-feed",
+ "format": "feed",
+ "out_prefix": "feed",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p5.mp4",
+  "start": 24.035,
+  "seconds": 16
+ },
+ "shots": [
+  [
+   "p2.mp4",
+   30.0,
+   4
+  ],
+  [
+   "p2.mp4",
+   34.4,
+   4
+  ],
+  [
+   "p9.mp4",
+   36.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   25.0,
+   2
+  ],
+  [
+   "p2.mp4",
+   31.6,
+   4
+  ],
+  [
+   "p2.mp4",
+   37.2,
+   2
+  ],
+  [
+   "p9.mp4",
+   4.0,
+   2
+  ],
+  [
+   "p2.mp4",
+   36.6,
+   1
+  ],
+  [
+   "p8.mp4",
+   40.0,
+   1
+  ],
+  [
+   "p9.mp4",
+   38.0,
+   2
+  ],
+  [
+   "p8.mp4",
+   27.0,
+   20
+  ]
+ ],
+ "end_beats": 9,
+ "texts": [
+  {
+   "text": "Minuit.",
+   "from": 0,
+   "to": 4,
+   "style": "hook"
+  },
+  {
+   "text": "00h → 02h",
+   "from": 4,
+   "to": 12,
+   "style": "tag"
+  },
+  {
+   "text": "Eliyo prend la barre",
+   "from": 4,
+   "to": 12,
+   "style": "line"
+  },
+  {
+   "text": "et la péniche se met à tanguer",
+   "from": 12,
+   "to": 24,
+   "style": "line"
+  }
+ ],
+ "end_line": "Jusqu’à 2h, la house d’Istanbul"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "cd27",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media",
+ "audio": {
+  "src": "p9.mp4",
+  "start": 14.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "p9.mp4",
+   14.5,
+   4
+  ],
+  [
+   "p8.mp4",
+   6.5,
+   4
+  ],
+  [
+   "p2.mp4",
+   34.8,
+   20
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "Ce soir",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "Embarquement 20h30, pont Marie.",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Ce soir, sur la Seine"
+}

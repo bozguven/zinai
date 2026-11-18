@@ -38,6 +38,12 @@ def beats_of(project, wav):
 def build(recipe_path, render=False):
     r = json.load(open(recipe_path))
     rid = r['id']
+    fmt = r.get('format', 'reel')
+    W, H = (1080, 1350) if fmt == 'feed' else (1080, 1920)
+    L = ({'brand': 80, 'hook': 330, 'line': 360, 'tag': 250, 'mega': 300, 'endline': 260, 'info': 640, 'cta': 820, 'credit': 1280}
+         if fmt == 'feed' else
+         {'brand': 250, 'hook': 560, 'line': 600, 'tag': 470, 'mega': 520, 'endline': 470, 'info': 840, 'cta': 1020, 'credit': 1270})
+    cta_text = r.get('cta', 'Lien juste en dessous ↓' if fmt == 'story' else 'Billets : lien en bio')
     proj = os.path.join(ROOT, 'videos', rid)
     media = os.path.join(proj, 'assets/media')
     os.makedirs(media, exist_ok=True)
@@ -65,6 +71,10 @@ def build(recipe_path, render=False):
     # footage proxies (1080x1920, 30 fps, silent), one per source clip
     for clip in sorted({s[0] for s in r['shots']}):
         out = os.path.join(media, clip)
+        shared = [os.path.join(ROOT, 'videos', d, 'assets/media', clip) for d in os.listdir(os.path.join(ROOT, 'videos'))]
+        shared = [x for x in shared if os.path.exists(x) and os.path.abspath(x) != os.path.abspath(out)]
+        if not os.path.exists(out) and shared:
+            os.link(shared[0], out) if os.stat(shared[0]).st_dev == os.stat(media).st_dev else shutil.copy(shared[0], out)
         if not os.path.exists(out):
             sh(['ffmpeg', '-loglevel', 'error', '-y', '-i', os.path.join(src_dir, clip), '-an', '-vf', 'scale=1080:1920,fps=30',
                 '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19', '-pix_fmt', 'yuv420p', out])
@@ -86,14 +96,16 @@ def build(recipe_path, render=False):
         a_, b_ = tx['from'], min(tx['to'], end_from)
         if b_ <= a_: continue
         texts.append((f't{k+1}', tx, round(a_*B, 3), round((b_-a_)*B, 3)))
-    tdivs = '\n'.join(f'      <div id="{i}" class="t {tx.get("style","line")} clip" data-start="{s}" data-duration="{d}" data-track-index="4">{E(tx["text"])}</div>' for i, tx, s, d in texts)
+    def tstyle(tx):
+        return ' style="font-size:200px"' if tx.get('style') == 'mega' and len(tx['text']) > 4 else ''
+    tdivs = '\n'.join(f'      <div id="{i}" class="t {tx.get("style","line")} clip"{tstyle(tx)} data-start="{s}" data-duration="{d}" data-track-index="4">{E(tx["text"])}</div>' for i, tx, s, d in texts)
     es = round(end_from*B, 3); ed = round(dur - es, 3)
     info_s = round(es + 2*B, 3); cta_s = round(es + 4*B, 3)
 
     js_push = ',\n'.join(f'["#{i}",{round(b*B,3)},{round(n*B,3)},{1.0 + 0.06*(k%3)},{1.08 - 0.03*(k%2)}]' for k, (i, c, ms, b, n) in enumerate(shots))
     cuts = [round(b*B, 3) for (_, _, _, b, _) in shots[1:] if b < end_from]
     js_text = '\n'.join(
-        (f'      tl.fromTo("#{i}", {{ scale: 1.14 }}, {{ scale: 1, duration: 0.6, ease: "power3.out" }}, {s});' if tx.get('style') == 'hook' else
+        (f'      tl.fromTo("#{i}", {{ scale: 1.14 }}, {{ scale: 1, duration: 0.6, ease: "power3.out" }}, {s});' if tx.get('style') in ('hook', 'mega') else
          f'      tl.fromTo("#{i}", {{ opacity: 0, y: 40 }}, {{ opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }}, {s});')
         for i, tx, s, d in texts)
     blk = [round(b*B, 3) for b in r.get('blackout_beats', [])]
@@ -102,7 +114,7 @@ def build(recipe_path, render=False):
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1080, height=1920" />
+    <meta name="viewport" content="width={W}, height={H}" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
     <style>
       @font-face {{ font-family: "Unbounded"; font-weight: 900; src: url("assets/fonts/unbounded-latin-900-normal.woff2") format("woff2"); }}
@@ -110,27 +122,29 @@ def build(recipe_path, render=False):
       @font-face {{ font-family: "Fira Sans Condensed"; font-weight: 700; src: url("assets/fonts/fira-sans-condensed-latin-700-normal.woff2") format("woff2"); }}
       :root {{ --ink: #f6f2e6; --window: #decf58; }}
       * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-      html, body {{ width: 1080px; height: 1920px; overflow: hidden; background: #000; }}
+      html, body {{ width: {W}px; height: {H}px; overflow: hidden; background: #000; }}
       #root {{ position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Fira Sans Condensed", sans-serif; color: var(--ink); }}
-      .shot {{ position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; z-index: 1; }}
+      .shot {{ position: absolute; inset: 0; width: {W}px; height: {H}px; object-fit: cover; z-index: 1; }}
       .full {{ position: absolute; inset: 0; }}
       #shade {{ z-index: 2; background: linear-gradient(180deg, #000a 0%, #0004 24%, transparent 40%, transparent 72%, #000a 100%); }}
       #black {{ z-index: 3; background: #000; }}
       #endshade {{ z-index: 3; background: linear-gradient(180deg, #0d1330cc 0%, #0d1330aa 55%, #0d1330ee 100%); }}
       .t {{ position: absolute; left: 0; width: 1080px; text-align: center; z-index: 10; text-wrap: balance; text-shadow: 0 4px 30px #0009; }}
-      #brand {{ top: 250px; font: 700 30px/1 "Fira Sans Condensed"; letter-spacing: 0.32em; opacity: 0.9; }}
-      .hook {{ top: 560px; padding: 0 70px; font: 900 170px/0.98 "Unbounded"; letter-spacing: -0.04em; }}
-      .line {{ top: 600px; padding: 0 120px; font: 900 90px/1.03 "Unbounded"; letter-spacing: -0.03em; }}
-      .tag {{ top: 470px; font: 700 40px/1 "Fira Sans Condensed"; letter-spacing: 0.24em; color: var(--window); }}
-      #endline {{ top: 470px; padding: 0 130px; font: 900 88px/1.04 "Unbounded"; letter-spacing: -0.03em; }}
-      #info {{ top: 840px; font: 700 44px/1.35 "Fira Sans Condensed"; }}
-      #cta {{ top: 1020px; }}
+      #brand {{ top: {L['brand']}px; font: 700 30px/1 "Fira Sans Condensed"; letter-spacing: 0.32em; opacity: 0.9; }}
+      .hook {{ top: {L['hook']}px; padding: 0 70px; font: 900 170px/0.98 "Unbounded"; letter-spacing: -0.04em; }}
+      .line {{ top: {L['line']}px; padding: 0 120px; font: 900 90px/1.03 "Unbounded"; letter-spacing: -0.03em; }}
+      .mega {{ top: {L['mega']}px; font: 900 300px/0.95 "Unbounded"; letter-spacing: -0.05em; }}
+      .sub {{ top: {L['mega'] + 340}px; padding: 0 120px; font: 900 76px/1.05 "Unbounded"; letter-spacing: -0.03em; }}
+      .tag {{ top: {L['tag']}px; font: 700 40px/1 "Fira Sans Condensed"; letter-spacing: 0.24em; color: var(--window); }}
+      #endline {{ top: {L['endline']}px; padding: 0 130px; font: 900 88px/1.04 "Unbounded"; letter-spacing: -0.03em; }}
+      #info {{ top: {L['info']}px; font: 700 44px/1.35 "Fira Sans Condensed"; }}
+      #cta {{ top: {L['cta']}px; }}
       #cta span {{ display: inline-block; padding: 18px 40px; border-radius: 999px; background: var(--window); color: #141a3a; font: 700 44px/1 "Fira Sans Condensed"; text-shadow: none; }}
-      #credit {{ top: 1270px; font: 500 26px/1 "Fira Sans Condensed"; opacity: 0.75; }}
+      #credit {{ top: {L['credit'] if fmt != 'feed' else H - 60}px; font: 500 26px/1 "Fira Sans Condensed"; opacity: 0.75; }}
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="{dur}" data-width="1080" data-height="1920" data-fps="30">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{dur}" data-width="{W}" data-height="{H}" data-fps="30">
 {vids}
       <div id="shade" class="full clip" data-start="0" data-duration="{dur}" data-track-index="1"></div>
       <div id="black" class="full clip" data-start="0" data-duration="{dur}" data-track-index="2"></div>
@@ -139,7 +153,7 @@ def build(recipe_path, render=False):
 {tdivs}
       <div id="endline" class="t clip" data-start="{es}" data-duration="{ed}" data-track-index="4">{E(r["end_line"])}</div>
       <div id="info" class="t clip" data-start="{info_s}" data-duration="{round(dur-info_s,3)}" data-track-index="5">Vendredi 27.11 · 20h30 → 4h<br />Péniche Le Marcounet · Pont Marie</div>
-      <div id="cta" class="t clip" data-start="{cta_s}" data-duration="{round(dur-cta_s,3)}" data-track-index="6"><span>Billets : lien en bio</span></div>
+      <div id="cta" class="t clip" data-start="{cta_s}" data-duration="{round(dur-cta_s,3)}" data-track-index="6"><span>{E(cta_text)}</span></div>
       <div id="credit" class="t clip" data-start="0" data-duration="{dur}" data-track-index="7">{E(r.get("credit",""))}</div>
       <audio id="music" src="assets/media/track.wav" data-start="0" data-duration="{dur}" data-volume="1" data-fade-in="0.05" data-fade-out="1.2" data-track-index="8"></audio>
     </div>
@@ -169,7 +183,7 @@ def build(recipe_path, render=False):
         f"Media are not in git. Rebuild with: python3 tools/video/hf_reel.py {os.path.relpath(recipe_path, ROOT)} (needs the source clips in media_dir).\n")
     print(f'{rid}: {bpm} BPM, {total_beats} beats, {dur}s, {len(shots)} shots')
     if render:
-        out = os.path.join(ROOT, 'out/bosphore-sur-seine/video', f'reel-{rid}.mp4')
+        out = os.path.join(ROOT, 'out/bosphore-sur-seine/video', f"{r.get('out_prefix', 'reel')}-{rid}.mp4")
         sh(HF + ['render', '--quality', 'looks', '-o', out], cwd=proj)
         print('rendered', out)
 
