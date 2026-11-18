@@ -85,7 +85,7 @@ function blockers(i) {
   for (const x of i.blocked_by || []) b.push(`blocked: ${x}`);
   if (!targets(i).length) b.push('no Instagram/Facebook target or no media');
   for (const t of targets(i)) if (!fs.existsSync(path.join(OUT, t.file))) b.push(`missing file ${t.file}`);
-  return b;
+  return [...new Set(b)];
 }
 const done = (i, t) => i.published?.[`${t.net}_${t.kind}`];
 
