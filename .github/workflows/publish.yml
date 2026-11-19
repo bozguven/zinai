@@ -40,6 +40,8 @@ jobs:
       META_FACEBOOK: ${{ vars.META_FACEBOOK }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # always the latest schedule, never the commit the run was queued on (avoids double posts)
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -52,6 +54,7 @@ jobs:
           ls -R out/bosphore-sur-seine | head -40
       - name: Publish
         run: |
+          git pull -q --rebase origin main || true
           CMD="${{ github.event.inputs.command || 'run' }}"
           ITEM="${{ github.event.inputs.item }}"
           node tools/publish/meta.mjs plan
