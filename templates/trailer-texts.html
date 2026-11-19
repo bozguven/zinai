@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:U;src:url(unbounded-latin-900-normal.woff2)}@font-face{font-family:U;src:url(unbounded-latin-ext-900-normal.woff2);unicode-range:U+0100-024F}
+@font-face{font-family:F;font-weight:500;src:url(fira-sans-condensed-latin-500-normal.woff2)}@font-face{font-family:F;font-weight:700;src:url(fira-sans-condensed-latin-700-normal.woff2)}
+@font-face{font-family:F;font-weight:700;src:url(fira-sans-condensed-latin-ext-700-normal.woff2);unicode-range:U+0100-024F}
+@font-face{font-family:F;font-weight:500;src:url(fira-sans-condensed-latin-ext-500-normal.woff2);unicode-range:U+0100-024F}
+html,body{margin:0;background:transparent}
+#c{width:1920px;height:1080px;position:relative;color:#f6efe3;font-family:F;text-align:center}
+.band{position:absolute;left:0;right:0;top:380px;height:320px;background:linear-gradient(180deg,rgba(20,26,58,0),rgba(20,26,58,.55) 30%,rgba(20,26,58,.55) 70%,rgba(20,26,58,0))}
+.big{position:absolute;left:0;right:0;font-family:U;font-weight:900;text-shadow:0 4px 24px rgba(0,0,0,.45)}
+.brand{position:absolute;left:0;right:0;letter-spacing:.32em;font-weight:700;text-transform:uppercase;font-size:28px;top:60px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.full{position:absolute;inset:0;background:rgba(20,26,58,.72)}
+.l{position:absolute;left:0;right:0}
+</style></head><body><div id="c"></div>
+<script>
+const S={
+ t1:`<div class="brand">Bosphore sur Seine</div><div class="band"></div><div class="big" style="top:470px;font-size:112px">Le son d'Istanbul</div>`,
+ t2:`<div class="brand">Bosphore sur Seine</div><div class="band"></div><div class="big" style="top:470px;font-size:112px">remonte la Seine.</div>`,
+ t3:`<div class="brand">Bosphore sur Seine</div><div class="band"></div><div class="big" style="top:440px;font-size:96px">23h. Le saxophone</div><div class="l" style="top:575px;font-size:44px;font-weight:700">de Michaël Wakko Havard</div>`,
+ t4:`<div class="brand">Bosphore sur Seine</div><div class="band"></div><div class="big" style="top:470px;font-size:96px">Des Balkans à l'Anatolie,</div>`,
+ t5:`<div class="brand">Bosphore sur Seine</div><div class="band"></div><div class="big" style="top:440px;font-size:96px">Minuit.</div><div class="l" style="top:575px;font-size:44px;font-weight:700">Eliyo prend la barre, jusqu'à 2h.</div>`,
+ end:`<div class="full"></div><div class="brand" style="top:170px">Bosphore sur Seine</div>
+  <div class="big" style="top:260px;font-size:92px;line-height:1.05">Jusqu'à 4h, un voyage<br>musical et dansé</div>
+  <div class="l" style="top:545px;font-size:40px;font-weight:700">Ruşan Filiztek &amp; l'orchestre · Michaël Wakko Havard · Eliyo</div>
+  <div class="l" style="top:615px;font-size:40px;font-weight:500">Vendredi 27 novembre · 20h30 → 4h · Péniche Le Marcounet, Pont Marie</div>
+  <div class="l" style="top:930px;font-size:24px;font-weight:500;letter-spacing:.06em;opacity:.85">Présenté par L'Heur du Spectacle</div>
+  <div class="l" style="top:972px;font-size:22px;font-weight:500;opacity:.7">Images : Horde × Baajar, Cabaret Sauvage, 2025 · sets d'Eliyo · @michael_wakko_havard</div>`};
+window.show=k=>{document.getElementById('c').innerHTML=S[k]};
+</script></body></html>
