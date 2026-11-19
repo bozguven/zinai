@@ -1731,11 +1731,21 @@
         "michael_wakko_havard"
       ],
       "notes": "Footage + sound: Michaël's own post (screen recording sent by Bertuğ 18 Nov), cropped; Rugby World Cup banner kept out of frame. Credit on screen: @michael_wakko_havard.",
-      "status": "approved",
+      "status": "publishing",
       "approval": {
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
-      }
+      },
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "publish_errors": [
+        {
+          "key": "instagram_reel",
+          "at": "2026-11-19T12:01:59.080Z",
+          "error": "POST /v25.0/17841427408016997/media: User not visible"
+        }
+      ]
     }
   ],
   "video_plan": {
