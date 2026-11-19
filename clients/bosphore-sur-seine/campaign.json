@@ -1186,7 +1186,7 @@
       "needs": [
         "Eliyo's Instagram handle for the collab [À CONFIRMER]"
       ],
-      "status": "publishing",
+      "status": "approved",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1220,10 +1220,7 @@
           "at": "2026-11-19T17:51:05.116Z",
           "error": "POST /ig-api-upload/v25.0/18127029496913601: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
         }
-      ],
-      "attempts": {
-        "instagram_reel": 1
-      }
+      ]
     },
     {
       "id": "E11",
