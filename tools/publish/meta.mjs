@@ -247,6 +247,13 @@ if (cmd === 'plan') {
   }
   if (changed) save(c);
   if (failures) process.exitCode = 1;
+} else if (cmd === 'delete') {
+  // delete Instagram media by id (only ids passed explicitly, e.g. a duplicate post)
+  if (!LIVE) { log('[dry run] would delete', args.join(' ')); process.exit(0); }
+  for (const id of args) {
+    try { const r = await api('DELETE', id); log(`deleted ${id}: ${JSON.stringify(r)}`); }
+    catch (e) { log(`ERROR delete ${id}: ${e.message}`); process.exitCode = 1; }
+  }
 } else {
-  log('Commands: plan | media | check | run [--now <id>]');
+  log('Commands: plan | media | check | run [--now <id>] | delete <media ids>');
 }

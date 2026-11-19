@@ -15,10 +15,10 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: 'plan | check | run'
+        description: 'plan | check | run | delete'
         default: 'plan'
       item:
-        description: 'optional: publish this approved item now (run only)'
+        description: 'run: item id to publish now · delete: Instagram media ids'
         default: ''
 
 permissions:
@@ -59,6 +59,7 @@ jobs:
           ITEM="${{ github.event.inputs.item }}"
           node tools/publish/meta.mjs plan
           if [ "$CMD" = "check" ]; then node tools/publish/meta.mjs check; fi
+          if [ "$CMD" = "delete" ]; then node tools/publish/meta.mjs delete $ITEM; fi
           if [ "$CMD" = "run" ]; then
             if [ -n "$ITEM" ]; then node tools/publish/meta.mjs run --now "$ITEM"; else node tools/publish/meta.mjs run; fi
           fi
