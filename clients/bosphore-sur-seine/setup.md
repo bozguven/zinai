@@ -30,3 +30,5 @@ What has to be connected or confirmed before ZinAI can publish. Update the boxes
 
 - Link: see `links.json` → `board_artifact`.
 - Videos show as stills; a tap loads the whole video, then plays it (works on phones and in WhatsApp's browser). 18 Nov.
+
+- [x] **Publisher trigger** (19 Nov): cron-job.org job `cron-zinai` calls the publish workflow every 5 min (GitHub's own schedule only ran a few times a day). Its GitHub token (Actions: read and write, zinai only) expires **19 Dec 2026**.
