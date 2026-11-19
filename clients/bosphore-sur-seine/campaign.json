@@ -1186,7 +1186,7 @@
       "needs": [
         "Eliyo's Instagram handle for the collab [À CONFIRMER]"
       ],
-      "status": "approved",
+      "status": "publishing",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1198,7 +1198,17 @@
         "youtube_shorts": "video:reel-e10",
         "facebook_feed": "video:feed-e10",
         "ads_4x5": "video:feed-e10"
-      }
+      },
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "publish_errors": [
+        {
+          "key": "instagram_reel",
+          "at": "2026-11-19T17:31:43.748Z",
+          "error": "GET /v25.0/me: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons."
+        }
+      ]
     },
     {
       "id": "E11",
