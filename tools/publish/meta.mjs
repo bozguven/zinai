@@ -139,7 +139,12 @@ async function publishInstagram(i, t) {
     if (t.kind === 'reel') { params.caption = caption(i); params.share_to_feed = true;
       const collab = (i.collaborators || []).filter((x) => /^@?[\w.]+$/.test(x)).map((x) => x.replace('@', ''));
       if (collab.length) params.collaborators = collab; }
-    container = (await api('POST', `${ig}/media`, params)).id;
+    container = await api('POST', `${ig}/media`, params).then((r) => r.id).catch(async (e) => {
+      if (!params.collaborators || !/not visible|collaborat/i.test(e.message)) throw e;
+      log(`collaborators refused (${e.message}); posting without them`);
+      delete params.collaborators;
+      return (await api('POST', `${ig}/media`, params)).id;
+    });
     const data = bytes(t.file);
     await api('POST', `https://rupload.facebook.com/ig-api-upload/${V}/${container}`, {},
       { offset: '0', file_size: String(data.length), 'Content-Type': 'application/octet-stream' }, data);

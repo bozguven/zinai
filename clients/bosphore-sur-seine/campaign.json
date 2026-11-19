@@ -1149,7 +1149,7 @@
       "caption_fr": "21h, la live session avec Ruşan Filiztek & friends : Ruşan au saz et au chant, Doğan Poyraz aux percussions, Michaël Wakko Havard au saxophone. Dès minuit, Eliyo et la house. Jusqu'à 4h, un voyage musical et dansé sur la Seine. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "21.00'de Ruşan Filiztek & friends canlı: sazda ve vokalde Ruşan, perküsyonda Doğan Poyraz, saksafonda Michaël Wakko Havard. Gece yarısından sonra Eliyo ve house. Sabah 4'e kadar Seine üstünde müzik ve dans. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #saz #live #Paris #péniche",
-      "notes": "Was feedback-only because it shows the saz; Ruşan asked to post it with the musicians named (19 Nov). Footage: 0510 + 0814 team videos.",
+      "notes": "Was feedback-only because it shows the saz; Ruşan asked to post it with the musicians named (19 Nov). Footage: 0510 + 0814 team videos. Collab tag removed 19 Nov: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
       "needs": [],
       "status": "approved",
       "approval": {
@@ -1161,7 +1161,7 @@
         "tiktok": "video:reel-voyage",
         "youtube_shorts": "video:reel-voyage"
       },
-      "collaborators": [
+      "collaborators_failed": [
         "michael_wakko_havard"
       ]
     },
@@ -1681,15 +1681,15 @@
       "caption_fr": "23h. Michaël Wakko Havard monte à bord avec son saxophone. Les platines, l'orchestre, le son du Bosphore : la nuit passe le seuil. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "23.00. Michaël Wakko Havard saksafonuyla gemide. DJ, orkestra, Boğaz'ın sesi: gece eşiği geçiyor. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saxophone #Paris #péniche",
-      "collaborators": [
-        "michael_wakko_havard"
-      ],
       "status": "approved",
       "approval": {
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
       },
-      "notes": "Published by the API as an image post (JPEG from the publish-media branch). Photo: Michaël's profile picture, sent by the team."
+      "notes": "Published by the API as an image post (JPEG from the publish-media branch). Photo: Michaël's profile picture, sent by the team. Collab tag removed 19 Nov: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
+      "collaborators_failed": [
+        "michael_wakko_havard"
+      ]
     },
     {
       "id": "SX03",
@@ -1727,17 +1727,11 @@
       "caption_fr": "23h. Le saxophone de Michaël Wakko Havard passe le seuil : il rejoint les platines et l'orchestre, et le son d'Istanbul change de couleur. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "23.00. Michaël Wakko Havard'ın saksafonu eşiği geçiyor: DJ'e ve orkestraya katılıyor, İstanbul'un sesi renk değiştiriyor. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saxophone #Paris #péniche",
-      "collaborators": [
-        "michael_wakko_havard"
-      ],
-      "notes": "Footage + sound: Michaël's own post (screen recording sent by Bertuğ 18 Nov), cropped; Rugby World Cup banner kept out of frame. Credit on screen: @michael_wakko_havard.",
-      "status": "publishing",
+      "notes": "Footage + sound: Michaël's own post (screen recording sent by Bertuğ 18 Nov), cropped; Rugby World Cup banner kept out of frame. Credit on screen: @michael_wakko_havard. Collab tag removed 19 Nov: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
+      "status": "approved",
       "approval": {
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
-      },
-      "attempts": {
-        "instagram_reel": 1
       },
       "publish_errors": [
         {
@@ -1745,6 +1739,9 @@
           "at": "2026-11-19T12:01:59.080Z",
           "error": "POST /v25.0/17841427408016997/media: User not visible"
         }
+      ],
+      "collaborators_failed": [
+        "michael_wakko_havard"
       ]
     }
   ],
