@@ -1787,6 +1787,32 @@
           "at": "2026-11-19T12:03:36.695Z"
         }
       }
+    },
+    {
+      "id": "E17",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "channel": "instagram reel + tiktok + youtube shorts",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel \"Vendredi, on embarque\": the boat itself (river, terrace, neon), Péniche Le Marcounet footage",
+      "visuals": [
+        "video:reel-e17"
+      ],
+      "variants": {
+        "instagram_reel": "video:reel-e17",
+        "tiktok": "video:reel-e17",
+        "youtube_shorts": "video:reel-e17"
+      },
+      "caption_fr": "Vendredi, on embarque. Une péniche au pied du pont Marie, l'île Saint-Louis en face, et le son d'Istanbul jusqu'à 4h : la live session de Ruşan Filiztek & friends, puis Eliyo dès minuit. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "Cuma günü gemiye biniyoruz. Pont Marie'nin dibinde bir tekne, bir yanda Seine, sabah 4'e kadar İstanbul'un sesi: önce Ruşan Filiztek & friends canlı, gece yarısından sonra Eliyo. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #péniche #Paris #pontMarie #Istanbul",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
+        "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
+      },
+      "notes": "Boat footage sent 19 Nov (Marcounet_Privatisation, 2509_100an). Only shots without drinks (Loi Évin) and without other bands on stage. C1593 (4K, very dark) not used."
     }
   ],
   "video_plan": {

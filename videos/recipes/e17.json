@@ -1,0 +1,90 @@
+{
+ "id": "e17",
+ "credit": "Images : Péniche Le Marcounet · Son : Horde × Baajar, Cabaret Sauvage, 2025",
+ "media_dir": "/home/claude/media/boat",
+ "audio": {
+  "src": "p5.mp4",
+  "start": 24.035,
+  "seconds": 16
+ },
+ "shots": [
+  [
+   "a.mp4",
+   0.2,
+   4
+  ],
+  [
+   "m.mp4",
+   6.0,
+   4
+  ],
+  [
+   "a.mp4",
+   7.0,
+   2
+  ],
+  [
+   "m.mp4",
+   5.0,
+   2
+  ],
+  [
+   "m.mp4",
+   19.2,
+   2
+  ],
+  [
+   "a.mp4",
+   24.1,
+   2
+  ],
+  [
+   "m.mp4",
+   24.0,
+   2
+  ],
+  [
+   "a.mp4",
+   32.0,
+   2
+  ],
+  [
+   "m.mp4",
+   43.0,
+   2
+  ],
+  [
+   "a.mp4",
+   31.0,
+   20
+  ]
+ ],
+ "end_beats": 9,
+ "texts": [
+  {
+   "text": "Vendredi, on embarque.",
+   "from": 0,
+   "to": 8,
+   "style": "hook"
+  },
+  {
+   "text": "Au pied du pont Marie,",
+   "from": 8,
+   "to": 14,
+   "style": "line"
+  },
+  {
+   "text": "le son d'Istanbul",
+   "from": 14,
+   "to": 18,
+   "style": "line"
+  },
+  {
+   "text": "jusqu'à 4h.",
+   "from": 18,
+   "to": 24,
+   "style": "line"
+  }
+ ],
+ "end_line": "Le son d'Istanbul, sur la Seine"
+}
