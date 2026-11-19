@@ -14,7 +14,7 @@ Built and run by Bertuğ. First client: **Bosphore sur Seine** (27 November 2026
 2. Read `clients/bosphore-sur-seine/campaign.json` (or run `node tools/campaign.mjs list`) to see what is
    planned, drafted, approved, scheduled or done. It is the single source of truth for everything scheduled.
 3. **All French copy follows `.claude/skills/voix-horde/SKILL.md`** (Horde's voice: *vous*, the Istanbul → Paris
-   crossing, Istanbul in every piece, never saz or halay). Run its self-check before handing over copy.
+   crossing, Istanbul in every piece; saz only as Ruşan's instrument credit, never halay). Run its self-check before handing over copy.
 4. Use the marketing skills when they fit: `social`, `events`, `launch`, `ads`, `ad-creative`,
    `influencer-marketing`, `referrals`, `copywriting`, `video`, `analytics`.
 

@@ -1,6 +1,6 @@
 {
-  "status": "all campaigns are created PAUSED; a person launches them after Ali and Ruşan approve",
-  "account": "Birkleyn Sound ad account (confirmed 17 Nov)",
+  "status": "Plan v2 (19 Nov, Andromeda-era best practices from the ads skill). Created PAUSED by ZinAI/Bertuğ; a person switches them on. Budget changes only with Bertuğ's yes.",
+  "account": "[À CONFIRMER] Bertuğ's ad account (2478535585489888, new portfolio) or Birkleyn Sound's: asked 19 Nov",
   "identity": "Birkleyn Sound Facebook Page + Instagram account",
   "budget_total_eur": {
     "suggested": 150,
@@ -9,168 +9,144 @@
     "by": "Ali and Ruşan"
   },
   "tracking": {
-    "pixel": "Meta Pixel connected in Shotgun Smartboard (SG01); optimise for Purchase",
-    "fallback_if_no_pixel": "optimise for Landing page views to the Shotgun URL",
-    "utm": "utm_source=instagram&utm_medium=paid&utm_campaign=bss1-<campaign id>"
+    "pixel": "Meta Pixel added in Shotgun Smartboard → Settings → Integrations (+ Conversions API token). Optimise for Purchase.",
+    "fallback_if_pixel_not_ready": "optimise for Landing page views; switch to Purchase when the pixel shows events",
+    "utm": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=meta&utm_medium=paid&utm_campaign=bss1-<campaign>&utm_content=<ad>"
   },
   "rules": [
     "No alcohol in visuals or copy (Loi Évin)",
-    "Cut any ad whose cost per result is twice the campaign average after 2 days",
-    "Never raise a budget without approval"
+    "After 48 h, pause an ad only if it has clearly fewer results per euro than the others on a fair number of impressions (≥ ~1,000)",
+    "Never raise a budget without Bertuğ's approval",
+    "Exclude people who already bought (pixel Purchase, 30 days) once the pixel has data"
   ],
   "campaigns": [
     {
-      "id": "A01",
-      "name": "BSS1 · Découverte",
-      "objective": "Engagement (ThruPlay video views)",
+      "id": "C1",
+      "name": "BSS1 · Billets · Large",
+      "objective": "Sales (conversion: Purchase on Shotgun; fallback Landing page views)",
       "dates": [
-        "2026-11-19",
-        "2026-11-22"
+        "2026-11-20",
+        "2026-11-27"
+      ],
+      "budget_eur": 100,
+      "budget_type": "campaign budget (Advantage+), ~12.5 €/day",
+      "audience": {
+        "location": "Paris + 30 km",
+        "age": "18-45 (Advantage+ audience may go wider)",
+        "interests": "none (broad)",
+        "languages": "all"
+      },
+      "placements": "Advantage+ placements (Instagram Reels / Stories / Feed, Facebook Feed / Reels / Stories)",
+      "ads": [
+        {
+          "id": "C1-A1",
+          "concept": "Le saxophone (23h)",
+          "video": "reel-sx04",
+          "headline": "23h, le saxophone passe le seuil",
+          "primary_fr": "23h. Le saxophone de Michaël Wakko Havard rejoint les platines et la live session de Ruşan Filiztek & friends, avec Doğan Poyraz aux percussions. Le son d'Istanbul change de couleur sur la Seine, et à minuit Eliyo prend la barre jusqu'au bout de la nuit.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
+        },
+        {
+          "id": "C1-A2",
+          "concept": "Minuit, la house",
+          "video": "reel-e10",
+          "headline": "Minuit : Eliyo prend la barre",
+          "primary_fr": "Minuit. Eliyo prend la barre et la péniche se met à tanguer : la house d'Istanbul jusqu'à 2h, puis une surprise jusqu'à 4h. Avant, dès 21h, la live session de Ruşan Filiztek & friends ouvre la traversée.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
+        },
+        {
+          "id": "C1-A3",
+          "concept": "La nuit heure par heure",
+          "video": "reel-voyage",
+          "headline": "Jusqu'à 4h, un voyage musical et dansé",
+          "primary_fr": "21h, la live session avec Ruşan Filiztek & friends : saz et chant, percussions de Doğan Poyraz, saxophone de Michaël Wakko Havard. Minuit, Eliyo et la house. 2h, une surprise. 4h, l'aube sur la Seine. Une nuit entière, du Bosphore au pont Marie.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
+        },
+        {
+          "id": "C1-A4",
+          "concept": "Le son d'Istanbul (identité)",
+          "video": "reel-e16",
+          "headline": "Le son d'Istanbul sur la Seine",
+          "primary_fr": "Le son d'Istanbul a traversé les Balkans et l'Anatolie. Le 27 novembre, il s'amarre au pied du pont Marie. Vous êtes d'Istanbul, vous l'avez quittée, ou vous en rêvez : cette nuit est pour vous.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
+        },
+        {
+          "id": "C1-A5",
+          "concept": "Türkçe (diaspora)",
+          "video": "reel-e16",
+          "headline": "Paris'te İstanbul'un sesi",
+          "primary_tr": "İstanbul'un sesi Seine'de. 27 Kasım Cuma, Pont Marie'nin dibindeki teknede sabah 4'e kadar: 21.00'de Ruşan Filiztek & friends canlı (Doğan Poyraz perküsyon, Michaël Wakko Havard saksafon), gece yarısından sonra Eliyo ve house. Biletler 15 / 18 / 20 €, Shotgun'da.\n\nL'Heur du Spectacle sunar."
+        }
+      ],
+      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=meta&utm_medium=paid&utm_campaign=bss1-c1&utm_content=<ad id>",
+      "cta": "Acheter des billets"
+    },
+    {
+      "id": "C2",
+      "name": "BSS1 · Relance",
+      "objective": "Sales (Purchase), fallback Landing page views",
+      "dates": [
+        "2026-11-22",
+        "2026-11-27"
       ],
       "budget_eur": 30,
       "audience": {
-        "location": "Paris + 20 km",
-        "age": "22-40",
-        "languages": [
-          "Turkish"
+        "custom": [
+          "Instagram @birkleyn_sound engagers, 60 days",
+          "People who watched ≥ 50% of the C1 videos",
+          "Shotgun event page visitors, 14 days (pixel)"
         ],
-        "interests": [
-          "Istanbul",
-          "Organic house / Deep house",
-          "Electronic dance music",
-          "Cabaret Sauvage",
-          "Les Suds à Arles",
-          "Jazz à Vienne",
-          "Les Vieilles Charrues",
-          "Acid Pauli",
-          "World music"
-        ],
-        "note": "Meta interest names may differ; pick the closest available"
+        "exclude": "Purchasers, 30 days (pixel)"
       },
-      "placements": [
-        "Instagram Reels",
-        "Instagram Stories",
-        "Instagram Feed",
-        "Facebook Feed",
-        "Facebook Stories"
-      ],
-      "creatives": [
-        "E10 Reel 9:16 + feed-e10 4:5",
-        "E13 Reel 9:16 + feed-e13 4:5"
-      ],
-      "copy": [
+      "ads": [
         {
-          "lang": "fr",
-          "primary": "Minuit, Eliyo prend la barre : une nuit Istanbul–Paris sur la Seine, de l'orchestre à la house, jusqu'à 4h.",
-          "headline": "Bosphore sur Seine · 27.11",
-          "cta": "En savoir plus"
+          "id": "C2-A1",
+          "concept": "Programme + pratique (different angle)",
+          "image": "programme story/post (to make: names, hours, Métro 7, prices)",
+          "headline": "Le programme de vendredi",
+          "primary_fr": "Vendredi, on embarque à 20h30. 21h : live session avec Ruşan Filiztek & friends. 23h : platines, orchestre et saxophone. Minuit : Eliyo. Métro 7 Pont Marie, billet sur votre téléphone. Plus le vendredi approche, plus le tarif monte.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
         },
         {
-          "lang": "tr",
-          "primary": "Gece yarısı dümen Eliyo'da: Seine'in üzerinde orkestradan house'a bir İstanbul–Paris gecesi, 04.00'e kadar.",
-          "headline": "Bosphore sur Seine · 27.11",
-          "cta": "Daha fazla bilgi"
+          "id": "C2-A2",
+          "concept": "Michaël (portrait)",
+          "image": "sax-mwh-post",
+          "headline": "23h : Michaël Wakko Havard",
+          "primary_fr": "Le saxophone de Michaël Wakko Havard, vendredi à 23h, sur la Seine.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
         }
-      ]
+      ],
+      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=meta&utm_medium=paid&utm_campaign=bss1-c2&utm_content=<ad id>"
     },
     {
-      "id": "A02",
-      "name": "BSS1 · Billets",
-      "objective": "Sales (Purchase via Shotgun Meta Pixel)",
+      "id": "C3",
+      "name": "BSS1 · Dernier appel",
+      "objective": "Sales (Purchase)",
       "dates": [
-        "2026-11-20",
-        "2026-11-26"
-      ],
-      "budget_eur": 70,
-      "audience": {
-        "location": "Paris + 20 km",
-        "age": "22-40",
-        "languages": [
-          "Turkish",
-          "French"
-        ],
-        "interests": [
-          "Istanbul",
-          "Organic house / Deep house",
-          "Cabaret Sauvage",
-          "Les Suds à Arles",
-          "Jazz à Vienne",
-          "Les Vieilles Charrues",
-          "Live music"
-        ],
-        "note": "Two ad sets: Turkish speakers, and French speakers with the interests"
-      },
-      "placements": [
-        "Instagram Reels",
-        "Instagram Stories",
-        "Instagram Feed",
-        "Facebook Feed",
-        "Facebook Stories"
-      ],
-      "creatives": [
-        "E13 9:16 + 4:5",
-        "E15 9:16 + 4:5",
-        "E10 9:16 + 4:5",
-        "C01 carousel 4:5"
-      ],
-      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=paid&utm_campaign=bss1-a02",
-      "copy": [
-        {
-          "lang": "fr",
-          "primary": "L'orchestre et la brise d'Istanbul, puis la house d'Eliyo jusqu'à 4h, sur la Seine. La fin reste une surprise. Billets dès 15 €.",
-          "headline": "Vendredi 27 novembre, pont Marie",
-          "cta": "Acheter des billets"
-        },
-        {
-          "lang": "tr",
-          "primary": "Önce orkestra ve İstanbul esintisi, sonra Eliyo'yla sabah 4'e kadar house, Seine'in üzerinde. Finali sürpriz. Biletler 15 €'dan.",
-          "headline": "27 Kasım Cuma, Pont Marie",
-          "cta": "Bilet al"
-        }
-      ]
-    },
-    {
-      "id": "A03",
-      "name": "BSS1 · Retargeting",
-      "objective": "Sales (Purchase) to warm audiences",
-      "dates": [
-        "2026-11-23",
+        "2026-11-26",
         "2026-11-27"
       ],
-      "budget_eur": 50,
-      "audience": {
-        "custom": [
-          "Watched 50% of E10, O01 or V07 (last 14 days)",
-          "Engaged with the Birkleyn Sound Instagram (last 30 days)",
-          "Viewed the Shotgun event page (pixel, last 14 days), excluding buyers"
-        ]
-      },
-      "placements": [
-        "Instagram Reels",
-        "Instagram Stories",
-        "Instagram Feed",
-        "Facebook Feed",
-        "Facebook Stories"
-      ],
-      "creatives": [
-        "E14 9:16 + 4:5",
-        "CD stories (J-2, J-1) 9:16"
-      ],
-      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=instagram&utm_medium=paid&utm_campaign=bss1-a03",
-      "copy": [
+      "budget_eur": 20,
+      "audience": "same as C1 (broad Paris + 30 km), excluding purchasers",
+      "ads": [
         {
-          "lang": "fr",
-          "primary": "La péniche se remplit. Dernières traversées pour vendredi, 20h30 → 4h.",
-          "headline": "Ce vendredi, pont Marie",
-          "cta": "Acheter des billets"
-        },
-        {
-          "lang": "tr",
-          "primary": "Tekne doluyor. Cuma için son biletler, 20.30 → 04.00.",
-          "headline": "Bu cuma, Pont Marie",
-          "cta": "Bilet al"
+          "id": "C3-A1",
+          "concept": "Demain / Ce soir",
+          "video": "story-cd26 / story-cd27 (countdown) + best C1 video",
+          "headline": "Ce soir, sur la Seine",
+          "primary_fr": "Ce soir, on embarque à 20h30 au pied du pont Marie. Live session avec Ruşan Filiztek & friends, Eliyo dès minuit, jusqu'à 4h. Dernières places en ligne ; à l'embarquement au tarif Late s'il reste de la place.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
         }
-      ]
+      ],
+      "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=meta&utm_medium=paid&utm_campaign=bss1-c3&utm_content=<ad id>"
     }
-  ]
+  ],
+  "principles": [
+    "Broad audience, creative does the targeting: Paris + 30 km, Advantage+ audience, no interest stacking (ads skill, Meta Andromeda playbook).",
+    "Few campaigns, enough budget per ad set to learn: 2 campaigns + a last-48h push, not 4.",
+    "Each ad is a distinct concept (saxophone, house at midnight, hour-by-hour journey, Istanbul identity, Turkish-language), not 5 copies of one video.",
+    "Identity triggers in the copy: 'Istanbul', 'Bosphore', 'Paris', Turkish text for the diaspora; long primary text gives Meta context.",
+    "Retargeting shows a different angle (programme, practical info, urgency), never the same ad again.",
+    "Judge after ~48 h and enough impressions; cut only clear losers; never raise budget without approval.",
+    "Loi Évin: no drinks in images or text. Special ad category: none."
+  ],
+  "budget_split": {
+    "C1": 100,
+    "C2": 30,
+    "C3": 20,
+    "total": 150
+  }
 }

@@ -97,6 +97,13 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 Past nights by the team drew a halay crowd. This series aims at a curated Istanbul–Paris soirée.
 A halay can close the night, but it is never the promise.
 
+## Musicians (Ruşan, 19 Nov): name them, before midnight nothing should look anonymous
+
+- **Live, 21h → 00h ("live session avec Ruşan Filiztek & friends"):** Saz et chant : **Ruşan Filiztek** · Percussion : **Doğan Poyraz** · Saxophone : **Michaël Wakko Havard** (@michael_wakko_havard).
+- **Dès minuit : Eliyo** (house).
+- **Saz:** allowed again as Ruşan's instrument (he asked for "Saz et chant" and for V07, which shows it). Still no halay, no "folklore", and nothing about the 2h surprise beyond "Surprise".
+- Video end cards carry a small line: "Live : Ruşan Filiztek · Doğan Poyraz · Michaël Wakko Havard / Dès minuit : Eliyo".
+
 ## Legal organiser
 
 - **L'Heur du Spectacle** (Paris · production, diffusion, festivals) represents the event: it is the legal company

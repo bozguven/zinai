@@ -1137,25 +1137,33 @@
     },
     {
       "id": "V07",
-      "date": "2026-11-19",
-      "time": "12:30",
-      "channel": "instagram + tiktok + youtube shorts",
+      "date": "2026-11-23",
+      "time": "18:30",
+      "channel": "instagram reel + tiktok + youtube shorts",
       "format": "reel",
       "mode": "auto",
-      "title": "Reel: \"Jusqu'à 4h\" — the night hour by hour (21h live → 23h hybrid set → minuit Eliyo → 2h invité surprise → 4h l'aube sur la Seine)",
+      "title": "Reel \"Jusqu'à 4h\": the night hour by hour, live session avec Ruşan Filiztek & friends, musicians named (Ruşan's request 19 Nov)",
       "visuals": [
         "video:reel-voyage"
       ],
-      "caption_fr": "De 21h à l'aube, la Seine change de rive. 🌙\nJusqu'à 4h, un voyage musical et dansé sur la Seine.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
-      "caption_tr": "21.00'den sabaha kadar Seine kıyı değiştiriyor. 🌙\nSabah 4'e kadar Seine üzerinde müzikli bir yolculuk ve dans.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
-      "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
-      "notes": "Made with HyperFrames (videos/voyage-4h). Sound: the hybrid-set recording (0814). Footage: 0510 (live) and 0814 (hybrid set). Kept only to get Ali and Ruşan's feedback on the style (it shows the saz).",
+      "caption_fr": "21h, la live session avec Ruşan Filiztek & friends : Ruşan au saz et au chant, Doğan Poyraz aux percussions, Michaël Wakko Havard au saxophone. Dès minuit, Eliyo et la house. Jusqu'à 4h, un voyage musical et dansé sur la Seine. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "caption_tr": "21.00'de Ruşan Filiztek & friends canlı: sazda ve vokalde Ruşan, perküsyonda Doğan Poyraz, saksafonda Michaël Wakko Havard. Gece yarısından sonra Eliyo ve house. Sabah 4'e kadar Seine üstünde müzik ve dans. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #saz #live #Paris #péniche",
+      "notes": "Was feedback-only because it shows the saz; Ruşan asked to post it with the musicians named (19 Nov). Footage: 0510 + 0814 team videos.",
       "needs": [],
-      "status": "draft",
+      "status": "approved",
       "approval": {
-        "ali": null,
-        "rusan": null
-      }
+        "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
+        "rusan": "asked for this version (19 Nov 12:02)"
+      },
+      "variants": {
+        "instagram_reel": "video:reel-voyage",
+        "tiktok": "video:reel-voyage",
+        "youtube_shorts": "video:reel-voyage"
+      },
+      "collaborators": [
+        "michael_wakko_havard"
+      ]
     },
     {
       "id": "E10",

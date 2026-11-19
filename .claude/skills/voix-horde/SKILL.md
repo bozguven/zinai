@@ -34,7 +34,7 @@ dérive, la transe douce, le groove, le set, le live, hybride, les machines, les
 invité·e surprise.
 Genre words stay in English, as on Shotgun: *organic house, downtempo, deep house, live, hybrid set*.
 
-**Never:** saz (and no saz on screen), halay, Turkish rock or any hint at the 2h surprise, folklore, folklorique, soirée turque, ambiance orientale, exotique,
+**Saz:** only as Ruşan's instrument credit ("Saz et chant : Ruşan Filiztek"), as he asked on 19 Nov; never the main hook. **Never:** halay, Turkish rock or any hint at the 2h surprise, folklore, folklorique, soirée turque, ambiance orientale, exotique,
 communauté, diaspora, "oriental" as an adjective for people or music, any claim we can't prove.
 (Instruments can be *les cordes*, *un instrument d'Anatolie* only if unavoidable; better: say nothing
 and let the video show it.)
@@ -124,7 +124,7 @@ No numbers we don't have. Ali & Ruşan don't publish tier quantities, so:
 - [ ] First line is an image, not an info line.
 - [ ] "Istanbul" appears.
 - [ ] *vous*, not *tu*.
-- [ ] No banned word (saz, halay, folklore, oriental…).
+- [ ] No banned word (halay, folklore, oriental…); saz only in a musician credit.
 - [ ] Every fact (hours, prices, place, names) matches the brief; anything unsure is `[À CONFIRMER]`.
 - [ ] No alcohol, no "boire", no bar imagery (Loi Évin).
 - [ ] Read it aloud: would it sit naturally next to a Horde event page?
