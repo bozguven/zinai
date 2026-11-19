@@ -1149,7 +1149,7 @@
       "caption_fr": "21h, la live session avec Ruşan Filiztek & friends : Ruşan au saz et au chant, Doğan Poyraz aux percussions, Michaël Wakko Havard au saxophone. Dès minuit, Eliyo et la house. Jusqu'à 4h, un voyage musical et dansé sur la Seine. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "21.00'de Ruşan Filiztek & friends canlı: sazda ve vokalde Ruşan, perküsyonda Doğan Poyraz, saksafonda Michaël Wakko Havard. Gece yarısından sonra Eliyo ve house. Sabah 4'e kadar Seine üstünde müzik ve dans. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #saz #live #Paris #péniche",
-      "notes": "Was feedback-only because it shows the saz; Ruşan asked to post it with the musicians named (19 Nov). Footage: 0510 + 0814 team videos. Collab tag removed 19 Nov: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
+      "notes": "Was feedback-only because it shows the saz; Ruşan asked to post it with the musicians named (19 Nov). Footage: 0510 + 0814 team videos. Handle confirmed by Bertuğ 19 Nov; tag kept, the publisher drops it if Instagram refuses again. (Earlier:: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
       "needs": [],
       "status": "approved",
       "approval": {
@@ -1161,7 +1161,7 @@
         "tiktok": "video:reel-voyage",
         "youtube_shorts": "video:reel-voyage"
       },
-      "collaborators_failed": [
+      "collaborators": [
         "michael_wakko_havard"
       ]
     },
@@ -1686,8 +1686,8 @@
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
       },
-      "notes": "Published by the API as an image post (JPEG from the publish-media branch). Photo: Michaël's profile picture, sent by the team. Collab tag removed 19 Nov: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
-      "collaborators_failed": [
+      "notes": "Published by the API as an image post (JPEG from the publish-media branch). Photo: Michaël's profile picture, sent by the team. Handle confirmed by Bertuğ 19 Nov; tag kept, the publisher drops it if Instagram refuses again. (Earlier:: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible).",
+      "collaborators": [
         "michael_wakko_havard"
       ]
     },
