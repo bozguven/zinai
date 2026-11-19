@@ -1186,7 +1186,7 @@
       "needs": [
         "Eliyo's Instagram handle for the collab [À CONFIRMER]"
       ],
-      "status": "failed",
+      "status": "approved",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1198,9 +1198,6 @@
         "youtube_shorts": "video:reel-e10",
         "facebook_feed": "video:feed-e10",
         "ads_4x5": "video:feed-e10"
-      },
-      "attempts": {
-        "instagram_reel": 3
       },
       "publish_errors": [
         {
