@@ -98,9 +98,20 @@ function buildBoard() {
     new Intl.DateTimeFormat('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z'));
   const label = { auto: 'Auto', manual: 'Manuel · téléphone', shotgun: 'Shotgun', website: 'Site web', 'meta-ads': 'Pub Meta' };
 
-  const days = {};
-  for (const i of [...c.items].filter((x) => x.status !== 'retired').sort(byTime)) (days[i.date] ||= []).push(i);
-  const order = Object.keys(days).sort((a, b) => (a === 'trigger') - (b === 'trigger') || a.localeCompare(b));
+  const now = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).format(new Date()).replace(' ', 'T');
+  const todayP = now.slice(0, 10);
+  const cat = (i) => (i.status === 'published' || (i.published && Object.keys(i.published).length)) ? 'pub'
+    : (['approved', 'publishing', 'scheduled'].includes(i.status) && i.mode === 'auto') ? 'prog'
+    : ((['shotgun', 'website'].includes(i.mode) || (i.mode === 'manual' && i.status === 'approved')) && !['done', 'retired', 'missed', 'failed'].includes(i.status) && (i.date === 'trigger' || i.date >= todayP)) ? 'todo'
+    : 'arch';
+  const live = [...c.items].filter((x) => x.status !== 'retired').sort(byTime);
+  const group = (arr) => { const d = {}; for (const i of arr) (d[i.date] ||= []).push(i); return d; };
+  const prog = live.filter((i) => ['prog', 'pub'].includes(cat(i)));
+  const upcoming = prog.filter((i) => cat(i) === 'prog' || i.date >= todayP), past = prog.filter((i) => cat(i) === 'pub' && i.date < todayP);
+  const todo = live.filter((i) => cat(i) === 'todo'), arch = live.filter((i) => cat(i) === 'arch');
+  const next = live.find((i) => cat(i) === 'prog' && (i.date + 'T' + (i.time || '00:00')) >= now);
+  const daysHtml = (arr, open = true) => { const g = group(arr); return Object.keys(g).sort((a, b) => (a === 'trigger') - (b === 'trigger') || a.localeCompare(b))
+    .map((d) => `<section class="day"><h2>${fmtDay(d)}${d === todayP ? ' · aujourd’hui' : ''}</h2><div class="grid">${g[d].map(card).join('\n')}</div></section>`).join('\n'); };
 
   const card = (i) => {
     const imgs = (i.visuals || []).map((v) => {
@@ -126,8 +137,7 @@ function buildBoard() {
       return `<button class="media" data-src="img/${esc(v)}.png" data-kind="img" aria-label="Agrandir ${esc(v)}"><img src="img/${esc(v)}.png" alt="${esc(v)}" loading="lazy"></button>`;
     }).join('');
     const blocks = [];
-    if (i.caption_fr) blocks.push(`<details open><summary>FR</summary><p>${mark(i.caption_fr)}</p></details>`);
-    if (i.caption_tr) blocks.push(`<details><summary>TR</summary><p>${mark(i.caption_tr)}</p></details>`);
+    if (i.caption_fr) blocks.push(`<details><summary>Texte du post</summary><p>${mark(i.caption_fr)}</p></details>`);
     if (i.hashtags) blocks.push(`<p class="tags">${esc(i.hashtags)}</p>`);
     if (i.text_fr) blocks.push(`<details open><summary>Texte</summary><p>${mark(i.text_fr)}</p></details>`);
     if (i.subject_fr) blocks.push(`<details open><summary>Email</summary><p><b>${mark(i.subject_fr)}</b><br>${mark(i.body_fr || '')}</p></details>`);
@@ -144,14 +154,14 @@ function buildBoard() {
     if (i.preview_note) blocks.push(`<p class="tags">${mark(i.preview_note)}</p>`);
     if (i.shots) blocks.push(`<details><summary>Plans à filmer</summary><ul class="check">${i.shots.map((x) => `<li>${mark(x)}</li>`).join('')}</ul></details>`);
     if (i.trigger) blocks.push(`<p class="tags">Déclencheur : ${esc(i.trigger)}</p>`);
-    const ap = i.approval || {};
-    return `<article class="card m-${i.mode}" data-mode="${i.mode}" data-video="${i.format === 'reel' || (i.visuals || []).some((v) => v.startsWith('video:')) ? 1 : 0}" data-status="${i.status}">
-  <header><span class="id">${esc(i.id)}</span><span class="time">${esc(i.time)}</span><span class="badge">${label[i.mode] || i.mode}</span></header>
-  <p class="meta">${esc(i.channel)} · ${esc(i.format)}</p>
-  <h3>${mark(i.title)}</h3>
+    const k = cat(i), kind = { reel: 'Reel', story: 'Story', post: 'Post', carousel: 'Carrousel' }[i.format] || label[i.mode] || i.format;
+    const chip = { pub: 'Publié ✓', prog: 'Programmé · ZinAI', todo: 'À faire', arch: 'Brouillon' }[k];
+    return `<article class="card m-${i.mode} k-${k}" data-mode="${i.mode}" data-status="${i.status}">
+  <header><span class="time">${esc(i.time || '')}</span><span class="kind">${esc(kind)}</span><span class="chip c-${k}">${chip}</span></header>
+  <h3>${mark((i.caption_fr || '').split(/(?<=[.!?…])\s|\n/)[0] || i.title)}</h3>${i.caption_fr ? `<p class="idl">${mark(i.title)}</p>` : ''}
   ${imgs ? `<div class="imgs">${imgs}</div>` : ''}
   ${blocks.join('\n  ')}
-  <footer><span class="st st-${i.status}">${esc(i.status)}</span><span>Ali ${ap.ali ? '✓' : '·'}</span><span>Ruşan ${ap.rusan ? '✓' : '·'}</span></footer>
+  <p class="idl">${esc(i.id)}${k === 'todo' ? ' · ' + esc(label[i.mode] || '') : ''}</p>
 </article>`;
   };
 
@@ -193,20 +203,31 @@ ul{margin:0;padding-left:18px;font-size:13.5px}.needs li{color:#a33a26}mark{back
 .lb button:hover{background:rgba(255,255,255,.28)}.lb .x{top:10px;right:12px}.lb .prev{left:10px;top:50%;transform:translateY(-50%)}.lb .next{right:10px;top:50%;transform:translateY(-50%)}
 .lb .cap{position:absolute;top:18px;left:18px;color:#fff;font:600 15px system-ui;opacity:.85}
 @media (max-width:600px){.lb{padding:52px 6px 10px}.lb .prev,.lb .next{top:auto;bottom:14px;transform:none}}
-.decide{margin:22px 0 6px;background:#faf6d8;border-radius:12px;padding:14px 18px}.decide h2{font:700 17px Unbounded,system-ui,sans-serif;color:var(--blue);margin:0 0 8px}.decide ol{margin:0;padding-left:22px;font-size:15px}.decide li{margin:3px 0}.decide ul.done{margin:0 0 14px;padding-left:22px;list-style:'✓  '}.decide h2+ul,.decide h2+ol{margin-top:0}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 8px}.stats span,.chip{font-size:13px;font-weight:700;border-radius:99px;padding:2px 10px}.c-pub{background:#dff1e5;color:#2f7d4a}.c-prog{background:#e4e8f7;color:var(--blue)}.c-todo{background:#faf0c8;color:#7a5a00}.c-arch{background:#eee;color:#777}.next{margin:0 0 10px;font-size:15px}.kind{font-weight:700}.chip{margin-left:auto}.idl{margin:0;font-size:11.5px;color:var(--grey)}.k-pub{opacity:.75}.pastd{margin-top:26px;background:none}.pastd>summary{font-size:15px}\n.decide{margin:22px 0 6px;background:#faf6d8;border-radius:12px;padding:14px 18px}.decide h2{font:700 17px Unbounded,system-ui,sans-serif;color:var(--blue);margin:0 0 8px}.decide ol{margin:0;padding-left:22px;font-size:15px}.decide li{margin:3px 0}.decide ul.done{margin:0 0 14px;padding-left:22px;list-style:'✓  '}.decide h2+ul,.decide h2+ol{margin-top:0}
 </style></head><body>
 <div class="top"><h1>Bosphore sur Seine · Campagne</h1>
-<p class="sub">Tout ce qui est prévu jusqu'au 29 novembre. Rien ne part sans l'accord d'Ali et Ruşan. Mis à jour le ${esc(c.updated)}.</p>
-<div class="filters" role="group" aria-label="Filtrer">
-<button aria-pressed="true" data-f="all">Tout (${c.items.length})</button>
-<button aria-pressed="false" data-f="video">Vidéo (${c.items.filter((i) => i.format === 'reel' || (i.visuals || []).some((v) => v.startsWith('video:'))).length})</button>
-${Object.entries(label).map(([m, l]) => `<button aria-pressed="false" data-f="${m}">${l} (${counts[m]})</button>`).join('\n')}
+<p class="sub">ZinAI publie tout seul sur Instagram à l’heure indiquée. Pour changer ou arrêter un post, dites-le à Bertuğ avant l’heure. Mis à jour le ${esc(new Intl.DateTimeFormat('fr-FR', { dateStyle: 'long', timeStyle: 'short', timeZone: 'Europe/Paris' }).format(new Date()))}.</p>
+<div class="stats"><span class="c-pub">${prog.filter((i) => cat(i) === 'pub').length} publiés</span><span class="c-prog">${prog.filter((i) => cat(i) === 'prog').length} programmés</span><span class="c-todo">${todo.length} à faire par une personne</span></div>
+${next ? `<p class="next">Prochain post : <b>${fmtDay(next.date)} à ${esc(next.time)}</b> · ${esc(({ reel: 'Reel', story: 'Story', post: 'Post' })[next.format] || next.format)} · ${mark(next.title)}</p>` : ''}
+<div class="filters tabs" role="tablist">
+<button role="tab" aria-pressed="true" data-t="prog">Programme</button>
+<button role="tab" aria-pressed="false" data-t="todo">À faire (${todo.length})</button>
+<button role="tab" aria-pressed="false" data-t="arch">Brouillons et anciens (${arch.length})</button>
 </div></div>
 <main>
-${c.decisions ? `<section class="decide">${c.decisions.done ? `<h2>${esc(c.decisions.title)}</h2><ul class="done">${c.decisions.done.map((x) => `<li>${mark(x)}</li>`).join('')}</ul><h2>${esc(c.decisions.title_open || 'Encore ouvert')}</h2>` : `<h2>${esc(c.decisions.title)}</h2>`}<ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
-${c.channel_plan_fr ? `<section class="decide" style="background:#eef0fa"><h2>Les canaux</h2><ul style="margin:0;padding-left:20px">${c.channel_plan_fr.map(([k, v]) => `<li><b>${esc(k)}</b> : ${mark(v)}</li>`).join('')}</ul></section>` : ''}
-${order.map((d) => `<section class="day"><h2>${fmtDay(d)}</h2><div class="grid">${days[d].map(card).join('\n')}</div></section>`).join('\n')}
-<div class="legend"><span><b>Auto</b> : programmé dans Meta Business Suite (Instagram, Facebook) et Buffer (TikTok, YouTube) après accord.</span><span><b>Manuel</b> : story avec sticker (sondage, quiz, question, lien, compte à rebours), à poster depuis le téléphone.</span><span><b>Shotgun</b> : à faire dans le Smartboard.</span><span><b>Pub Meta</b> : créée en pause, lancée par une personne.</span></div>
+<div class="tab" data-t="prog">
+${daysHtml(upcoming)}
+${past.length ? `<details class="pastd"><summary>Déjà publié avant aujourd’hui (${past.length})</summary>${daysHtml(past)}</details>` : ''}
+</div>
+<div class="tab hide" data-t="todo">
+<p class="sub">Ce que ZinAI ne peut pas faire seul : Shotgun et réglages faits à la main. Les publicités sont suivies à part (plan dans ZinAI, lancées par Ruşan).</p>
+${daysHtml(todo)}
+${c.decisions ? `<section class="decide"><h2>${esc(c.decisions.title_open || 'Encore ouvert')}</h2><ol>${c.decisions.items.map((x) => `<li>${mark(x)}</li>`).join('')}</ol></section>` : ''}
+</div>
+<div class="tab hide" data-t="arch">
+<p class="sub">Idées et versions plus anciennes qui ne seront pas publiées telles quelles.</p>
+${daysHtml(arch)}
+</div>
 </main>
 <div class="lb" role="dialog" aria-modal="true" aria-label="Aperçu"><span class="cap"></span><button class="x" aria-label="Fermer">✕</button><button class="prev" aria-label="Précédent">‹</button><button class="next" aria-label="Suivant">›</button><div class="stage" style="display:contents"></div></div>
 <script>
@@ -234,9 +255,8 @@ lb.querySelector('.prev').onclick=()=>{at=(at-1+list.length)%list.length;show();
 document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')lb.querySelector('.prev').click();if(e.key==='ArrowRight')lb.querySelector('.next').click();});
 let x0=null;lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50&&list.length>1)lb.querySelector(dx<0?'.next':'.prev').click();x0=null;});
 const bs=[...document.querySelectorAll('.filters button')];
-bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.f;
-document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',f!=='all'&&(f==='video'?c.dataset.video!=='1':c.dataset.mode!==f)));
-document.querySelectorAll('.day').forEach(s=>s.classList.toggle('hide',!s.querySelector('.card:not(.hide)')));});
+bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const t=b.dataset.t;
+document.querySelectorAll('.tab').forEach(s=>s.classList.toggle('hide',s.dataset.t!==t));window.scrollTo(0,0);});
 </script></body></html>`;
   fs.writeFileSync(path.join(dir, 'index.html'), html);
   console.log(`board: ${path.relative(ROOT, dir)}/index.html (${c.items.length} items)`);
@@ -263,7 +283,7 @@ function buildPacks(ids) {
       } else { src = path.join(OUT, v + '.png'); name = (i.format === 'story' ? 'story' : 'post') + (k ? '-' + (k + 1) : '') + '.png'; }
       if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(dir, name)); files.push(name); } else files.push(name + ' (MISSING: ' + v + ')');
     });
-    const cap = [i.caption_fr || i.text_fr || '', i.caption_tr ? '—\n' + i.caption_tr : '', i.hashtags ? '\n' + i.hashtags : ''].filter(Boolean).join('\n').trim();
+    const cap = [i.caption_fr || i.text_fr || '', i.hashtags ? '\n' + i.hashtags : ''].filter(Boolean).join('\n').trim();
     if (cap) fs.writeFileSync(path.join(dir, 'caption.txt'), cap + '\n');
     const s = i.sticker_spec;
     const readme = [`# ${i.id} · ${i.date} ${i.time} (Paris)`, '', i.title, '', `**Where:** ${where(i)}`, `**Status:** ${i.status}`, '',

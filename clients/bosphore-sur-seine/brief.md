@@ -111,6 +111,10 @@ A halay can close the night, but it is never the promise.
 - Show it small, never as the headline: "Présenté par L'Heur du Spectacle" on video end cards, covers and image posts,
   and at the end of the Shotgun / Facebook event text ("Presented by…" in English). Not needed in captions.
 
+## Language (Ali, 19 Nov)
+
+- **Posts, stories, ads: French only.** No Turkish captions under posts. Shotgun: French then English.
+
 ## Keywords (Ali and Ruşan, 18 Nov): put weight on these in every piece
 
 - **Sound of Istanbul** / **le son d'Istanbul** · **Sound of Bosphore** / **le son du Bosphore**

@@ -169,12 +169,13 @@
         "Ad account and budget",
         "R01 video"
       ],
-      "status": "draft",
+      "status": "retired",
       "visuals": [],
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Replaced by the ads plan v2 in ads/meta.json (19 Nov)."
     },
     {
       "id": "R01",
@@ -267,12 +268,13 @@
         "Ad account and budget",
         "Meta Pixel on Shotgun (SG01)"
       ],
-      "status": "draft",
+      "status": "retired",
       "visuals": [],
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Replaced by the ads plan v2 in ads/meta.json (19 Nov)."
     },
     {
       "id": "C01",
@@ -333,7 +335,7 @@
       "format": "push notification",
       "mode": "shotgun",
       "title": "Shotgun push to followers",
-      "text_fr": "Istanbul accoste vendredi 27 au pont Marie : l'orchestre, puis Eliyo jusqu'à 2h. La fin, c'est une surprise.",
+      "text_fr": "Istanbul accoste vendredi 27 au pont Marie : la live session de Ruşan Filiztek & friends, puis Eliyo jusqu'à 2h. La fin, c'est une surprise.",
       "notes": "If Early Birds are almost gone, use instead: \"Derniers Early Birds à 15 € pour Bosphore sur Seine, vendredi 27.\"",
       "status": "draft",
       "visuals": [],
@@ -354,7 +356,7 @@
       "visuals": [
         "programme-post-fr"
       ],
-      "caption_fr": "Voici la traversée. 🖤\n\n21h → 23h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul\n23h → 00h · Hybrid set : platines, orchestre et saxophone [À CONFIRMER]\n00h → 02h · Eliyo, house\n02h → 04h · Surprise\n\nEmbarquement 20h30, Péniche Le Marcounet, Pont Marie.\nBillets : lien en bio",
+      "caption_fr": "Voici la traversée. 🖤\n\n21h → 23h · Live : Ruşan Filiztek & friends, la brise d'Istanbul\n23h → 00h · Hybrid set : platines, live et le saxophone de Michaël Wakko Havard\n00h → 02h · Eliyo, house\n02h → 04h · Surprise\n\nEmbarquement 20h30, Péniche Le Marcounet, Pont Marie.\nBillets : lien en bio",
       "caption_tr": "İşte yolculuk. 🖤\n\n21.00 → 23.00 · Canlı: Ruşan Filiztek & orkestra, İstanbul esintisi\n23.00 → 00.00 · Hybrid set: DJ, orkestra ve saksafon [À CONFIRMER]\n00.00 → 02.00 · Eliyo, house\n02.00 → 04.00 · Sürpriz\n\nBiniş 20.30, Péniche Le Marcounet, Pont Marie.\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #organichouse #péniche #hybridset",
       "needs": [
@@ -398,12 +400,13 @@
       "needs": [
         "Ad account and budget"
       ],
-      "status": "draft",
+      "status": "retired",
       "visuals": [],
       "approval": {
         "ali": null,
         "rusan": null
-      }
+      },
+      "notes": "Replaced by the ads plan v2 in ads/meta.json (19 Nov)."
     },
     {
       "id": "E01",
@@ -414,7 +417,7 @@
       "mode": "shotgun",
       "title": "Shotgun newsletter to the organisers' followers",
       "subject_fr": "Istanbul accoste vendredi. Il reste des traversées.",
-      "body_fr": "Vendredi 27 novembre, le Bosphore remonte la Seine jusqu'au pont Marie.\n\n21h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul\n23h · Hybrid set : platines, orchestre et saxophone [À CONFIRMER]\nMinuit · Eliyo, house\n2h · Surprise\n\nEmbarquement 20h30 à la Péniche Le Marcounet. Billets dès 15 € sur Shotgun.",
+      "body_fr": "Vendredi 27 novembre, le Bosphore remonte la Seine jusqu'au pont Marie.\n\n21h · Live session avec Ruşan Filiztek & friends (Doğan Poyraz, Michaël Wakko Havard)\n23h · Hybrid set : platines, live et le saxophone de Michaël Wakko Havard\nMinuit · Eliyo, house\n2h · Surprise\n\nEmbarquement 20h30 à la Péniche Le Marcounet. Billets dès 15 € sur Shotgun.",
       "needs": [
         "Smartboard access; Péniche Marcounet agrees to email its followers"
       ],
@@ -925,7 +928,7 @@
       "visuals": [
         "fb-event-cover"
       ],
-      "text_fr": "Le 27 novembre, un vapur quitte Karaköy à la tombée du jour. Il remonte le Bosphore, traverse la nuit et vient s'amarrer au pied du pont Marie. À bord : la brise d'Istanbul, un orchestre, des platines, et une foule qui ne sait plus très bien de quelle rive elle vient.\n\nEmbarquez à 20h30. La traversée commence avec l'orchestre, puis Eliyo fait monter la house jusqu'à 2h. Ensuite, la nuit change de cap. On ne vous dit rien : restez jusqu'au bout.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul\n● 23h → 00h · Hybrid set : platines, orchestre et saxophone [saxophone À CONFIRMER]\n● 00h → 02h · Eliyo, house\n● 02h → 04h · Surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#BosphoreSurSeine · Instagram : Birkleyn Sound [handle À CONFIRMER]\n\nBillets : https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=facebook&utm_medium=event&utm_campaign=bss1",
+      "text_fr": "Le 27 novembre, un vapur quitte Karaköy à la tombée du jour. Il remonte le Bosphore, traverse la nuit et vient s'amarrer au pied du pont Marie. À bord : la brise d'Istanbul, un orchestre, des platines, et une foule qui ne sait plus très bien de quelle rive elle vient.\n\nEmbarquez à 20h30. La traversée commence avec la live session de Ruşan Filiztek & friends, puis Eliyo fait monter la house jusqu'à 2h. Ensuite, la nuit change de cap. On ne vous dit rien : restez jusqu'au bout.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live : Ruşan Filiztek & friends, la brise d'Istanbul\n● 23h → 00h · Hybrid set : platines, orchestre et saxophone [saxophone À CONFIRMER]\n● 00h → 02h · Eliyo, house\n● 02h → 04h · Surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#BosphoreSurSeine · Instagram : Birkleyn Sound [handle À CONFIRMER]\n\nBillets : https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=facebook&utm_medium=event&utm_campaign=bss1",
       "checklist": [
         "Create the event from the Birkleyn Sound Facebook Page",
         "Add Péniche Le Marcounet as co-host",
@@ -1005,7 +1008,7 @@
       "format": "event description",
       "mode": "shotgun",
       "title": "Shotgun page: new title, cover, line-up and description (FR first, then EN; no Turkish) in the Horde voice, with the keywords",
-      "text_fr": "Le son d'Istanbul a toujours voyagé. Il a traversé l'Anatolie, longé les Balkans, passé des ponts et des seuils, et il en garde la trace. Le 27 novembre, il remonte la Seine et s'amarre au pied du pont Marie.\n\nEmbarquez à 20h30. Ruşan Filiztek et l'orchestre ouvrent la traversée : la brise d'Istanbul, le son du Bosphore. À 23h, les platines rejoignent l'orchestre et le saxophone de Michaël Wakko Havard. À minuit, Eliyo prend la barre et fait monter la house jusqu'à 2h. Ensuite, la nuit passe un dernier seuil. On ne vous dit rien : restez jusqu'au bout.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live : Ruşan Filiztek & l'orchestre, la brise d'Istanbul\n● 23h → 00h · Hybrid set : platines, orchestre et le saxophone de Michaël Wakko Havard\n● 00h → 02h · Eliyo, house\n● 02h → 04h · Surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nInstagram : @birkleyn_sound · #BosphoreSurSeine #SoundOfIstanbul\n\nPrésenté par L'Heur du Spectacle",
+      "text_fr": "Le son d'Istanbul a toujours voyagé. Il a traversé l'Anatolie, longé les Balkans, passé des ponts et des seuils, et il en garde la trace. Le 27 novembre, il remonte la Seine et s'amarre au pied du pont Marie.\n\nEmbarquez à 20h30. Ruşan Filiztek et l'orchestre ouvrent la traversée : la brise d'Istanbul, le son du Bosphore. À 23h, les platines rejoignent l'orchestre et le saxophone de Michaël Wakko Havard. À minuit, Eliyo prend la barre et fait monter la house jusqu'à 2h. Ensuite, la nuit passe un dernier seuil. On ne vous dit rien : restez jusqu'au bout.\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 LA TRAVERSÉE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● 21h → 23h · Live : Ruşan Filiztek & friends, la brise d'Istanbul\n● 23h → 00h · Hybrid set : platines, orchestre et le saxophone de Michaël Wakko Havard\n● 00h → 02h · Eliyo, house\n● 02h → 04h · Surprise\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 L'ESCALE\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Vendredi 27 novembre · Embarquement 20h30 → 4h\n● Péniche Le Marcounet, Port des Célestins, 75004 Paris · Métro 7 Pont Marie\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 BILLETS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n● Early Birds 15 € · Regular 18 € · Late 20 €\n● En ligne tant qu'il en reste ; à l'embarquement, au tarif Late, s'il reste de la place\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n🖤 SUIVEZ-NOUS\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nInstagram : @birkleyn_sound · #BosphoreSurSeine #SoundOfIstanbul\n\nPrésenté par L'Heur du Spectacle",
       "needs": [
         "Eliyo or Ruşan logs in to the Smartboard (only they have access)"
       ],

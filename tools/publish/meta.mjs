@@ -79,8 +79,8 @@ function targets(i) {
   return t;
 }
 function caption(i) {
-  const parts = [i.caption_fr, i.caption_tr].filter(Boolean);
-  let s = parts.join('\n\n· · ·\n\n');
+  // French only (Ali, 19 Nov): no Turkish under the posts
+  let s = (i.caption_fr || '').trim();
   if (i.hashtags) s += `\n\n${i.hashtags}`;
   return s.trim();
 }

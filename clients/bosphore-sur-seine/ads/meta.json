@@ -65,13 +65,6 @@
           "video": "reel-e16",
           "headline": "Le son d'Istanbul sur la Seine",
           "primary_fr": "Le son d'Istanbul a traversé les Balkans et l'Anatolie. Le 27 novembre, il s'amarre au pied du pont Marie. Vous êtes d'Istanbul, vous l'avez quittée, ou vous en rêvez : cette nuit est pour vous.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, au pied du pont Marie (Métro 7)\nBillets 15 / 18 / 20 € sur Shotgun\nPrésenté par L'Heur du Spectacle"
-        },
-        {
-          "id": "C1-A5",
-          "concept": "Türkçe (diaspora)",
-          "video": "reel-e16",
-          "headline": "Paris'te İstanbul'un sesi",
-          "primary_tr": "İstanbul'un sesi Seine'de. 27 Kasım Cuma, Pont Marie'nin dibindeki teknede sabah 4'e kadar: 21.00'de Ruşan Filiztek & friends canlı (Doğan Poyraz perküsyon, Michaël Wakko Havard saksafon), gece yarısından sonra Eliyo ve house. Biletler 15 / 18 / 20 €, Shotgun'da.\n\nL'Heur du Spectacle sunar."
         }
       ],
       "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=meta&utm_medium=paid&utm_campaign=bss1-c1&utm_content=<ad id>",
@@ -137,8 +130,6 @@
   "principles": [
     "Broad audience, creative does the targeting: Paris + 30 km, Advantage+ audience, no interest stacking (ads skill, Meta Andromeda playbook).",
     "Few campaigns, enough budget per ad set to learn: 2 campaigns + a last-48h push, not 4.",
-    "Each ad is a distinct concept (saxophone, house at midnight, hour-by-hour journey, Istanbul identity, Turkish-language), not 5 copies of one video.",
-    "Identity triggers in the copy: 'Istanbul', 'Bosphore', 'Paris', Turkish text for the diaspora; long primary text gives Meta context.",
     "Retargeting shows a different angle (programme, practical info, urgency), never the same ad again.",
     "Judge after ~48 h and enough impressions; cut only clear losers; never raise budget without approval.",
     "Loi Évin: no drinks in images or text. Special ad category: none."
@@ -148,5 +139,6 @@
     "C2": 30,
     "C3": 20,
     "total": 150
-  }
+  },
+  "language": "French only (Ali, 19 Nov): the Turkish ad was dropped."
 }

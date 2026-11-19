@@ -36,8 +36,8 @@ Built and run by Bertuğ. First client: **Bosphore sur Seine** (27 November 2026
 
 Every post is written for a bilingual French–Turkish audience in Paris:
 
-- **Caption:** French first, then Turkish, separated by a line. English only when the brief asks
-  (partners, English pages, international reach).
+- **Caption:** French only (Ali, 19 Nov 2026: no Turkish under the posts). `caption_tr` may stay in
+  campaign.json for reference but is never published. English only when the brief asks (Shotgun page).
 - **Visual text:** French by default; Turkish versions on request.
 - Write natively in each language. Don't translate word for word: a Turkish caption should read as
   if a young Istanbul lycéen wrote it; the French one follows the voix-horde skill.
