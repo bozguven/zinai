@@ -1,10 +1,10 @@
 {
  "id": "e17",
- "credit": "Images : Péniche Le Marcounet · Son : Horde × Baajar, Cabaret Sauvage, 2025",
+ "credit": "Images : Péniche Le Marcounet · Musique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
  "media_dir": "/home/claude/media/boat",
  "audio": {
-  "src": "p5.mp4",
-  "start": 24.035,
+  "src": "natackha.mp3",
+  "start": 100.0,
   "seconds": 16
  },
  "shots": [
@@ -55,7 +55,7 @@
   ],
   [
    "a.mp4",
-   31.0,
+   0.4,
    20
   ]
  ],
