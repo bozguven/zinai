@@ -1498,7 +1498,7 @@
       "visuals": [
         "video:story-cd20"
       ],
-      "status": "approved",
+      "status": "retired",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1509,7 +1509,7 @@
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\". Removed at Ali's request (19 Nov 21:54)."
     },
     {
       "id": "CD21",
@@ -1815,7 +1815,7 @@
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
       },
-      "notes": "Boat footage sent 19 Nov (Marcounet_Privatisation, 2509_100an). Only shots without drinks (Loi Évin) and without other bands on stage. C1593 (4K, very dark) not used. Music: Oceanvs Orientalis – Natackha (Kanto Records) from 1:40, as Ali asked (19 Nov). Moved to Sat 21 in place of E13 (Ali)."
+      "notes": "Boat footage sent 19 Nov (Marcounet_Privatisation, 2509_100an). Only shots without drinks (Loi Évin) and without other bands on stage. C1593 (4K, very dark) not used. Music: Oceanvs Orientalis – Natackha (Kanto Records) from 1:40, as Ali asked (19 Nov). Moved to Sat 21 in place of E13 (Ali). Re-cut from Ali's sequences (19 Nov 21:54): 2509_100an 0–3, 4–8, 28–33; C1593 24–27; Marcounet 4–8, 12–14, 19–27, 43–45, minus the seconds with drinks (Loi Évin) and the cakes."
     },
     {
       "id": "DP01",

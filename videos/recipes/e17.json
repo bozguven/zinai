@@ -2,89 +2,29 @@
  "id": "e17",
  "credit": "Images : Péniche Le Marcounet · Musique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
  "media_dir": "/home/claude/media/boat",
- "audio": {
-  "src": "natackha.mp3",
-  "start": 100.0,
-  "seconds": 16
- },
+ "audio": {"src": "natackha.mp3", "start": 100.0, "seconds": 20},
  "shots": [
-  [
-   "a.mp4",
-   0.2,
-   4
-  ],
-  [
-   "m.mp4",
-   6.0,
-   4
-  ],
-  [
-   "a.mp4",
-   7.0,
-   2
-  ],
-  [
-   "m.mp4",
-   5.0,
-   2
-  ],
-  [
-   "m.mp4",
-   19.2,
-   2
-  ],
-  [
-   "a.mp4",
-   24.1,
-   2
-  ],
-  [
-   "m.mp4",
-   24.0,
-   2
-  ],
-  [
-   "a.mp4",
-   32.0,
-   2
-  ],
-  [
-   "m.mp4",
-   43.0,
-   2
-  ],
-  [
-   "a.mp4",
-   0.4,
-   20
-  ]
+  ["a.mp4", 0.0, 4],
+  ["a.mp4", 2.0, 2],
+  ["m.mp4", 5.5, 4],
+  ["m.mp4", 12.0, 2],
+  ["a.mp4", 4.0, 2],
+  ["a.mp4", 6.0, 2],
+  ["m.mp4", 20.0, 2],
+  ["m.mp4", 22.5, 2],
+  ["cv.mp4", 0.5, 2],
+  ["m.mp4", 24.4, 2],
+  ["a.mp4", 28.0, 2],
+  ["a.mp4", 30.0, 2],
+  ["m.mp4", 43.0, 2],
+  ["a.mp4", 32.0, 20]
  ],
- "end_beats": 9,
+ "end_beats": 10,
  "texts": [
-  {
-   "text": "Vendredi, on embarque.",
-   "from": 0,
-   "to": 8,
-   "style": "hook"
-  },
-  {
-   "text": "Au pied du pont Marie,",
-   "from": 8,
-   "to": 14,
-   "style": "line"
-  },
-  {
-   "text": "le son d'Istanbul",
-   "from": 14,
-   "to": 18,
-   "style": "line"
-  },
-  {
-   "text": "jusqu'à 4h.",
-   "from": 18,
-   "to": 24,
-   "style": "line"
-  }
+  {"text": "Vendredi, on embarque.", "from": 0, "to": 6, "style": "hook"},
+  {"text": "Au pied du pont Marie,", "from": 6, "to": 12, "style": "line"},
+  {"text": "le son d'Istanbul", "from": 16, "to": 22, "style": "line"},
+  {"text": "jusqu'à 4h.", "from": 24, "to": 30, "style": "line"}
  ],
  "end_line": "Le son d'Istanbul, sur la Seine"
 }
