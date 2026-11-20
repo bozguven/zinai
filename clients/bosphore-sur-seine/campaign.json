@@ -1837,12 +1837,21 @@
       "visuals": [
         "perc-dp-story"
       ],
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "asked for it (19 Nov 21:39)",
         "rusan": "standing approval"
       },
-      "notes": "Photo sent by Ali 19 Nov. Same design as Michaël's story."
+      "notes": "Photo sent by Ali 19 Nov. Same design as Michaël's story.",
+      "attempts": {
+        "instagram_story": 1
+      },
+      "published": {
+        "instagram_story": {
+          "id": "17998239039052346",
+          "at": "2026-11-20T19:01:53.158Z"
+        }
+      }
     }
   ],
   "video_plan": {
