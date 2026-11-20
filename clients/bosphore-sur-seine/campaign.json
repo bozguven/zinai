@@ -1154,7 +1154,7 @@
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #saz #live #Paris #péniche",
       "notes": "Was feedback-only because it shows the saz; Ruşan asked to post it with the musicians named (19 Nov). Footage: 0510 + 0814 team videos. Handle confirmed by Bertuğ 19 Nov; tag kept, the publisher drops it if Instagram refuses again. (Earlier:: Instagram's API says the account is 'not visible' (wrong handle or private/not eligible). Moved to Fri 20 (Ali, 19 Nov).",
       "needs": [],
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "asked for this version (19 Nov 12:02)"
@@ -1166,7 +1166,16 @@
       },
       "collaborators": [
         "michael_wakko_havard"
-      ]
+      ],
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "18109904744318326",
+          "at": "2026-11-20T17:32:09.937Z"
+        }
+      }
     },
     {
       "id": "E10",
