@@ -1767,10 +1767,19 @@
       "visuals": [
         "sax-mwh-story"
       ],
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
+      },
+      "attempts": {
+        "instagram_story": 1
+      },
+      "published": {
+        "instagram_story": {
+          "id": "17918420649507915",
+          "at": "2026-11-21T19:01:48.902Z"
+        }
       }
     },
     {
