@@ -1837,12 +1837,21 @@
       "caption_fr": "Vendredi, on embarque. Une péniche au pied du pont Marie, l'île Saint-Louis en face, et le son d'Istanbul jusqu'à 4h : la live session de Ruşan Filiztek & friends, puis Eliyo dès minuit. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio\n\nMusique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
       "caption_tr": "Cuma günü gemiye biniyoruz. Pont Marie'nin dibinde bir tekne, bir yanda Seine, sabah 4'e kadar İstanbul'un sesi: önce Ruşan Filiztek & friends canlı, gece yarısından sonra Eliyo. 🖤\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #péniche #Paris #pontMarie #Istanbul",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval (Bertuğ, 18 Nov 20:56)",
         "rusan": "standing approval (Bertuğ, 18 Nov 20:56)"
       },
-      "notes": "Boat footage sent 19 Nov (Marcounet_Privatisation, 2509_100an). Only shots without drinks (Loi Évin) and without other bands on stage. C1593 (4K, very dark) not used. Music: Oceanvs Orientalis – Natackha (Kanto Records) from 1:40, as Ali asked (19 Nov). Moved to Sat 21 in place of E13 (Ali). Re-cut from Ali's sequences (19 Nov 21:54): 2509_100an 0–3, 4–8, 28–33; C1593 24–27; Marcounet 4–8, 12–14, 19–27, 43–45, minus the seconds with drinks (Loi Évin) and the cakes."
+      "notes": "Boat footage sent 19 Nov (Marcounet_Privatisation, 2509_100an). Only shots without drinks (Loi Évin) and without other bands on stage. C1593 (4K, very dark) not used. Music: Oceanvs Orientalis – Natackha (Kanto Records) from 1:40, as Ali asked (19 Nov). Moved to Sat 21 in place of E13 (Ali). Re-cut from Ali's sequences (19 Nov 21:54): 2509_100an 0–3, 4–8, 28–33; C1593 24–27; Marcounet 4–8, 12–14, 19–27, 43–45, minus the seconds with drinks (Loi Évin) and the cakes.",
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "18132583531881552",
+          "at": "2026-11-21T17:32:11.804Z"
+        }
+      }
     },
     {
       "id": "DP01",
