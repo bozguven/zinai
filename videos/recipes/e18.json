@@ -1,0 +1,22 @@
+{
+ "id": "e18",
+ "credit": "Images : Péniche Le Marcounet · Musique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
+ "media_dir": "/home/claude/media/marc",
+ "audio": {"src": "natackha.mp3", "start": 100.0, "seconds": 20},
+ "shots": [
+  ["mv.mp4", 0.5, 4],
+  ["mv.mp4", 5.0, 4],
+  ["mv.mp4", 9.0, 4],
+  ["mv.mp4", 12.5, 4],
+  ["mv.mp4", 15.0, 4],
+  ["mv.mp4", 17.0, 20]
+ ],
+ "end_beats": 10,
+ "texts": [
+  {"text": "Ici, vendredi.", "from": 0, "to": 8, "style": "hook"},
+  {"text": "Péniche Le Marcounet,", "from": 8, "to": 14, "style": "line"},
+  {"text": "le son d'Istanbul", "from": 14, "to": 20, "style": "line"},
+  {"text": "jusqu'à 4h.", "from": 20, "to": 30, "style": "line"}
+ ],
+ "end_line": "Le son d'Istanbul, sur la Seine"
+}
