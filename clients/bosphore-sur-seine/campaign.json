@@ -1923,12 +1923,21 @@
       },
       "caption_fr": "Ici, vendredi. Sous les néons rouges du Marcounet, au pied du pont Marie : la live session de Ruşan Filiztek & friends dès 21h, Eliyo dès minuit, et le son d'Istanbul jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio\n\nMusique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #péniche #Paris #Istanbul #house",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "asked to post it tonight (22 Nov 13:26)",
         "rusan": "standing approval"
       },
-      "notes": "Video filmed at the Marcounet (Ali). 16:9 phone clip cropped to 9:16 on the neon; music Natackha from 1:40 like the other boat videos."
+      "notes": "Video filmed at the Marcounet (Ali). 16:9 phone clip cropped to 9:16 on the neon; music Natackha from 1:40 like the other boat videos.",
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "18364969237216302",
+          "at": "2026-11-22T18:02:09.474Z"
+        }
+      }
     }
   ],
   "video_plan": {
