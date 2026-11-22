@@ -1387,7 +1387,7 @@
       "format": "reel",
       "mode": "auto",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1399,6 +1399,15 @@
         "youtube_shorts": "video:reel-e15",
         "facebook_feed": "video:feed-e15",
         "ads_4x5": "video:feed-e15"
+      },
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "18112107053299668",
+          "at": "2026-11-22T12:02:13.789Z"
+        }
       }
     },
     {
