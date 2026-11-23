@@ -75,6 +75,9 @@ def build(recipe_path, render=False):
     bpm, bt = beats_of(proj, tmp)
     first = bt[0] if bt else 0.0
     sh(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(a['start'] + first), '-t', str(secs), '-i', os.path.join(src_dir, a['src']), '-vn', '-ac', '2', '-ar', '48000', os.path.join(media, 'track.wav')])
+    _d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', os.path.join(media, 'track.wav')], capture_output=True, text=True).stdout.strip() or 0)
+    if _d < secs - 0.5:  # never build a silent video (e16 once went out with no sound: start was past the end of the source)
+        sys.exit(f"audio too short: {_d:.1f}s of {secs}s from {a['src']} at {a['start']}s (start past the end of the source?)")
     os.remove(tmp)
     B = 60.0 / bpm
     total_beats = int(secs / B)

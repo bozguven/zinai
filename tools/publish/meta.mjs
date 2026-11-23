@@ -22,6 +22,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const CLIENT = process.env.ZINAI_CLIENT || 'bosphore-sur-seine';
@@ -91,8 +92,17 @@ function blockers(i) {
   if (/À CONFIRMER/i.test(JSON.stringify([i.caption_fr, i.caption_tr, i.title_text, i.hashtags]))) b.push('[À CONFIRMER] in the text');
   for (const x of i.blocked_by || []) b.push(`blocked: ${x}`);
   if (!targets(i).length) b.push('no Instagram/Facebook target or no media');
-  for (const t of targets(i)) if (!fs.existsSync(path.join(OUT, t.file))) b.push(`missing file ${t.file}`);
+  for (const t of targets(i)) {
+    const f = path.join(OUT, t.file);
+    if (!fs.existsSync(f)) b.push(`missing file ${t.file}`);
+    else if (f.endsWith('.mp4') && !hasAudio(f)) b.push(`no sound in ${t.file}`);
+  }
   return [...new Set(b)];
+}
+// a Reel or video story without a sound track is never posted (E16 went out silent once)
+function hasAudio(file) {
+  try { return execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a', '-show_entries', 'stream=codec_name', '-of', 'csv=p=0', file]).toString().trim() !== ''; }
+  catch { return true; } // no ffprobe here: don't block on the check itself
 }
 const done = (i, t) => i.published?.[`${t.net}_${t.kind}`];
 
