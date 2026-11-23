@@ -1743,12 +1743,21 @@
       "caption_fr": "Le son d'Istanbul a traversé les Balkans et l'Anatolie. Partout où il passe, il laisse une trace. 🖤\nÀ minuit, Eliyo prend la barre : la house jusqu'à 2h.\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "caption_tr": "İstanbul'un sesi Balkanlar'dan, Anadolu'dan geçti; geçtiği her yerde iz bırakıyor. 🖤\nGece yarısı dümen Eliyo'da: 02.00'ye kadar house.\n\n27 Kasım Cuma · 20.30 → 04.00\nPéniche Le Marcounet, Pont Marie\nBiletler: link bio'da",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #Paris #house #péniche #Eliyo",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
       },
-      "notes": "HyperFrames (videos/e16). Images: Eliyo's sets (phone clips sent 18 Nov); sound: Plan 5 (Horde × Baajar). Venue of the clips not named."
+      "notes": "HyperFrames (videos/e16). Images: Eliyo's sets (phone clips sent 18 Nov); sound: Plan 5 (Horde × Baajar). Venue of the clips not named.",
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "18454842850131603",
+          "at": "2026-11-23T17:32:07.864Z"
+        }
+      }
     },
     {
       "id": "SX02",
