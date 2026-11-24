@@ -2018,12 +2018,21 @@
       },
       "caption_fr": "Le saz de Ruşan Filiztek, les platines d'Eliyo, la même nuit sur la péniche. Vendredi, la traversée commence à 21h avec la live session de Ruşan Filiztek & friends, et Eliyo prend la barre à minuit. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saz #house #péniche #Paris",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval",
         "rusan": "asked for new content with these videos (24 Nov 17:00)"
       },
-      "notes": "New video 24 Nov (IMG_1941), own live sound, one continuous take. Replaces E13 tonight."
+      "notes": "New video 24 Nov (IMG_1941), own live sound, one continuous take. Replaces E13 tonight.",
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "18122134612950735",
+          "at": "2026-11-24T17:32:33.325Z"
+        }
+      }
     },
     {
       "id": "MT01",
