@@ -111,6 +111,11 @@ A halay can close the night, but it is never the promise.
 - Show it small, never as the headline: "Présenté par L'Heur du Spectacle" on video end cards, covers and image posts,
   and at the end of the Shotgun / Facebook event text ("Presented by…" in English). Not needed in captions.
 
+## Footage (24 Nov)
+
+- **No more Cabaret Sauvage (Horde × Baajar) images in new content.** Use the fresh videos: boat, Marcounet, Ruşan × Eliyo, Michaël on the Seine, Doğan, the live session.
+- **Ads music:** « Tarlabaşı » (Oceanvs Orientalis, Be Svendsen Remix, Bar 25 Music). Boat videos: « Natackha » from 1:40.
+
 ## Language (Ali, 19 Nov)
 
 - **Posts, stories, ads: French only.** No Turkish captions under posts. Shotgun: French then English.

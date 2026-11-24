@@ -1672,7 +1672,7 @@
       "visuals": [
         "video:story-cd25"
       ],
-      "status": "approved",
+      "status": "retired",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1683,7 +1683,7 @@
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\". Replaced by stories from the new videos (24 Nov)."
     },
     {
       "id": "CD26",
@@ -1696,7 +1696,7 @@
       "visuals": [
         "video:story-cd26"
       ],
-      "status": "approved",
+      "status": "retired",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1707,7 +1707,7 @@
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\". Replaced by stories from the new videos (24 Nov)."
     },
     {
       "id": "CD27",
@@ -1720,7 +1720,7 @@
       "visuals": [
         "video:story-cd27"
       ],
-      "status": "approved",
+      "status": "retired",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1731,7 +1731,7 @@
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\". Replaced by stories from the new videos (24 Nov)."
     },
     {
       "id": "E16",
@@ -2036,7 +2036,7 @@
       ],
       "caption_fr": "Vendredi, sur la Seine. 21h, la live session de Ruşan Filiztek & friends, avec Doğan Poyraz aux percussions. 23h, le saxophone de Michaël Wakko Havard. Minuit, Eliyo prend la barre. Et le son d'Istanbul jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio\n\nMusique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #Paris #péniche #live #house",
-      "notes": "Main ad creative candidate.",
+      "notes": "Main ad creative candidate. Re-cut without the Cabaret Sauvage images (24 Nov: no more CS footage from now on).",
       "channel": "instagram reel",
       "mode": "auto",
       "status": "approved",
@@ -2111,6 +2111,73 @@
       "variants": {
         "instagram_reel": "video:reel-ses1"
       }
+    },
+    {
+      "id": "ST25",
+      "date": "2026-11-25",
+      "time": "10:00",
+      "channel": "instagram story",
+      "format": "story",
+      "mode": "auto",
+      "title": "Story J-2: Ruşan Filiztek × Eliyo on the boat (live sound)",
+      "visuals": [
+        "video:story-st25"
+      ],
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked to replace the 25/26/27 stories with the new content (24 Nov 17:51)"
+      }
+    },
+    {
+      "id": "ST26",
+      "date": "2026-11-26",
+      "time": "10:00",
+      "channel": "instagram story",
+      "format": "story",
+      "mode": "auto",
+      "title": "Story Demain: Michaël Wakko Havard on the Seine (live sound)",
+      "visuals": [
+        "video:story-st26"
+      ],
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked to replace the 25/26/27 stories with the new content (24 Nov 17:51)"
+      }
+    },
+    {
+      "id": "ST27",
+      "date": "2026-11-27",
+      "time": "10:00",
+      "channel": "instagram story",
+      "format": "story",
+      "mode": "auto",
+      "title": "Story Ce soir: story version of the master teaser (25 Nov Reel)",
+      "visuals": [
+        "video:story-st27"
+      ],
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked to replace the 25/26/27 stories with the new content (24 Nov 17:51)"
+      }
+    },
+    {
+      "id": "MT01AD",
+      "date": "2026-11-25",
+      "time": "",
+      "channel": "meta ads",
+      "format": "reel",
+      "mode": "meta-ads",
+      "status": "draft",
+      "title": "Ad version of the master teaser on « Tarlabaşı » (Be Svendsen Remix, Bar 25 Music), from 3:30 — for Ali and Ruşan to check before deciding the ads",
+      "visuals": [
+        "video:reel-mt01ad"
+      ],
+      "needs": [
+        "Ali and Ruşan watch it and decide the ads"
+      ]
     }
   ],
   "video_plan": {

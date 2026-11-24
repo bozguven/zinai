@@ -1,0 +1,110 @@
+{
+ "id": "st27",
+ "credit": "Images : Ruşan Filiztek & friends, Michaël Wakko Havard, Péniche Le Marcounet · Musique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
+ "media_dir": "/home/claude/media/n24",
+ "audio": {
+  "src": "natackha.mp3",
+  "start": 100.0,
+  "seconds": 26
+ },
+ "shots": [
+  [
+   "a.mp4",
+   0.2,
+   4
+  ],
+  [
+   "n1076.mp4",
+   10.0,
+   4
+  ],
+  [
+   "n1076.mp4",
+   0.5,
+   4
+  ],
+  [
+   "n1977.mp4",
+   0.5,
+   4
+  ],
+  [
+   "n1971.mp4",
+   40.0,
+   4
+  ],
+  [
+   "n1971.mp4",
+   14.0,
+   4
+  ],
+  [
+   "n1941.mp4",
+   28.0,
+   4
+  ],
+  [
+   "mv.mp4",
+   3.0,
+   4
+  ],
+  [
+   "n1941.mp4",
+   20.0,
+   4
+  ],
+  [
+   "mv.mp4",
+   9.0,
+   4
+  ],
+  [
+   "a.mp4",
+   32.0,
+   20
+  ]
+ ],
+ "end_beats": 12,
+ "texts": [
+  {
+   "text": "Ce soir.",
+   "from": 0,
+   "to": 4,
+   "style": "mega"
+  },
+  {
+   "text": "21h · Ruşan Filiztek & friends",
+   "from": 4,
+   "to": 12,
+   "style": "line"
+  },
+  {
+   "text": "Doğan Poyraz, percussions",
+   "from": 12,
+   "to": 16,
+   "style": "line"
+  },
+  {
+   "text": "23h · Michaël Wakko Havard",
+   "from": 16,
+   "to": 24,
+   "style": "line"
+  },
+  {
+   "text": "00h · Eliyo",
+   "from": 24,
+   "to": 36,
+   "style": "hook"
+  },
+  {
+   "text": "jusqu'à 4h.",
+   "from": 36,
+   "to": 44,
+   "style": "line"
+  }
+ ],
+ "end_line": "Ce soir, sur la Seine",
+ "format": "story",
+ "out_prefix": "story",
+ "cta": "Billets : lien en bio"
+}

@@ -1,0 +1,36 @@
+{
+ "id": "st25",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images et son : sur la péniche Le Marcounet",
+ "media_dir": "/home/claude/media/n24",
+ "audio": {
+  "src": "n1941.mp4",
+  "start": 6.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "n1941.mp4",
+   6.0,
+   400
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "J-2",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "Ruşan Filiztek × Eliyo",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Vendredi 27.11, sur la Seine",
+ "cta": "Billets : lien en bio"
+}

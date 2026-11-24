@@ -1,0 +1,36 @@
+{
+ "id": "st26",
+ "format": "story",
+ "out_prefix": "story",
+ "credit": "Images et son : Michaël Wakko Havard, sur la péniche",
+ "media_dir": "/home/claude/media/n24",
+ "audio": {
+  "src": "n1971.mp4",
+  "start": 40.0,
+  "seconds": 7.2
+ },
+ "shots": [
+  [
+   "n1971.mp4",
+   40.0,
+   400
+  ]
+ ],
+ "end_beats": 5,
+ "texts": [
+  {
+   "text": "Demain",
+   "from": 0,
+   "to": 10,
+   "style": "mega"
+  },
+  {
+   "text": "23h · Michaël Wakko Havard",
+   "from": 4,
+   "to": 10,
+   "style": "sub"
+  }
+ ],
+ "end_line": "Vendredi 27.11, sur la Seine",
+ "cta": "Billets : lien en bio"
+}
