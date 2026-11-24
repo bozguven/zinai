@@ -102,7 +102,7 @@ function buildBoard() {
   const todayP = now.slice(0, 10);
   const cat = (i) => (i.status === 'published' || (i.published && Object.keys(i.published).length)) ? 'pub'
     : (['approved', 'publishing', 'scheduled'].includes(i.status) && i.mode === 'auto') ? 'prog'
-    : ((['shotgun', 'website'].includes(i.mode) || (i.mode === 'manual' && i.status === 'approved')) && !['done', 'retired', 'missed', 'failed'].includes(i.status) && (i.date === 'trigger' || i.date >= todayP)) ? 'todo'
+    : ((['shotgun', 'website'].includes(i.mode) || (i.mode === 'manual' && i.status === 'approved') || (i.mode === 'meta-ads' && i.status === 'draft')) && !['done', 'retired', 'missed', 'failed'].includes(i.status) && (i.date === 'trigger' || i.date >= todayP)) ? 'todo'
     : 'arch';
   const live = [...c.items].filter((x) => x.status !== 'retired').sort(byTime);
   const group = (arr) => { const d = {}; for (const i of arr) (d[i.date] ||= []).push(i); return d; };
