@@ -2039,11 +2039,11 @@
       "date": "2026-11-25",
       "time": "13:00",
       "format": "reel",
-      "title": "Master teaser: every artist of the night + Eliyo at Cabaret Sauvage + the boat (Natackha)",
+      "title": "Master teaser on « Tarlabaşı » from 2:00 (also the ad creative): every artist + the boat",
       "visuals": [
         "video:reel-mt01"
       ],
-      "caption_fr": "Vendredi, sur la Seine. 21h, la live session de Ruşan Filiztek & friends, avec Doğan Poyraz aux percussions. 23h, le saxophone de Michaël Wakko Havard. Minuit, Eliyo prend la barre. Et le son d'Istanbul jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio\n\nMusique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
+      "caption_fr": "Vendredi, sur la Seine. 21h, la live session de Ruşan Filiztek & friends, avec Doğan Poyraz aux percussions. 23h, le saxophone de Michaël Wakko Havard. Minuit, Eliyo prend la barre. Et le son d'Istanbul jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio\n\nMusique : Oceanvs Orientalis, « Tarlabaşı » (Be Svendsen Remix, Bar 25 Music)",
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #Paris #péniche #live #house",
       "notes": "Main ad creative candidate. Re-cut without the Cabaret Sauvage images (24 Nov: no more CS footage from now on).",
       "channel": "instagram reel",
@@ -2162,7 +2162,7 @@
       "channel": "instagram story",
       "format": "story",
       "mode": "auto",
-      "title": "Story Ce soir: story version of the master teaser (25 Nov Reel)",
+      "title": "Story Ce soir: story version of the master teaser (25 Nov Reel) · music Tarlabaşı from 2:00",
       "visuals": [
         "video:story-st27"
       ],
@@ -2179,14 +2179,15 @@
       "channel": "meta ads",
       "format": "reel",
       "mode": "meta-ads",
-      "status": "draft",
+      "status": "retired",
       "title": "Ad version of the master teaser on « Tarlabaşı » (Be Svendsen Remix, Bar 25 Music), from 2:00 — for Ali and Ruşan to check before deciding the ads",
       "visuals": [
         "video:reel-mt01ad"
       ],
       "needs": [
         "Ali and Ruşan watch it and decide the ads"
-      ]
+      ],
+      "notes": "Merged into MT01: the scheduled teaser itself now uses Tarlabaşı (Bertuğ, 24 Nov 18:25)."
     }
   ],
   "video_plan": {
