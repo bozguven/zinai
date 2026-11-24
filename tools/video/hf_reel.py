@@ -137,6 +137,9 @@ def build(recipe_path, render=False):
       @font-face {{ font-family: "Unbounded"; font-weight: 900; src: url("assets/fonts/unbounded-latin-900-normal.woff2") format("woff2"); }}
       @font-face {{ font-family: "Fira Sans Condensed"; font-weight: 500; src: url("assets/fonts/fira-sans-condensed-latin-500-normal.woff2") format("woff2"); }}
       @font-face {{ font-family: "Fira Sans Condensed"; font-weight: 700; src: url("assets/fonts/fira-sans-condensed-latin-700-normal.woff2") format("woff2"); }}
+      @font-face {{ font-family: "Unbounded"; font-weight: 900; src: url("assets/fonts/unbounded-latin-ext-900-normal.woff2") format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF; }}
+      @font-face {{ font-family: "Fira Sans Condensed"; font-weight: 500; src: url("assets/fonts/fira-sans-condensed-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF; }}
+      @font-face {{ font-family: "Fira Sans Condensed"; font-weight: 700; src: url("assets/fonts/fira-sans-condensed-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF; }}
       :root {{ --ink: #f6f2e6; --window: #decf58; }}
       * {{ margin: 0; padding: 0; box-sizing: border-box; }}
       html, body {{ width: {W}px; height: {H}px; overflow: hidden; background: #000; }}

@@ -1,0 +1,39 @@
+{
+ "id": "sx05",
+ "credit": "Images et son : Michaël Wakko Havard, sur la péniche",
+ "media_dir": "/home/claude/media/n24",
+ "audio": {
+  "src": "n1971.mp4",
+  "start": 13.0,
+  "seconds": 22
+ },
+ "shots": [
+  [
+   "n1971.mp4",
+   13.0,
+   400
+  ]
+ ],
+ "end_beats": 10,
+ "texts": [
+  {
+   "text": "Michaël Wakko Havard",
+   "from": 0,
+   "to": 10,
+   "style": "hook"
+  },
+  {
+   "text": "au saxophone, sur la Seine.",
+   "from": 10,
+   "to": 20,
+   "style": "line"
+  },
+  {
+   "text": "Vendredi, 23h.",
+   "from": 20,
+   "to": 30,
+   "style": "line"
+  }
+ ],
+ "end_line": "Le son d'Istanbul, sur la Seine"
+}

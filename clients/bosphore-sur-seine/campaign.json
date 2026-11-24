@@ -1358,12 +1358,12 @@
       "format": "reel",
       "mode": "auto",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
-      "status": "approved",
+      "status": "retired",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
       },
-      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025.",
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025. Replaced by fresh videos (24 Nov).",
       "variants": {
         "instagram_reel": "video:reel-e13",
         "tiktok": "video:reel-e13",
@@ -2001,6 +2001,29 @@
           "at": "2026-11-23T18:28:06.830Z"
         }
       }
+    },
+    {
+      "id": "DUO1",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "channel": "instagram reel",
+      "format": "reel",
+      "mode": "auto",
+      "title": "Reel: Ruşan on saz and Eliyo on the decks, together on the boat terrace (live sound)",
+      "visuals": [
+        "video:reel-duo1"
+      ],
+      "variants": {
+        "instagram_reel": "video:reel-duo1"
+      },
+      "caption_fr": "Le saz de Ruşan Filiztek, les platines d'Eliyo, la même nuit sur la péniche. Vendredi, la traversée commence à 21h avec la live session de Ruşan Filiztek & friends, et Eliyo prend la barre à minuit. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saz #house #péniche #Paris",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked for new content with these videos (24 Nov 17:00)"
+      },
+      "notes": "New video 24 Nov (IMG_1941), own live sound, one continuous take. Replaces E13 tonight."
     }
   ],
   "video_plan": {

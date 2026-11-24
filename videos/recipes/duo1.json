@@ -1,0 +1,39 @@
+{
+ "id": "duo1",
+ "credit": "Images et son : sur la péniche Le Marcounet",
+ "media_dir": "/home/claude/media/n24",
+ "audio": {
+  "src": "n1941.mp4",
+  "start": 6.0,
+  "seconds": 22
+ },
+ "shots": [
+  [
+   "n1941.mp4",
+   6.0,
+   400
+  ]
+ ],
+ "end_beats": 10,
+ "texts": [
+  {
+   "text": "Le saz de Ruşan Filiztek,",
+   "from": 0,
+   "to": 10,
+   "style": "hook"
+  },
+  {
+   "text": "les platines d'Eliyo,",
+   "from": 10,
+   "to": 18,
+   "style": "line"
+  },
+  {
+   "text": "la même nuit, sur la péniche.",
+   "from": 18,
+   "to": 30,
+   "style": "line"
+  }
+ ],
+ "end_line": "Le son d'Istanbul, sur la Seine"
+}
