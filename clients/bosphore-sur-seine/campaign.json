@@ -1639,7 +1639,7 @@
       "visuals": [
         "video:story-cd24"
       ],
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
@@ -1650,7 +1650,16 @@
         "label": "Billets",
         "where": "under the yellow pill"
       },
-      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\"."
+      "notes": "Made for the API (stickers cannot be added there): the video ends on \"Billets : lien en bio\".",
+      "attempts": {
+        "instagram_story": 1
+      },
+      "published": {
+        "instagram_story": {
+          "id": "18129499735931415",
+          "at": "2026-11-24T09:02:47.479Z"
+        }
+      }
     },
     {
       "id": "CD25",
