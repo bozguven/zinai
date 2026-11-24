@@ -140,5 +140,32 @@
     "C3": 20,
     "total": 150
   },
-  "language": "French only (Ali, 19 Nov): the Turkish ad was dropped."
+  "language": "French only (Ali, 19 Nov): the Turkish ad was dropped.",
+  "plan_v3_24nov": {
+    "why": "Only 3 days left (Tue 24 evening → Fri 27): fewer, simpler pieces; boost the Reels already posted (keeps likes and comments).",
+    "set_up_by": "Ruşan in his Ads Manager, guided by Bertuğ on the phone (24 Nov 16:45)",
+    "objective": "Sales → Purchase if the Shotgun pixel shows events; otherwise Traffic → Landing page views",
+    "link": "https://shotgun.live/fr/events/bosphore-sur-seine-world-folk-house?utm_source=meta&utm_medium=paid&utm_campaign=bss-final",
+    "campaigns": [
+      {
+        "name": "BSS · Billets · Large",
+        "budget": "120 € lifetime, ends Fri 27 Nov 23:00",
+        "audience": "Paris + 30 km, 20–50, Advantage+ audience on, no interests",
+        "placements": "Advantage+",
+        "ads": "use existing Instagram posts: the 3–4 Reels with the most views (candidates: saxophone 23h, Minuit Eliyo, Jusqu'à 4h, boat Natackha, Marcounet 'Ici, vendredi')",
+        "cta": "Acheter des billets (or En savoir plus)"
+      },
+      {
+        "name": "BSS · Relance",
+        "budget": "30 € lifetime, ends Fri 27 Nov 23:00",
+        "audience": "custom audience: people who engaged with @birkleyn_sound in the last 60 days (+ video viewers if offered)",
+        "ads": "the 2 other Reels (different from the Large ones)"
+      }
+    ],
+    "rules": [
+      "Loi Évin: no drinks (all chosen Reels are clean)",
+      "Nobody raises the budget without agreeing",
+      "Check Wed evening: pause an ad only if it clearly lags the others"
+    ]
+  }
 }
