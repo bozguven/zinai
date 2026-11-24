@@ -21,14 +21,14 @@
   {
    "text": "Doğan Poyraz",
    "from": 0,
-   "to": 20,
+   "to": 6,
    "style": "hook"
   },
   {
-   "text": "aux percussions, vendredi dès 21h.",
-   "from": 0,
-   "to": 20,
-   "style": "sub"
+   "text": "aux percussions, dès 21h.",
+   "from": 6,
+   "to": 12,
+   "style": "line"
   }
  ],
  "end_line": "Vendredi 27.11, sur la Seine",

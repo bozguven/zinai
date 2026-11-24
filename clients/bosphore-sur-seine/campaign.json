@@ -1425,12 +1425,12 @@
       "format": "reel",
       "mode": "auto",
       "hashtags": "#BosphoreSurSeine #Istanbul #Paris #house #péniche #Eliyo",
-      "status": "approved",
+      "status": "retired",
       "approval": {
         "ali": "yes (relayed by Bertuğ, 18 Nov 20:47)",
         "rusan": "yes (relayed by Bertuğ, 18 Nov 20:47)"
       },
-      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025.",
+      "notes": "HyperFrames, house style (tools/video/hf_reel.py, videos/recipes). Footage + sound: Horde × Baajar, Cabaret Sauvage 2025. Replaced by fresh videos (24 Nov).",
       "variants": {
         "instagram_reel": "video:reel-e14",
         "tiktok": "video:reel-e14",
@@ -2024,6 +2024,93 @@
         "rusan": "asked for new content with these videos (24 Nov 17:00)"
       },
       "notes": "New video 24 Nov (IMG_1941), own live sound, one continuous take. Replaces E13 tonight."
+    },
+    {
+      "id": "MT01",
+      "date": "2026-11-25",
+      "time": "13:00",
+      "format": "reel",
+      "title": "Master teaser: every artist of the night + Eliyo at Cabaret Sauvage + the boat (Natackha)",
+      "visuals": [
+        "video:reel-mt01"
+      ],
+      "caption_fr": "Vendredi, sur la Seine. 21h, la live session de Ruşan Filiztek & friends, avec Doğan Poyraz aux percussions. 23h, le saxophone de Michaël Wakko Havard. Minuit, Eliyo prend la barre. Et le son d'Istanbul jusqu'à 4h. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio\n\nMusique : Oceanvs Orientalis, « Natackha » (Kanto Records)",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #Istanbul #Paris #péniche #live #house",
+      "notes": "Main ad creative candidate.",
+      "channel": "instagram reel",
+      "mode": "auto",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked for new content with these videos (24 Nov 17:00)"
+      },
+      "variants": {
+        "instagram_reel": "video:reel-mt01"
+      }
+    },
+    {
+      "id": "SX05",
+      "date": "2026-11-25",
+      "time": "18:30",
+      "format": "reel",
+      "title": "Reel: Michaël Wakko Havard on saxophone on the boat, Pont Marie behind (live sound)",
+      "visuals": [
+        "video:reel-sx05"
+      ],
+      "caption_fr": "Michaël Wakko Havard, au saxophone, sur la Seine. Vendredi à 23h, il rejoint les platines et la live session de Ruşan Filiztek & friends. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saxophone #Paris #péniche",
+      "collaborators": [
+        "michael_wakko_havard"
+      ],
+      "channel": "instagram reel",
+      "mode": "auto",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked for new content with these videos (24 Nov 17:00)"
+      },
+      "variants": {
+        "instagram_reel": "video:reel-sx05"
+      }
+    },
+    {
+      "id": "DP02",
+      "date": "2026-11-25",
+      "time": "20:00",
+      "format": "story",
+      "title": "Story: Doğan Poyraz on percussion (live session, live sound)",
+      "visuals": [
+        "video:story-dp02"
+      ],
+      "channel": "instagram story",
+      "mode": "auto",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked for new content with these videos (24 Nov 17:00)"
+      }
+    },
+    {
+      "id": "SES1",
+      "date": "2026-11-26",
+      "time": "13:00",
+      "format": "reel",
+      "title": "Reel: live session Ruşan Filiztek & friends (saz, double bass, accordion; live sound)",
+      "visuals": [
+        "video:reel-ses1"
+      ],
+      "caption_fr": "Ruşan Filiztek & friends. Vendredi à 21h, la live session ouvre la traversée : le saz et la voix de Ruşan, les percussions de Doğan Poyraz, le saxophone de Michaël Wakko Havard. 🖤\n\nVendredi 27 novembre · 20h30 → 4h\nPéniche Le Marcounet, Pont Marie\nBillets : lien en bio",
+      "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saz #live #Paris #péniche",
+      "channel": "instagram reel",
+      "mode": "auto",
+      "status": "approved",
+      "approval": {
+        "ali": "standing approval",
+        "rusan": "asked for new content with these videos (24 Nov 17:00)"
+      },
+      "variants": {
+        "instagram_reel": "video:reel-ses1"
+      }
     }
   ],
   "video_plan": {
