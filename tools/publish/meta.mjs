@@ -152,6 +152,7 @@ async function publishInstagram(i, t) {
     container = await api('POST', `${ig}/media`, params).then((r) => r.id).catch(async (e) => {
       if (!params.collaborators || !/not visible|collaborat/i.test(e.message)) throw e;
       log(`collaborators refused (${e.message}); posting without them`);
+      i.collab_todo = params.collaborators; // the account manager invites them by hand after posting (shown on the board)
       delete params.collaborators;
       return (await api('POST', `${ig}/media`, params)).id;
     });

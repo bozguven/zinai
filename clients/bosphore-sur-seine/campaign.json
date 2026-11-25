@@ -2055,7 +2055,11 @@
       },
       "variants": {
         "instagram_reel": "video:reel-mt01"
-      }
+      },
+      "collaborators": [
+        "rusanfiliztek",
+        "michael_wakko_havard"
+      ]
     },
     {
       "id": "SX05",
@@ -2119,7 +2123,10 @@
       },
       "variants": {
         "instagram_reel": "video:reel-ses1"
-      }
+      },
+      "collaborators": [
+        "rusanfiliztek"
+      ]
     },
     {
       "id": "ST25",
