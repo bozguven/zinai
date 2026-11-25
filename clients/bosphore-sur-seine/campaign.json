@@ -1870,7 +1870,10 @@
           "id": "18079691738743353",
           "at": "2026-11-19T12:03:36.695Z"
         }
-      }
+      },
+      "collab_todo": [
+        "michael_wakko_havard"
+      ]
     },
     {
       "id": "E17",
@@ -2032,7 +2035,10 @@
           "id": "18122134612950735",
           "at": "2026-11-24T17:32:33.325Z"
         }
-      }
+      },
+      "collab_todo": [
+        "rusanfiliztek"
+      ]
     },
     {
       "id": "MT01",
@@ -2204,6 +2210,42 @@
         "Ali and Ruşan watch it and decide the ads"
       ],
       "notes": "Merged into MT01: the scheduled teaser itself now uses Tarlabaşı (Bertuğ, 24 Nov 18:25)."
+    },
+    {
+      "id": "EM01",
+      "date": "2026-11-25",
+      "time": "19:00",
+      "channel": "shotgun newsletter",
+      "format": "email",
+      "mode": "shotgun",
+      "status": "draft",
+      "title": "Newsletter Shotgun : « Vendredi, sur la Seine »",
+      "subject_fr": "Vendredi, le son d'Istanbul remonte la Seine",
+      "text_fr": "Vendredi soir, une péniche s'amarre au pied du pont Marie et le son d'Istanbul monte à bord.\n\nÀ 21h, la live session de Ruşan Filiztek & friends ouvre la traversée : Ruşan au saz et au chant, Doğan Poyraz aux percussions, Michaël Wakko Havard au saxophone. À minuit, Eliyo prend la barre et fait monter la house. Ensuite, une surprise, jusqu'à 4h.\n\nVendredi 27 novembre · embarquement 20h30 → 4h\nPéniche Le Marcounet, Port des Célestins, Paris 4e · Métro 7 Pont Marie\nBillets en ligne tant qu'il en reste ; à l'embarquement au tarif Late, s'il reste de la place.\n\n[Bouton] Prendre ma place\n\nLe teaser de la nuit : instagram.com/birkleyn_sound\n\nÀ vendredi, sur la Seine.\nPrésenté par L'Heur du Spectacle",
+      "checklist": [
+        "Smartboard → Marketing → Campaigns → Newsletter (Promotional email)",
+        "Audience: contacts who accepted the newsletter (Shotgun handles consent and unsubscribe)",
+        "Paste subject + text, add the square cover image, button → event page",
+        "Send a test to yourself, then send"
+      ]
+    },
+    {
+      "id": "EM02",
+      "date": "2026-11-27",
+      "time": "11:00",
+      "channel": "shotgun newsletter",
+      "format": "email",
+      "mode": "shotgun",
+      "status": "draft",
+      "title": "Newsletter Shotgun : « Ce soir »",
+      "subject_fr": "Ce soir, on embarque à 20h30",
+      "text_fr": "Ce soir, la péniche Le Marcounet vous attend au pied du pont Marie.\n\n20h30 · embarquement\n21h · live session avec Ruşan Filiztek & friends (Doğan Poyraz, Michaël Wakko Havard)\nMinuit · Eliyo\nPuis une surprise, jusqu'à 4h.\n\nVotre billet est sur votre téléphone. Pas encore de place ? Il en reste en ligne, et à l'embarquement au tarif Late s'il reste de la place.\n\n[Bouton] Prendre ma place\n\nMétro 7 Pont Marie · Port des Célestins, Paris 4e\nPrésenté par L'Heur du Spectacle",
+      "checklist": [
+        "Smartboard → Marketing → Campaigns → Newsletter (Promotional email)",
+        "Audience: contacts who accepted the newsletter (Shotgun handles consent and unsubscribe)",
+        "Paste subject + text, add the square cover image, button → event page",
+        "Send a test to yourself, then send"
+      ]
     }
   ],
   "video_plan": {

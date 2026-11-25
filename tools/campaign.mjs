@@ -100,7 +100,7 @@ function buildBoard() {
 
   const now = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).format(new Date()).replace(' ', 'T');
   const todayP = now.slice(0, 10);
-  const cat = (i) => (i.status === 'published' || (i.published && Object.keys(i.published).length)) ? 'pub'
+  const cat = (i) => (i.collab_todo && i.collab_todo.length && !i.collab_done) ? 'todo' : (i.status === 'published' || (i.published && Object.keys(i.published).length)) ? 'pub'
     : (['approved', 'publishing', 'scheduled'].includes(i.status) && i.mode === 'auto') ? 'prog'
     : ((['shotgun', 'website'].includes(i.mode) || (i.mode === 'manual' && i.status === 'approved') || (i.mode === 'meta-ads' && i.status === 'draft')) && !['done', 'retired', 'missed', 'failed'].includes(i.status) && (i.date === 'trigger' || i.date >= todayP)) ? 'todo'
     : 'arch';
@@ -161,6 +161,7 @@ function buildBoard() {
   <h3>${mark((i.caption_fr || '').split(/(?<=[.!?…])\s|\n/)[0] || i.title)}</h3>${i.caption_fr ? `<p class="idl">${mark(i.title)}</p>` : ''}
   ${imgs ? `<div class="imgs">${imgs}</div>` : ''}
   ${blocks.join('\n  ')}
+  ${i.collab_todo && i.collab_todo.length && !i.collab_done ? `<p class="next">À faire après publication : inviter en collaboration ${i.collab_todo.map((h) => '@' + esc(h)).join(', ')} (Reel → ⋯ → Modifier → Identifier des personnes → Inviter un collaborateur).</p>` : ''}
   <p class="idl">${esc(i.id)}${k === 'todo' ? ' · ' + esc(label[i.mode] || '') : ''}</p>
 </article>`;
   };
