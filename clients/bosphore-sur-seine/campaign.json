@@ -2055,7 +2055,7 @@
       "notes": "Main ad creative candidate. Re-cut without the Cabaret Sauvage images (24 Nov: no more CS footage from now on).",
       "channel": "instagram reel",
       "mode": "auto",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval",
         "rusan": "asked for new content with these videos (24 Nov 17:00)"
@@ -2070,7 +2070,22 @@
       ],
       "collab_extra": [
         "d_g_npoy"
-      ]
+      ],
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "collab_todo": [
+        "rusanfiliztek",
+        "eliyomusic",
+        "michael_wakko_havard",
+        "d_g_npoy"
+      ],
+      "published": {
+        "instagram_reel": {
+          "id": "17883702132548703",
+          "at": "2026-11-25T12:02:42.481Z"
+        }
+      }
     },
     {
       "id": "SX05",
