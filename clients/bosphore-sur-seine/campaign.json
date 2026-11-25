@@ -2103,7 +2103,7 @@
       ],
       "channel": "instagram reel",
       "mode": "auto",
-      "status": "publishing",
+      "status": "published",
       "approval": {
         "ali": "standing approval",
         "rusan": "asked for new content with these videos (24 Nov 17:00)"
@@ -2112,7 +2112,7 @@
         "instagram_reel": "video:reel-sx05"
       },
       "attempts": {
-        "instagram_reel": 1
+        "instagram_reel": 2
       },
       "publish_errors": [
         {
@@ -2120,7 +2120,13 @@
           "at": "2026-11-25T17:32:37.207Z",
           "error": "POST /ig-api-upload/v25.0/18127531207913601: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
         }
-      ]
+      ],
+      "published": {
+        "instagram_reel": {
+          "id": "18016080170767207",
+          "at": "2026-11-25T17:37:26.413Z"
+        }
+      }
     },
     {
       "id": "DP02",
