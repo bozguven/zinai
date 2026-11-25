@@ -2139,10 +2139,19 @@
       ],
       "channel": "instagram story",
       "mode": "auto",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval",
         "rusan": "asked for new content with these videos (24 Nov 17:00)"
+      },
+      "attempts": {
+        "instagram_story": 1
+      },
+      "published": {
+        "instagram_story": {
+          "id": "18014840622006434",
+          "at": "2026-11-25T19:02:33.772Z"
+        }
       }
     },
     {
