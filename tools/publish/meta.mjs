@@ -245,6 +245,7 @@ if (cmd === 'plan') {
       try {
         const id = t.net === 'instagram' ? await publishInstagram(i, t) : await publishFacebook(i, t);
         i.published = { ...(i.published || {}), [key]: { id, at: new Date().toISOString() } };
+        if (i.collab_extra && t.kind !== 'story') i.collab_todo = [...new Set([...(i.collab_todo || []), ...i.collab_extra])]; // beyond the API's limit: invite by hand
         log(`published ${i.id} → ${key} (${id})`);
       } catch (e) {
         failures++;

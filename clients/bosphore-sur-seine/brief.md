@@ -97,6 +97,11 @@ soil. Birkleyn Sound: his live-session series, filmed with Arpeggio Films.
 Past nights by the team drew a halay crowd. This series aims at a curated Istanbul–Paris soirée.
 A halay can close the night, but it is never the promise.
 
+## Instagram handles (Bertuğ, 25 Nov)
+
+- Ruşan Filiztek @rusanfiliztek · Eliyo @eliyomusic · Doğan Poyraz @d_g_npoy · Michaël Wakko Havard @michael_wakko_havard
+- Invite them as collaborators on the Reels they appear in (API at posting; if refused, the account manager invites them by hand).
+
 ## Musicians (Ruşan, 19 Nov): name them, before midnight nothing should look anonymous
 
 - **Live, 21h → 00h ("live session avec Ruşan Filiztek & friends"):** Saz et chant : **Ruşan Filiztek** · Percussion : **Doğan Poyraz** · Saxophone : **Michaël Wakko Havard** (@michael_wakko_havard).
