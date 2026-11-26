@@ -2216,10 +2216,19 @@
       "visuals": [
         "video:story-st26"
       ],
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval",
         "rusan": "asked to replace the 25/26/27 stories with the new content (24 Nov 17:51)"
+      },
+      "attempts": {
+        "instagram_story": 1
+      },
+      "published": {
+        "instagram_story": {
+          "id": "18107558525023488",
+          "at": "2026-11-26T09:02:35.550Z"
+        }
       }
     },
     {
