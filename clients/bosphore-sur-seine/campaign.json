@@ -2167,7 +2167,7 @@
       "hashtags": "#BosphoreSurSeine #SoundOfIstanbul #saz #live #Paris #péniche",
       "channel": "instagram reel",
       "mode": "auto",
-      "status": "approved",
+      "status": "published",
       "approval": {
         "ali": "standing approval",
         "rusan": "asked for new content with these videos (24 Nov 17:00)"
@@ -2177,7 +2177,16 @@
       },
       "collaborators": [
         "rusanfiliztek"
-      ]
+      ],
+      "attempts": {
+        "instagram_reel": 1
+      },
+      "published": {
+        "instagram_reel": {
+          "id": "17912971041579670",
+          "at": "2026-11-26T12:02:56.329Z"
+        }
+      }
     },
     {
       "id": "ST25",
